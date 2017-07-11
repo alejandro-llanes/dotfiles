@@ -184,7 +184,7 @@ bindsym $mod+Ctrl+L exec --no-startup-id i3lock -c "#000000"
 bindsym $mod+Shift+N exec dm-tool switch-to-user `zenity --entry --text "Switch to user:"`
 
 ## filemanager
-bindsym $mod+F+M exec --no-startup-id pcmanfm
+bindsym $mod+Ctrl+F exec --no-startup-id pcmanfm
 
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id yakuake
