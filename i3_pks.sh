@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-PKGS="xbacklight nitrogen xcompmgr xmodmap mrxvt dmenu terminator"
+PKGS="xbacklight nitrogen xcompmgr xmodmap mrxvt dmenu terminator pcmanfm"
 
 for p in $PKGS
 do
