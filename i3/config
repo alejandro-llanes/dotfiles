@@ -176,6 +176,9 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink toggle
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
+##session lock
+bindsym $mod+Ctrl+L exec --no-startup-id i3lock -c "#000000"
+
 ## session switch
 # dm-tool switch-to-user
 bindsym $mod+Shift+N exec dm-tool switch-to-user `zenity --entry --text "Switch to user:"`
