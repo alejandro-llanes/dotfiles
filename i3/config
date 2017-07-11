@@ -183,6 +183,9 @@ bindsym $mod+Ctrl+L exec --no-startup-id i3lock -c "#000000"
 # dm-tool switch-to-user
 bindsym $mod+Shift+N exec dm-tool switch-to-user `zenity --entry --text "Switch to user:"`
 
+## filemanager
+bindsym $mod+f+m exec --no-startup-id pcmanfm
+
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id yakuake
 exec --no-startup-id feh --bg-scale ~/Images/freebsd.png
