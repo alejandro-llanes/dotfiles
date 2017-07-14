@@ -166,7 +166,11 @@ bar {
         position top
 }
 
-##volumes 
+## inputs setup
+exec --no-startup-id "setxkbmap -layout latam,us"
+exec --no-startup-id xmodmap -e "pointer = 3 2 1"
+
+## audio settings
 set $sink `pactl list short sinks | grep RUNNING | cut -f1`
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +10% 
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -10% 
@@ -180,15 +184,17 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 bindsym $mod+Ctrl+L exec --no-startup-id i3lock -c "#000000"
 
 ## session switch
-# dm-tool switch-to-user
 bindsym $mod+Shift+N exec dm-tool switch-to-user `zenity --entry --text "Switch to user:"`
 
 ## filemanager
 bindsym $mod+Ctrl+F exec --no-startup-id pcmanfm
 
+##render 
+#exec xcompmgr -c -f -n
+exec --no-startup-id compton -b --backend glx --vsync opengl
+
+## background
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id yakuake
 exec --no-startup-id feh --bg-scale ~/Images/freebsd.png
-exec xcompmgr -c -f -n
-exec "setxkbmap -layout latam,us"
-exec xmodmap -e "pointer = 3 2 1"
+#exec --no-startup-id yakuake
+
