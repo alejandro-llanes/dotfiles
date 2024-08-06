@@ -223,3 +223,9 @@
   (yank)
 )
 (global-set-key (kbd "C-d") 'duplicate-line)
+
+;; rustic mode auto-save
+(use-package! rustic
+  :hook ((rustic-mode . (lambda()
+                         (setq-local auto-save-visited-interval 1)
+                         (auto-save-mode 1)))))
