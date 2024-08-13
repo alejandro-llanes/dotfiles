@@ -54,4 +54,5 @@
 (package! cargo)
 (package! nerd-icons-ibuffer)
 (package! ibuffer-sidebar)
+(package! lsp-ui)
 ;;(package! popwin)

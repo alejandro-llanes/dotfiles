@@ -160,7 +160,8 @@
   ;;(windmove-left)
   (set-window-parameter (selected-window) 'window-name 'normal)
   (mio/set-display-groups)
-  (windmove-left))
+  (windmove-left)
+  (balance-windows-area))
 
 ;;(use-package ibuffer-sidebar
 ;;  :bind (("C-x C-b" . ibuffer-sidebar-toggle-sidebar))
@@ -229,3 +230,44 @@
   :hook ((rustic-mode . (lambda()
                          (setq-local auto-save-visited-interval 1)
                          (auto-save-mode 1)))))
+
+;; documentation location
+;; (use-package! lsp-mode
+;;   :commands (lsp lsp-deferred)
+;;   :hook ((rust-mode . lsp)
+;;          (rustic-mode . lsp)))
+
+;; (use-package! lsp-ui
+;;   :after lsp-mode
+;;   ;;:after lsp-ui
+;;   :custom
+;;   (lsp-ui-doc-enable t)
+;;   ;;(lsp-ui-doc-use-webkit t)
+;;   (lsp-ui-doc-position 'at-point)
+;;   (lsp-ui-doc-header t)
+;;   (lsp-ui-doc-include-signature t)
+;;   (lsp-ui-doc-max-width 80)
+;;   (lsp-ui-doc-max-height 20)
+;;   (lsp-ui-doc-use-childframe t)
+;;   ;;(lsp-ui-doc-delay 0.5)
+;;   :hook (lsp-mode . lsp-ui-mode))
+
+;; (add-hook 'rust-mode-hook 'lsp-ui-doc-mode )
+;; (add-hook 'rustic-mode-hook 'lsp-ui-doc-mode)
+
+(after! lsp-ui
+  (setq lsp-ui-doc-position 'at-point)
+  (setq lsp-ui-doc-use-childframe t)
+  (setq lsp-ui-doc-max-width 80)
+  (setq lsp-ui-doc-max-height 20)
+  (setq lsp-ui-doc-enable t))
+
+;; lsp-ui-doc-show
+;; lsp-ui-imenu
+
+;; (custom-set-variables
+;;  '(lsp-ui-doc-position 'at-point))
+(setq lsp-ui-doc-show-with-cursor t)
+
+;; set caro colors for eshell
+(setenv "CARGO_TERM_COLOR" "always")
