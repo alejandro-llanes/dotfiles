@@ -123,15 +123,6 @@
       (when (equal (window-parameter window 'window-name) name)
         (throw 'window window)))))
 
-;;(defun mio/display-buffer-in-named-window (buffer alist window-name)
-;;  "Display BUFFER in the window named WINDOW-NAME."
-;;  (let ((window (mio/get-window-by-name window-name)))
-;;    (if window
-;;        (progn
-;;          (set-window-buffer window buffer)
-;;          window)
-;;      (display-buffer-pop-up-window buffer alist))))
-
 (defun mio/set-display-groups ()
   "Used to display specific buffer to specific window."
   (setq display-buffer-alist
@@ -150,8 +141,9 @@
   (windmove-right)
   (split-window-below (floor (* 0.80 (window-height))))
   (windmove-down)
-  (eshell)
-  ;;;(vterm)
+  ;;(eshell)
+  ;;(vterm)
+  (+vterm/here ".")
   (windmove-up)
   ;;(split-window-right (floor (* 0.95 (window-width))))
   ;;(windmove-right)
@@ -162,11 +154,6 @@
   (mio/set-display-groups)
   (windmove-left)
   (balance-windows-area))
-
-;;(use-package ibuffer-sidebar
-;;  :bind (("C-x C-b" . ibuffer-sidebar-toggle-sidebar))
-;;  :ensure nil
-;;  :commands (ibuffer-sidebar-toggle-sidebar))
 
 (defun mio/display-buffer-in-named-window (buffer window-name)
   "Display BUFFER in the window named WINDOW-NAME."
@@ -256,7 +243,8 @@
 ;; (add-hook 'rustic-mode-hook 'lsp-ui-doc-mode)
 
 (after! lsp-ui
-  (setq lsp-ui-doc-position 'at-point)
+  ;;(setq lsp-ui-doc-position 'at-point)
+  (setq lsp-ui-doc-position 'top)
   (setq lsp-ui-doc-use-childframe t)
   (setq lsp-ui-doc-max-width 80)
   (setq lsp-ui-doc-max-height 20)
