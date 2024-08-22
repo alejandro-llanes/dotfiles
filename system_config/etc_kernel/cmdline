@@ -1,0 +1,13 @@
+systemd.machine_id=f4dd8f25327b4ea3afb1f91640ac3801
+rd.luks=1
+rd.luks.uuid=21f1b207-0d11-43f5-a7bf-2dbea36beea4
+rd.luks.allow-discards
+rd.fstab=1
+rd.auto=1
+rd.lvm=1
+root=UUID=754afef0-77ac-4ec2-8a06-e72f5fd024d4
+resume=UUID=8e0fdab8-8a48-462e-8a68-b71e878357e8
+init=/lib/systemd/systemd
+splash
+quiet
+loglevel=0

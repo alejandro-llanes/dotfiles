@@ -1,0 +1,6 @@
+# required by www-client/google-chrome (argument)
+>=www-client/google-chrome-126.0.6478.126 google-chrome
+# required by net-print/cnijfilter2 (argument)
+>=net-print/cnijfilter2-6.70 Canon-IJ
+# discord
+>=net-im/discord-0.0.62 all-rights-reserved

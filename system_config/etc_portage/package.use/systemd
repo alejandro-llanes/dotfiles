@@ -1,0 +1,8 @@
+sys-apps/systemd boot cryptsetup
+# required by kde-frameworks/kauth-5.116.0::gentoo
+# required by kde-frameworks/kconfigwidgets-5.116.0::gentoo
+# required by kde-frameworks/kiconthemes-5.116.0::gentoo
+# required by kde-plasma/polkit-kde-agent-5.27.11::gentoo
+# required by sys-auth/polkit-124-r1::gentoo[kde]
+# required by gnome-extra/polkit-gnome-0.105-r2::gentoo
+>=sys-auth/polkit-qt-0.200.0 qt5
