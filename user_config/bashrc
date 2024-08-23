@@ -1,0 +1,41 @@
+# /etc/skel/.bashrc
+#
+# This file is sourced by all *interactive* bash shells on startup,
+# including some apparently interactive shells such as scp and rcp
+# that can't tolerate any output.  So make sure this doesn't display
+# anything or bad things will happen !
+
+
+# Test for an interactive shell.  There is no need to set anything
+# past this point for scp and rcp, and it's important to refrain from
+# outputting anything in those cases.
+if [[ $- != *i* ]] ; then
+	# Shell is non-interactive.  Be done now!
+	return
+fi
+
+
+# Put your fun stuff here.
+. "$HOME/.cargo/env"
+# ziglang
+export PATH=$PATH:$HOME/zig-linux-x86_64-0.13.0-dev.339+6b020c3d1
+
+# nvim -> vim
+#alias vim="/usr/bin/nvim"
+
+# doom-emacs
+export PATH=$PATH:$HOME/.config/emacs/bin
+# emacs
+# systemctl --user enable --now emacs-29
+export ALTERNATE_EDITOR=''
+alias e='emacsclient --tty'
+export EDITOR='emacsclient -t'
+export VISUAL='emacsclient -t'
+alias vi='emacsclient -t'
+alias vim='emacsclient -t'
+
+# default to tmux session
+#test -n "$PS1" && test -z "$TMUX" -a -n "$SSH_TTY" && exec tmux new -ADX
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux new -ADX
+fi

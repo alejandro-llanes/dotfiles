@@ -14,7 +14,7 @@
          "on-click": "activate",
          // "all-outputs": false,
          // "format": "{name}: {icon}",
-         "format": "{name}",
+         "format": "{icon}",
          "on-scroll-up": "hyprctl dispatch workspace m-1 > /dev/null",
          "on-scroll-down": "hyprctl dispatch workspace m+1 > /dev/null",
          "format-icons": {

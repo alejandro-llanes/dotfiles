@@ -64,7 +64,8 @@
 
 #workspaces button.active {
   border-radius: 4px;
-  background-color: @base02;
+  /*background-color: @base02;*/
+  background-color: @base0B;
 }
 
 #workspaces button.urgent {
