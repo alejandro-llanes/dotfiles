@@ -14,11 +14,13 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
+# own binaries
+export PATH=$PATH:$HOME/.bin
 
 # Put your fun stuff here.
 . "$HOME/.cargo/env"
 # ziglang
-export PATH=$PATH:$HOME/zig-linux-x86_64-0.13.0-dev.339+6b020c3d1
+export PATH=$PATH:$HOME/zig-linux-x86_64-0.14.0-dev.1307+849c31a6c
 
 # nvim -> vim
 #alias vim="/usr/bin/nvim"
@@ -36,6 +38,6 @@ alias vim='emacsclient -t'
 
 # default to tmux session
 #test -n "$PS1" && test -z "$TMUX" -a -n "$SSH_TTY" && exec tmux new -ADX
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ] && [[ ! "$EMACSW" ]] ; then
   exec tmux new -ADX
 fi

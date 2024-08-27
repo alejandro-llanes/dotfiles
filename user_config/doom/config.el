@@ -259,3 +259,8 @@
 
 ;; set caro colors for eshell
 (setenv "CARGO_TERM_COLOR" "always")
+;; set emacsw env for avoid xterm start inside emacs
+(setenv "EMACSW" "true")
+
+;; zig zls
+;;(setq lsp-zig-zig-exe-path "/home/alejandro/.bin/zls")
