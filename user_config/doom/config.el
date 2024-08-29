@@ -1,82 +1,42 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 
-;; Place your private configuration here! Remember, you do not need to run 'doom
-;; sync' after modifying this file!
+;; fonts
 
-
-;; Some functionality uses this to identify you, e.g. GPG configuration, email
-;; clients, file templates and snippets. It is optional.
-;; (setq user-full-name "John Doe"
-;;       user-mail-address "john@doe.com")
-
-;; Doom exposes five (optional) variables for controlling fonts in Doom:
-;;
-;; - `doom-font' -- the primary font to use
-;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
-;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
-;;   presentations or streaming.
-;; - `doom-symbol-font' -- for symbols
-;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
-;;
-;; See 'C-h v doom-font' for documentation and more examples of what they
-;; accept. For example:
-;;
 (setq doom-font (font-spec :family "Fira Code" :size 12 :weight 'semi-light)
       doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
-;;
-;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
-;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
-;; refresh your font settings. If Emacs still can't find your font, it likely
-;; wasn't installed correctly. Font issues are rarely Doom issues!
 
-;; There are two ways to load a theme. Both assume the theme is installed and
-;; available. You can either set `doom-theme' or manually load a theme with the
-;; `load-theme' function. This is the default:
+;; themes
 (setq doom-theme 'doom-one)
 
-;; This determines the style of line numbers in effect. If set to `nil', line
-;; numbers are disabled. For relative line numbers, set this to `relative'.
+;; show line numbers
 (setq display-line-numbers-type t)
 
-;; If you use `org' and don't want your org files in the default location below,
-;; change `org-directory'. It must be set before org loads!
+;; Blinking cursor
+(blink-cursor-mode 1)
+
+;; ORG MODEEEEEEE FCK YEAHH
 (setq org-directory "~/org/")
 
+(setq org-log-done 'time)
+(setq org-log-done 'note)
 
-;; Whenever you reconfigure a package, make sure to wrap your config in an
-;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
-;;
-;;   (after! PACKAGE
-;;     (setq x y))
-;;
-;; The exceptions to this rule:
-;;
-;;   - Setting file/directory variables (like `org-directory')
-;;   - Setting variables which explicitly tell you to set them before their
-;;     package is loaded (see 'C-h v VARIABLE' to look up their documentation).
-;;   - Setting doom variables (which start with 'doom-' or '+').
-;;
-;; Here are some additional functions/macros that will help you configure Doom.
-;;
-;; - `load!' for loading external *.el files relative to this one
-;; - `use-package!' for configuring packages
-;; - `after!' for running code after a package has loaded
-;; - `add-load-path!' for adding directories to the `load-path', relative to
-;;   this file. Emacs searches the `load-path' when you load packages with
-;;   `require' or `use-package'.
-;; - `map!' for binding new keys
-;;
-;; To get information about any of these functions/macros, move the cursor over
-;; the highlighted symbol at press 'K' (non-evil users must press 'C-c c k').
-;; This will open documentation for it, including demos of how they are used.
-;; Alternatively, use `C-h o' to look up a symbol (functions, variables, faces,
-;; etc).
-;;
-;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
-;; they are implemented.
-;; (after! core-ui (menu-bar-mode 1))
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "|" "DONE(d)" "CANCELLED(c)")
+        (sequence "TASK(f)" "|" "DONE(d)")
+        (sequence "MAYBE(m)" "|" "CANCELLED(c)")))
+
+(setq org-todo-keyword-faces
+      '(("TODO" . (:foreground "DarkOrange1" :weight bold))
+        ("MAYBE" . (:foreground "sea green"))
+        ("DONE" . (:foreground "light sea green"))
+        ("CANCELLED" . (:foreground "forest green"))
+        ("TASK" . (:foreground "blue"))))
+
+
+;; show menu bar
 ;;(menu-bar-mode 1)
 
+;; treemacs
 (require 'cfrs)
 (require 'treemacs)
 
@@ -103,37 +63,38 @@
 
 (add-to-list 'treemacs-ignored-file-predicates #'treemacs-ignore-example)
 
-;; (setq treemacs-width 30)
-
-;;(require 'treemacs-icons-dired)
-;;(treemacs-icons-dired-mode t)
-;;(require 'treemacs-all-the-icons)
-;;(treemacs-all-the-icons t)
 (use-package treemacs-icons-dired :after treemacs :config (treemacs-load-theme "icons-dired"))
 (doom/set-frame-opacity 85)
 
-;;(setq display-buffer-base-action
-;;     '((display-buffer-reuse-window
-;;        display-buffer-use-some-window)))
+;; (use-package treemacs
+;;   :ensure t
+;;   :after persp-mode
+;;   :config
+;;   (add-hook 'persp-created-functions
+;;             (lambda (_persp)
+;;               (treemacs-select-window))))
 
-(defun mio/get-window-by-name (name)
-  "Get a window by its NAME."
-  (catch 'window
-    (dolist (window (window-list))
-      (when (equal (window-parameter window 'window-name) name)
-        (throw 'window window)))))
+;; max
+(setq max-lisp-eval-depth 10000)
+;;(add-hook 'ibuffer-mode-hook #'nerd-icons-ibuffer-mode) ;; this breaks ibuffer-sidebar
 
-(defun mio/set-display-groups ()
-  "Used to display specific buffer to specific window."
-  (setq display-buffer-alist
-      `((,(regexp-opt '("^\*[a-zA-z0-9\-\ ]*\*$"))
-         (mio/display-buffer-in-named-window)
-         (window-name . special))
-        (".*"
-         (mio/display-buffer-in-named-window)
-         (window-name . normal)))))
+;; customization
 
-(defun mio/layout-1 ()
+;; function for duplicate line, doesn't work in org.
+(defun duplicate-line()
+  (interactive)
+  (move-beginning-of-line 1)
+  (kill-line)
+  (yank)
+  (open-line 1)
+  (forward-line 1)
+  (yank)
+)
+(global-set-key (kbd "C-d") 'duplicate-line)
+
+;;;; Workspace layouts
+
+(defun mio/dev1 ()
   "Layout One"
   (interactive)
   (treemacs)
@@ -141,23 +102,54 @@
   (windmove-right)
   (split-window-below (floor (* 0.80 (window-height))))
   (windmove-down)
-  ;;(eshell)
-  ;;(vterm)
   (+vterm/here ".")
   (windmove-up)
-  ;;(split-window-right (floor (* 0.95 (window-width))))
-  ;;(windmove-right)
-  ;;(set-window-parameter (split-window-right) 'window-name 'special)
   (set-window-parameter (split-window-right (floor (* 0.95 (window-width)))) 'window-name 'special)
-  ;;(windmove-left)
   (set-window-parameter (selected-window) 'window-name 'normal)
-  (mio/set-display-groups)
+  (dev1/set-display-groups)
   (windmove-left)
   (balance-windows-area))
 
-(defun mio/display-buffer-in-named-window (buffer window-name)
+(defun mio/agenda ()
+  "Agenda Layout"
+  (interactive)
+  (org-mode)
+  (setq org-agenda-file '("~/org/"))
+  (treemacs)
+  ;;(treemacs-add-project-to-workspace "~/org")
+  ;;(treemacs-select-directory)
+  ;;(treemacs-add-and-display-current-project)
+  (ibuffer-sidebar-show-sidebar)
+  (windmove-right)
+  (split-window-below (floor (* 0.50 (window-height))))
+  (windmove-down)
+  (org-todo-list)
+  (set-window-dedicated-p (selected-window) 1)
+  (windmove-up)
+  (find-file "~/org/startup.org"))
+
+;; get window by name
+(defun dev1/get-window-by-name (name)
+  "Get a window by its NAME."
+  (catch 'window
+    (dolist (window (window-list))
+      (when (equal (window-parameter window 'window-name) name)
+        (throw 'window window)))))
+
+;; set where to display buffers
+(defun dev1/set-display-groups ()
+  "Used to display specific buffer to specific window."
+  (setq display-buffer-alist
+      `((,(regexp-opt '("^\*[a-zA-z0-9\-\ ]*\*$"))
+         (dev1/display-buffer-in-named-window)
+         (window-name . special))
+        (".*"
+         (dev1/display-buffer-in-named-window)
+         (window-name . normal)))))
+
+(defun dev1/display-buffer-in-named-window (buffer window-name)
   "Display BUFFER in the window named WINDOW-NAME."
-  (let ((window (mio/get-window-by-name window-name)))
+  (let ((window (dev1/get-window-by-name window-name)))
     (if window
        (progn
           (set-window-buffer window buffer)
@@ -165,11 +157,11 @@
       (message "No window named %s" window-name)
       (display-buffer buffer))))
 
-(defun mio/ibuffer-display-buffer ()
+(defun dev1/ibuffer-display-buffer ()
   "Display the buffer from ibuffer in the special window."
   (interactive)
   (let ((buffer (ibuffer-current-buffer)))
-    (mio/display-buffer-in-named-window buffer 'special)))
+    (dev1/display-buffer-in-named-window buffer 'special)))
 
 (defun my/treemacs-open-file-in-window (buffer _)
   "Force Treemacs to open files in a specific named window."
@@ -178,69 +170,17 @@
       (select-window window)
       (switch-to-buffer buffer))))
 
-;;(defun mio/treemacs-display-buffer (buffer _alist)
-;;  "Display BUFFER in the special window."
-;;  (mio/display-buffer-in-named-window buffer 'normal))
-
 (add-hook 'ibuffer-mode-hook
           (lambda ()
-            (define-key ibuffer-mode-map (kbd "RET") 'mio/ibuffer-display-buffer)))
+            (define-key ibuffer-mode-map (kbd "RET") 'dev1/ibuffer-display-buffer)))
 
-;;(add-hook 'treemacs-mode-hook
-;;          (lambda ()
-;;	    (setq treemacs-display-in-side-window t)
-;;	    (setq display-buffer-alist
-;;		  `((,(regexp-quote (buffer-name))
-;;		      (mio/treemacs-display-buffer))))))
-
-;;(with-eval-after-load 'treemacs
-;;		      (add-hook 'treemacs-select-file-hook
-;;				(lambda ()
-;;				(mio/treemacs-open-file-in-window ))))
-
-(setq max-lisp-eval-depth 10000)
-;;(add-hook 'ibuffer-mode-hook #'nerd-icons-ibuffer-mode) ;; this breaks ibuffer-sidebar
-
-(defun duplicate-line()
-  (interactive)
-  (move-beginning-of-line 1)
-  (kill-line)
-  (yank)
-  (open-line 1)
-  (next-line 1)
-  (yank)
-)
-(global-set-key (kbd "C-d") 'duplicate-line)
+;; some configs for RUST
 
 ;; rustic mode auto-save
 (use-package! rustic
   :hook ((rustic-mode . (lambda()
                          (setq-local auto-save-visited-interval 1)
                          (auto-save-mode 1)))))
-
-;; documentation location
-;; (use-package! lsp-mode
-;;   :commands (lsp lsp-deferred)
-;;   :hook ((rust-mode . lsp)
-;;          (rustic-mode . lsp)))
-
-;; (use-package! lsp-ui
-;;   :after lsp-mode
-;;   ;;:after lsp-ui
-;;   :custom
-;;   (lsp-ui-doc-enable t)
-;;   ;;(lsp-ui-doc-use-webkit t)
-;;   (lsp-ui-doc-position 'at-point)
-;;   (lsp-ui-doc-header t)
-;;   (lsp-ui-doc-include-signature t)
-;;   (lsp-ui-doc-max-width 80)
-;;   (lsp-ui-doc-max-height 20)
-;;   (lsp-ui-doc-use-childframe t)
-;;   ;;(lsp-ui-doc-delay 0.5)
-;;   :hook (lsp-mode . lsp-ui-mode))
-
-;; (add-hook 'rust-mode-hook 'lsp-ui-doc-mode )
-;; (add-hook 'rustic-mode-hook 'lsp-ui-doc-mode)
 
 (after! lsp-ui
   ;;(setq lsp-ui-doc-position 'at-point)
