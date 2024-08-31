@@ -1,0 +1,12 @@
+[submodule "user_config/doom/sidebal.el"]
+	path = user_config/doom/sidebal.el
+	url = https://github.com/sebastiencs/sidebar.el
+[submodule "user_config/doom/icons-in-terminal"]
+	path = user_config/doom/icons-in-terminal
+	url = https://github.com/sebastiencs/icons-in-terminal
+[submodule "user_config/doom/font-lock-plus"]
+	path = user_config/doom/font-lock-plus
+	url = https://github.com/emacsmirror/font-lock-plus
+[submodule "user_config/doom/modules/icons-in-terminal"]
+	path = user_config/doom/modules/icons-in-terminal
+	url = https://github.com/sebastiencs/icons-in-terminal

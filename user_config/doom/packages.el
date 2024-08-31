@@ -55,13 +55,19 @@
 (package! nerd-icons-ibuffer)
 (package! ibuffer-sidebar)
 (package! lsp-ui)
-;;(package! popwin)
+(package! beacon)
+(package! marginalia)
+(package! vertico-posframe
+        :recipe (:host github :repo "tumashu/vertico-posframe"))
+
+;; MacOS Specific
+
 (when (eq system-type 'darwin)
 (package! transient
-      :pin "c2bdf7e12c530eb85476d3aef317eb2941ab9440"
-      :recipe (:host github :repo "magit/transient")))
+        :pin "c2bdf7e12c530eb85476d3aef317eb2941ab9440"
+        :recipe (:host github :repo "magit/transient")))
 
 (when (eq system-type 'darwin)
 (package! with-editor
-          :pin "bbc60f68ac190f02da8a100b6fb67cf1c27c53ab"
-          :recipe (:host github :repo "magit/with-editor")))
+        :pin "bbc60f68ac190f02da8a100b6fb67cf1c27c53ab"
+        :recipe (:host github :repo "magit/with-editor")))
