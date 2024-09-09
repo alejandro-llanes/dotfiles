@@ -1,0 +1,25 @@
+/*@define-color no_color transparent;*/
+
+.background {
+    background-color: transparent;
+}
+
+.launcher .item.* {
+    background-color: transparent;
+}
+
+#bar .* {
+    background-color: transparent;
+}
+
+box, menubar, button {
+    background-color: transparent;
+}
+
+.workspaces {
+    background-color: transparent;
+}
+
+.workspaces .item.visible {
+    background-color: #a1b56c;
+}

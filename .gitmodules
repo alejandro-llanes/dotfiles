@@ -10,3 +10,6 @@
 [submodule "user_config/doom/modules/icons-in-terminal"]
 	path = user_config/doom/modules/icons-in-terminal
 	url = https://github.com/sebastiencs/icons-in-terminal
+[submodule "user_config/alacritty/themes"]
+	path = user_config/alacritty/themes
+	url = https://github.com/alacritty/alacritty-theme.git

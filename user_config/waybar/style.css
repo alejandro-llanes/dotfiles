@@ -16,21 +16,23 @@
 @define-color base0F #a16946;
 
 * {
-  /*transition: none;*/
-  box-shadow: none;
+  /*transition: none;
+  box-shadow: none;*/
 }
 
 #waybar {
 	font-family: 'Source Code Pro', sans-serif;
 	font-size: 1.2em;
 	font-weight: 400;
-  /*color: @base04
-  background: transparent;*/
-  background: rgba(0,0,0,0.3);
+  /*color: @base04*/
+  background: transparent;
+  /*background: rgba(0,0,0,0.3);*/
   color: #ffffff;
   transition-property: background-color;
   transition-duration: .5s;
 }
+
+
 /*
 #waybar.hidden {
   opacity: 0.2;
@@ -49,6 +51,19 @@
   font-weight: bold;
 }
 */
+
+#window {
+  font-size: 0.9em;
+	font-weight: 400;
+	font-family: sans-serif;
+  /*justify-content: flex-start;
+  text-align: left;*/
+}
+
+#window > * {
+  margin-right: 5px;
+}
+
 #workspaces {
   margin: 0 4px;
 }
@@ -112,12 +127,6 @@
 
 #temperature.critical {
   color: @base0F;
-}
-
-#window {
-  font-size: 0.9em;
-	font-weight: 400;
-	font-family: sans-serif;
 }
 
 #language {

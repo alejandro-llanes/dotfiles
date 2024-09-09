@@ -14,6 +14,12 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
+# Git contrib
+source ~/dotfiles/user_config/git-prompt.sh
+
+# PS1
+#PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='[\[\e[38;5;55;3m\]\d\[\e[0m\] \[\e[38;5;55;3m\]\t\[\e[0m\]][\[\e[38;5;33m\]\w\[\e[0m\]]${PS1_CMD1}> '
+PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='[\[\e[38;5;55;3m\]\d\[\e[0m\] \[\e[38;5;55;3m\]\t\[\e[0m\]][\[\e[38;5;33m\]\w\[\e[0m\]]\[\e[38;5;189;48;5;130;1;2m\]${PS1_CMD1}\[\e[0m\]> '
 # own binaries
 export PATH=$PATH:$HOME/.bin
 
@@ -30,14 +36,18 @@ export PATH=$PATH:$HOME/.config/emacs/bin
 # emacs
 # systemctl --user enable --now emacs-29
 export ALTERNATE_EDITOR=''
+#alias e='emacsclient --tty --socket-name=main'
 alias e='emacsclient --tty'
 export EDITOR='emacsclient -t'
 export VISUAL='emacsclient -t'
 #alias vi='emacsclient -t'
 #alias vim='emacsclient -t'
 
+# lsd
+alias ls="lsd"
+
 # default to tmux session
 #test -n "$PS1" && test -z "$TMUX" -a -n "$SSH_TTY" && exec tmux new -ADX
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ] && [[ ! "$EMACSW" ]] ; then
-  exec tmux new -ADX
+  exec tmux -u new -ADX
 fi

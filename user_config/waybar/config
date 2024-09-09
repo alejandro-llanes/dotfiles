@@ -5,9 +5,10 @@
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces", "idle_inhibitor","bluetooth", "wireplumber", "backlight", "network"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["hyprland/submap", "hyprland/language", "cpu", "memory", "temperature", "battery", "tray", "clock"],
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": [],
+    //"modules-center": ["hyprland/window"],
+    "modules-right": ["hyprland/submap", "hyprland/language", "idle_inhibitor", "wireplumber", "backlight", "network", "cpu", "memory", "temperature", "battery", "tray", "clock"],
     // Modules configuration
      "hyprland/workspaces": {
          "disable-scroll": true,
@@ -18,14 +19,16 @@
          "on-scroll-up": "hyprctl dispatch workspace m-1 > /dev/null",
          "on-scroll-down": "hyprctl dispatch workspace m+1 > /dev/null",
          "format-icons": {
-             "1": "",
+             "1": "",
              "2": "",
-             "3": "",
+             "3": "",
              "4": "",
-             "5": "",
+             "5": "",
+             //"5": "",
+             //"6": "\uf1ff",
              "urgent": "",
              "focused": "",
-             "default": ""
+             "default": "󱢎"
          },
          "persistent-workspaces": {
           "1": ["eDP-1"],
@@ -113,7 +116,7 @@
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% "
     },
     "temperature": {
         // "thermal-zone": 2,

@@ -6,8 +6,11 @@
 ;; environment
 ;; set cargo colors for eshell
 (setenv "CARGO_TERM_COLOR" "always")
-;; set emacsw env for avoid xterm start inside emacs
+;; set emacsw env for avoid tmux start inside emacs
 (setenv "EMACSW" "true")
+
+;;
+(doom/set-frame-opacity 85)
 
 ;; show line numbers
 (setq display-line-numbers-type t)
@@ -19,7 +22,7 @@
 (after! persp-mode
   (setq persp-emacsclient-init-frame-behaviour-override "main"))
 
-;; max
+;; max recursion
 (setq max-lisp-eval-depth 10000)
 
 
@@ -30,8 +33,17 @@
 
 
 ;; THEMES
-
-(setq doom-theme 'doom-one)
+;; [[https://github.com/doomemacs/themes/tree/screenshots][themes]]
+;;(setq doom-theme 'doom-one)
+;;(setq doom-theme 'doom-vibrant)
+;;(setq doom-theme 'doom-acario-dark)
+;;;(setq doom-theme 'doom-dracula)
+;;(setq doom-theme 'doom-gruvbox)
+(setq doom-theme 'doom-laserwave)
+;;(setq doom-theme 'doom-gruvbox)
+;;(setq doom-theme 'doom-outrun-electric)
+;;(setq doom-theme 'doom-solarized-dark)
+;;;(setq doom-theme 'doom-nord-light)
 
 
 ;; CURSOR
@@ -63,6 +75,28 @@
         ("TASK" . (:foreground "blue"))))
 
 
+;; POPUP ORG-CAPTURE
+
+
+(defvar mio-capture-frame "Mio Capture" "The name of the workspace for org capture.")
+
+(defun mio/org-capture ()
+  "Custom org capture popup."
+  (interactive)
+  (+workspace/new-named mio-capture-frame)
+  (org-capture)
+  (delete-other-windows))
+
+(defun mio/post-capture-action ()
+  "To run after finalize org capture."
+  (interactive)
+  (when (persp-with-name-exists-p mio-capture-frame)
+    (persp-kill mio-capture-frame)
+    (delete-frame)))
+
+(advice-add 'org-capture-finalize :after #'mio/post-capture-action)
+
+
 ;; TREEMACS
 
 (require 'cfrs)
@@ -71,6 +105,7 @@
 (treemacs-fringe-indicator-mode t)
 (treemacs-filewatch-mode t)
 (setq treemacs-file-event-delay 1000)
+
 (require 'treemacs-project-follow-mode)
 (setq treemacs-project-follow-mode nil)
 (setf treemacs-follow-mode nil)
@@ -85,12 +120,15 @@
 
 (add-to-list 'treemacs-ignored-file-predicates #'treemacs-ignore-example)
 
-(use-package treemacs-icons-dired :after treemacs :config (treemacs-load-theme "icons-dired"))
-(doom/set-frame-opacity 85)
+(use-package treemacs-icons-dired
+  :after treemacs
+  ;;:config (treemacs-load-theme "icons-dired"))
+  :config (treemacs-icons-dired-mode))
+
 
 (use-package treemacs-persp
   :after (treemacs persp-mode)
-  :ensure t
+  ;;:ensure t
   :config (treemacs-set-scope-type 'Perspectives))
 
 
@@ -108,101 +146,120 @@
 
 ;; IBUFFER
 
-
-;; '(("Group Title"
-;;   ("Label"   (type  . value))))
-
-(setq ibuffer-saved-filter-groups
-      '(("MyList"
-         ("Unsaved" (modified))                      ; All unsaved buffers
-         ("Stars"   (starred-name))                  ; Group *starred*
-         ("Start"   (name          . "*scratch\\*")) ; By regexp
-         ("Dired"   (mode          . dired-mode))    ; Filter by mode
-         ("Org"     (filename      . ".org"))        ; By filename
-         ;;("Scheme"  (directory     . "~/scheme*"))   ; By directory
-         ("Gnus" (or                                 ; Or multiple!
-	          (saved        . "gnus")
-	          (derived-mode . bbdb-mode))))))
-
-(add-hook 'ibuffer-mode-hook
-          (lambda ()
-            (ibuffer-switch-to-saved-filter-groups "MyList")
-            (setq-local display-buffer-base-action '(display-buffer-use-some-window))
-            ))
-
-
-;; CUSTOM FUNCTIONS
-
-
-;; function for duplicate line, doesn't work in org.
-(defun duplicate-line()
+(defun mio/ibuffer-ace-window-display ()
+  "Use ace-window to select a window to display the buffer from ibuffer."
   (interactive)
-  (move-beginning-of-line 1)
-  (kill-line)
-  (yank)
-  (open-line 1)
-  (forward-line 1)
-  (yank)
-  )
-(global-set-key (kbd "C-d") 'duplicate-line)
+  (let ((buf (ibuffer-current-buffer)))
+    (if buf
+        (let ((aw-flip-keys nil)) ; Disable flipping of keys in ace-window
+          (ace-select-window)     ; Use ace-window to select a window
+           (switch-to-buffer buf)) ; Display the selected buffer
+          (message "No buffer selected!"))))
 
-;; Workspace layouts
-
-(defun mio/dev1 ()
-  "Layout One"
-  (interactive)
-  (treemacs)
-  (ibuffer-sidebar-show-sidebar)
-  (windmove-right)
-  (split-window-below (floor (* 0.80 (window-height))))
-  (windmove-down)
-  (+vterm/here ".")
-  (set-window-dedicated-p (selected-window) 1)
-  (windmove-up)
-  (set-window-parameter (split-window-right (floor (* 0.95 (window-width)))) 'window-name 'special)
-  (set-window-parameter (selected-window) 'window-name 'normal)
-  (windmove-left)
-  (balance-windows-area)
-  (setq treemacs-follow-after-init nil)
-  (setq pop-up-windows nil))
-
-(defun mio/agenda ()
-  "Agenda Layout"
-  (interactive)
-  (org-mode)
-  (setq org-agenda-file '("~/org/"))
-  (treemacs)
-  ;;(treemacs-add-project-to-workspace "~/org")
-  ;;(treemacs-select-directory)
-  ;;(treemacs-add-and-display-current-project)
-  (ibuffer-sidebar-show-sidebar)
-  (windmove-right)
-  (split-window-below (floor (* 0.50 (window-height))))
-  (windmove-down)
-  (org-todo-list)
-  (set-window-dedicated-p (selected-window) 1)
-  (windmove-up)
-  (find-file "~/org/startup.org")
-  (setq treemacs-follow-after-init nil)
-  (setq pop-up-windows nil))
+  (with-eval-after-load 'ibuffer
+    ;; Bind the function to a key in `ibuffer` mode, for example, "a"
+    (define-key ibuffer-mode-map (kbd "o") 'mio/ibuffer-ace-window-display))
 
 
-;; LANGUAGES SPECIFIC
+  ;; '(("Group Title"
+  ;;   ("Label"   (type  . value))))
 
-;; LSP
-(after! lsp-ui
-  ;;(setq lsp-ui-doc-position 'at-point)
-  (setq lsp-ui-doc-position 'top)
-  (setq lsp-ui-doc-use-childframe t)
-  (setq lsp-ui-doc-max-width 80)
-  (setq lsp-ui-doc-max-height 20)
-  (setq lsp-ui-doc-enable t))
+  (setq ibuffer-saved-filter-groups
+        '(("MyList"
+           ("Unsaved" (modified))                      ; All unsaved buffers
+           ("Stars"   (starred-name))                  ; Group *starred*
+           ("Start"   (name          . "*scratch\\*")) ; By regexp
+           ("Dired"   (mode          . dired-mode))    ; Filter by mode
+           ("Org"     (filename      . ".org"))        ; By filename
+           ;;("Scheme"  (directory     . "~/scheme*"))   ; By directory
+           ("Gnus" (or                                 ; Or multiple!
+	            (saved        . "gnus")
+	            (derived-mode . bbdb-mode))))))
 
-(setq lsp-ui-doc-show-with-cursor t)
+  (add-hook 'ibuffer-mode-hook
+            (lambda ()
+              (ibuffer-switch-to-saved-filter-groups "MyList")
+              (setq-local display-buffer-base-action '(display-buffer-use-some-window))
+              ))
 
-;; RUST
-;; rustic mode auto-save
-(use-package! rustic
-  :hook ((rustic-mode . (lambda()
-                          (setq-local auto-save-visited-interval 1)
-                          (auto-save-mode 1)))))
+
+  ;; CUSTOM FUNCTIONS
+
+
+  ;; function for duplicate line, doesn't work in org.
+  (defun duplicate-line()
+    (interactive)
+    (move-beginning-of-line 1)
+    (kill-line)
+    (yank)
+    (open-line 1)
+    (forward-line 1)
+    (yank)
+    )
+  (global-set-key (kbd "C-d") 'duplicate-line)
+
+  ;; Workspace layouts
+
+  (defun mio/dev1 ()
+    "Layout One"
+    (interactive)
+    (treemacs-set-scope-type 'Perspectives)
+    (treemacs)
+    (ibuffer-sidebar-show-sidebar)
+    (windmove-right)
+    (split-window-below (floor (* 0.80 (window-height))))
+    (windmove-down)
+    (+vterm/here ".")
+    (set-window-dedicated-p (selected-window) 1)
+    (windmove-up)
+    (set-window-parameter (split-window-right (floor (* 0.95 (window-width)))) 'window-name 'special)
+    (set-window-parameter (selected-window) 'window-name 'normal)
+    (windmove-left)
+    ;;(lsp-ui-menu)
+    (balance-windows-area)
+    ;;  (minimap-mode 1)
+    (setq treemacs-follow-after-init nil)
+    (setq pop-up-windows nil))
+
+  (defun mio/agenda ()
+    "Agenda Layout"
+    (interactive)
+    (org-mode)
+    (setq org-agenda-file '("~/org/"))
+    (treemacs)
+    ;;(treemacs-add-project-to-workspace "~/org")
+    ;;(treemacs-select-directory)
+    ;;(treemacs-add-and-display-current-project)
+    (ibuffer-sidebar-show-sidebar)
+    (windmove-right)
+    (split-window-below (floor (* 0.50 (window-height))))
+    (windmove-down)
+    (org-todo-list)
+    (set-window-dedicated-p (selected-window) 1)
+    (windmove-up)
+    (find-file "~/org/startup.org")
+    (setq treemacs-follow-after-init nil)
+    (setq pop-up-windows nil))
+
+
+  ;; LANGUAGES SPECIFIC
+
+  ;; LSP
+  (after! lsp-ui
+    ;;(setq lsp-ui-doc-position 'at-point)
+    (setq lsp-ui-doc-position 'top)
+    (setq lsp-ui-doc-use-childframe t)
+    (setq lsp-ui-doc-max-width 80)
+    (setq lsp-ui-doc-max-height 20)
+    (setq lsp-ui-doc-enable t))
+
+  (setq lsp-ui-doc-show-with-cursor t)
+
+  ;; RUST
+  ;; rustic mode auto-save
+  (use-package! rustic
+    :hook ((rustic-mode . (lambda()
+                            (setq-local auto-save-visited-interval 1)
+                            (auto-save-mode 1)))))
+
+

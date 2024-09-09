@@ -1,5 +1,10 @@
 # created by eselect-repo
 
+[kde]
+location = /var/db/repos/kde
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/kde.git
+
 [brave-overlay]
 location = /var/db/repos/brave-overlay
 sync-type = git

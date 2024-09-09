@@ -1,0 +1,190 @@
+anchor_to_edges = true
+position = "bottom"
+icon_theme = "bluesolar"
+margin.bottom = 1
+margin.top = 1
+margin.left = 1
+margin.right = 1
+layer = "overlay"
+
+[[start]]
+type = "workspaces"
+all_monitors = false
+
+[start.name_map]
+1 = ""
+2 = "󰖟"
+3 = ""
+4 = ""
+5 = ""
+
+[[center]]
+type = "launcher"
+#favorites = [
+#    "firefox",
+#    "discord",
+#    "steam",
+#]
+show_names = true
+show_icons = true
+icon_size  = 16
+
+#[[end]]
+#type = "focused"
+#show_icon = true
+#show_title = true
+#icon_size = 16
+#truncate = "end"
+
+#[[start]]
+#type = "label"
+#label = "random num: {{500:echo FIXME}}"
+
+#[[end]]
+#type = "music"
+#player_type = "mpd"
+#music_dir = "/home/jake/Music"
+
+#[end.truncate]
+#mode = "end"
+#max_length = 100
+
+#[[end]]
+#type = "music"
+#player_type = "mpd"
+#host = "chloe:6600"
+#truncate = "end"
+
+#[[end]]
+#type = "script"
+#cmd = "/home/jake/bin/phone-battery"
+
+#[end.show_if]
+#cmd = "/home/jake/bin/phone-connected"
+#interval = 500
+
+[[end]]
+type = "sys_info"
+orientation = "h"
+format = [
+    #" {cpu_percent}% | {temp_c:k10temp-Tccd1}°C",
+    " {cpu_percent}%",
+    #" {memory_used} / {memory_total} GB ({memory_percent}%)",
+    " {memory_used}%",
+#    "| {swap_used} / {swap_total} GB ({swap_percent}%)",
+#    "󰋊 {disk_used:/} / {disk_total:/} GB ({disk_percent:/}%)",
+#    "󰓢 {net_down:enp39s0} / {net_up:enp39s0} Mbps",
+#    "󰖡 {load_average:1} | {load_average:5} | {load_average:15}",
+#    "󰥔 {uptime}",
+]
+
+[end.interval]
+memory = 30
+cpu = 1
+temps = 5
+disks = 300
+networks = 3
+
+[[end]]
+type = "clipboard"
+max_items = 3
+
+[end.truncate]
+mode = "end"
+length = 50
+
+[[end]]
+type = "tray"
+direction = "left_to_right"
+icon_size = 16
+
+[[end]]
+type = "script"
+cmd = "hyprctl devices -j | jq -r '.keyboards[] | select(.main == true) | .active_keymap'"
+mode = "poll"
+interval = 5000
+tooltip = "{{300000:hyprctl devices -j | jq -r '.keyboards[] | select(.main == true) | .layout +\" \\n \"+.options' }}"
+
+[[end]]
+type = "volume"
+format = "{icon} {percentage}%"
+max_volume = 100
+
+[end.icons]
+volume_high = "󰕾"
+volume_medium = "󰖀"
+volume_low = "󰕿"
+muted = "󰝟"
+
+[[end]]
+type = "script"
+cmd = "~/dotfiles/user_config/scripts/iron-bluetooth.sh"
+mode = "poll"
+interval = 5000
+on_click_left = "blueman-manager"
+
+[[end]]
+type = "network_manager"
+icon_size = 32
+on_click_right = "alacritty --class 'nmtui' -e 'nmtui'"
+
+[[end]]
+type = "upower"
+format = "{percentage}%"
+
+[[end]]
+type = "clock"
+format = "%H:%M"
+
+[[end]]
+type = "custom"
+class = "power-menu"
+#tooltip = "Up: {{30000:uptime -p | cut -d ' ' -f2-}}"
+
+[[end.bar]]
+type = "button"
+name = "power-btn"
+label = ""
+on_click = "popup:toggle"
+
+[[end.popup]]
+type = "box"
+orientation = "vertical"
+
+[[end.popup.widgets]]
+type = "label"
+name = "header"
+label = "Power menu"
+
+[[end.popup.widgets]]
+type = "box"
+
+[[end.popup.widgets.widgets]]
+type = "button"
+class = "power-btn"
+label = "<span font-size='40pt'></span>"
+on_click = "!shutdown now"
+
+[[end.popup.widgets.widgets]]
+type = "button"
+class = "power-btn"
+label = "<span font-size='40pt'></span>"
+on_click = "!reboot"
+
+[[end.popup.widgets]]
+type = "label"
+name = "uptime"
+label = "Uptime: {{30000:uptime -p | cut -d ' ' -f2-}}"
+
+
+#[[end]]
+#type = "notifications"
+#show_count = true
+
+#[end.icons]
+#closed_none = "󰍥"
+#closed_some = "󱥂"
+#closed_dnd = "󱅯"
+#open_none = "󰍡"
+#open_some = "󱥁"
+#open_dnd = "󱅮"
