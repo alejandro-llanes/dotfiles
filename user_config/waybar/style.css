@@ -98,6 +98,10 @@
   border-left: 1px solid @base00;
 }
 
+#tray > *{
+  background: transparent;
+}
+
 #tray *:first-child {
   border-left: none;
 }
