@@ -1,0 +1,1698 @@
+21:30:55 [info] [LOG SESSION] ---------- START ----------
+21:30:55 [info] [PluginFactory] loading plugins
+21:30:55 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libtaglibreader.so
+21:30:55 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libsupereqdsp.so
+21:30:55 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libstockencoders.so
+21:30:55 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libserver.so
+21:30:55 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpulseout.so
+21:30:55 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libpipewireout.so
+21:30:55 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libopenmptdecoder.so
+21:30:55 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libnullout.so
+21:30:55 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libmpris.so
+21:30:55 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libhttpdatastream.so
+21:30:55 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libffmpegdecoder.so
+21:30:55 [info] [PluginFactory] loaded: /usr/share/musikcube/plugins/libalsaout.so
+21:30:55 [info] [Indexer] indexer source 155697690 running...
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+21:30:55 [info] [Indexer] indexer source 155697690 finished
+21:30:55 [info] [Indexer] scanning /home/alejandro/Music/
+21:30:55 [info] [Indexer] scanning /home/alejandro/recordings/
+21:30:55 [info] [Indexer] scan completed successfully
+21:30:55 [info] [Indexer] cleanup 1/2
+21:30:55 [info] [Indexer] cleanup 2/2
+21:30:55 [info] [Indexer] optimizing
+21:30:55 [info] [LocalLibrary] query 'SearchTrackListQuery' enqueued
+21:30:55 [info] [Indexer] done!
+21:30:55 [info] [LocalLibrary] query 'SearchTrackListQuery' running
+21:30:55 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'SearchTrackListQuery' finished with status=4
+21:30:55 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
+21:30:55 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
+21:30:55 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+21:30:55 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=5
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=5
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=5
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=5
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=5
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=5
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=5
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=5
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=5
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryListQuery' finished with status=4
+21:30:55 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+21:30:55 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+21:30:55 [info] [GaplessTransport] starting track at /home/alejandro/Music/Music/Alejandro/reggaeton/SONGS/artist_43 - 2. Na De Na (Feat Angel y Khri.mp3
+21:30:55 [info] [Player] new instance created
+21:30:55 [info] [GaplessTransport] stop
+21:30:55 [info] [Stream] opening /home/alejandro/Music/Music/Alejandro/reggaeton/SONGS/artist_43 - 2. Na De Na (Feat Angel y Khri.mp3
+21:30:55 [info] [LocalFileStream] opening file: /home/alejandro/Music/Music/Alejandro/reggaeton/SONGS/artist_43 - 2. Na De Na (Feat Angel y Khri.mp3
+21:30:55 [info] [ffmpegdecoder] parsing data stream...
+21:30:55 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:30:55 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:30:55 [info] [ffmpegdecoder] found audio stream!
+21:30:55 [info] [ffmpegdecoder] resolved codec: MP3 (MPEG audio layer 3)
+21:30:55 [info] [Streams] found a decoder for /home/alejandro/Music/Music/Alejandro/reggaeton/SONGS/artist_43 - 2. Na De Na (Feat Angel y Khri.mp3
+21:30:55 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+21:30:55 [info] [LocalLibrary] query 'CategoryTrackListQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'CategoryTrackListQuery' running
+21:30:55 [info] [LocalLibrary] query 'CategoryTrackListQuery' finished with status=4
+21:30:55 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:30:55 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:30:55 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:30:59 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:30:59 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:30:59 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:31:00 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:31:00 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:31:00 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:31:00 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:31:00 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:31:00 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:31:00 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:31:00 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:31:00 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:31:01 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:31:01 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:31:01 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:31:01 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:31:01 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:31:01 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:31:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:31:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:31:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:31:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:31:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:31:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:31:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' enqueued
+21:31:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' running
+21:31:02 [info] [LocalLibrary] query 'TrackMetadataBatchQuery' finished with status=4
+21:31:08 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+21:31:08 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+21:31:08 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+21:31:08 [info] [GaplessTransport] starting track at /home/alejandro/recordings/out.wav
+21:31:08 [info] [Player] new instance created
+21:31:08 [info] [GaplessTransport] stop
+21:31:08 [info] [Stream] opening /home/alejandro/recordings/out.wav
+21:31:08 [info] [LocalFileStream] opening file: /home/alejandro/recordings/out.wav
+21:31:08 [info] [ffmpegdecoder] parsing data stream...
+21:31:08 [info] [ffmpegdecoder] found audio stream!
+21:31:08 [info] [ffmpegdecoder] resolved codec: PCM signed 16-bit little-endian
+21:31:08 [info] [Streams] found a decoder for /home/alejandro/recordings/out.wav
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [info] [PipeWireOut] detected PipeWire:Interface:Device with id=100
+21:31:08 [info] [PipeWireOut] detected PipeWire:Interface:Device with id=98
+21:31:08 [info] [PipeWireOut] detected PipeWire:Interface:Device with id=58
+21:31:08 [info] [PipeWireOut] detected PipeWire:Interface:Device with id=94
+21:31:08 [info] [PipeWireOut] detected PipeWire:Interface:Device with id=122
+21:31:08 [info] [PipeWireOut] device refresh finished
+21:31:08 [info] [PipeWireOut] state changed from 0 to 1. (no additional context)
+21:31:08 [info] [PipeWireOut] new stream created and connected successfully
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [info] [PipeWireOut] state changed from 1 to 2. (no additional context)
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [info] [PipeWireOut] state changed from 2 to 3. (no additional context)
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [info] [LocalLibrary] query 'TrackMetadataQuery' enqueued
+21:31:08 [info] [LocalLibrary] query 'TrackMetadataQuery' running
+21:31:08 [info] [LocalLibrary] query 'TrackMetadataQuery' finished with status=4
+21:31:08 [info] [Player] new instance created
+21:31:08 [info] [Stream] opening /home/alejandro/recordings/out.mp3
+21:31:08 [info] [LocalFileStream] opening file: /home/alejandro/recordings/out.mp3
+21:31:08 [info] [ffmpegdecoder] parsing data stream...
+21:31:08 [info] [ffmpegdecoder] found audio stream!
+21:31:08 [info] [ffmpegdecoder] resolved codec: MP3 (MPEG audio layer 3)
+21:31:08 [info] [Streams] found a decoder for /home/alejandro/recordings/out.mp3
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:08 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:08 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:09 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:09 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:10 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:10 [info] [GaplessTransport] starting track at /home/alejandro/recordings/out.mp3
+21:31:10 [info] [Player] new instance created
+21:31:10 [info] [GaplessTransport] stop
+21:31:10 [info] [Stream] opening /home/alejandro/recordings/out.mp3
+21:31:10 [info] [LocalFileStream] opening file: /home/alejandro/recordings/out.mp3
+21:31:10 [info] [ffmpegdecoder] parsing data stream...
+21:31:10 [info] [PipeWireOut] state changed from 3 to 2. (no additional context)
+21:31:10 [info] [PipeWireOut] state changed from 2 to 3. (no additional context)
+21:31:10 [info] [ffmpegdecoder] found audio stream!
+21:31:10 [info] [ffmpegdecoder] resolved codec: MP3 (MPEG audio layer 3)
+21:31:10 [info] [Streams] found a decoder for /home/alejandro/recordings/out.mp3
+21:31:11 [info] [Player] new instance created
+21:31:11 [info] [Stream] opening /home/alejandro/Music/Music/Alejandro/reggaeton/SONGS/artist_43 - 2. Na De Na (Feat Angel y Khri.mp3
+21:31:11 [info] [LocalFileStream] opening file: /home/alejandro/Music/Music/Alejandro/reggaeton/SONGS/artist_43 - 2. Na De Na (Feat Angel y Khri.mp3
+21:31:11 [info] [ffmpegdecoder] parsing data stream...
+21:31:11 [info] [ffmpegdecoder] found audio stream!
+21:31:11 [info] [ffmpegdecoder] resolved codec: MP3 (MPEG audio layer 3)
+21:31:11 [info] [Streams] found a decoder for /home/alejandro/Music/Music/Alejandro/reggaeton/SONGS/artist_43 - 2. Na De Na (Feat Angel y Khri.mp3
+21:31:11 [warning] [ffmpegdecoder] invalid packet detected, discarding.
+21:31:24 [info] [GaplessTransport] starting track at /home/alejandro/recordings/out.wav
+21:31:24 [info] [Player] new instance created
+21:31:24 [info] [GaplessTransport] stop
+21:31:24 [info] [Stream] opening /home/alejandro/recordings/out.wav
+21:31:24 [info] [LocalFileStream] opening file: /home/alejandro/recordings/out.wav
+21:31:24 [info] [ffmpegdecoder] parsing data stream...
+21:31:24 [info] [PipeWireOut] state changed from 3 to 2. (no additional context)
+21:31:24 [info] [PipeWireOut] state changed from 2 to 3. (no additional context)
+21:31:24 [info] [ffmpegdecoder] found audio stream!
+21:31:24 [info] [ffmpegdecoder] resolved codec: PCM signed 16-bit little-endian
+21:31:24 [info] [Streams] found a decoder for /home/alejandro/recordings/out.wav
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [info] [Player] new instance created
+21:31:24 [info] [Stream] opening /home/alejandro/recordings/out.mp3
+21:31:24 [info] [LocalFileStream] opening file: /home/alejandro/recordings/out.mp3
+21:31:24 [info] [ffmpegdecoder] parsing data stream...
+21:31:24 [info] [ffmpegdecoder] found audio stream!
+21:31:24 [info] [ffmpegdecoder] resolved codec: MP3 (MPEG audio layer 3)
+21:31:24 [info] [Streams] found a decoder for /home/alejandro/recordings/out.mp3
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:24 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:24 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:25 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:25 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:26 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:26 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:27 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:27 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:28 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:28 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:29 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:29 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:30 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:30 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:31 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:31 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:32 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:32 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:33 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:33 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:33 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:33 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:33 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:33 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:33 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:33 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:33 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:33 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:33 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:33 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:33 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:33 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:33 [warning] [ffmpegdecoder] swr_convert_frame() failed: Input changed
+21:31:33 [warning] [ffmpegdecoder] swr_init() failed: Invalid argument
+21:31:33 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' enqueued
+21:31:33 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' running
+21:31:33 [info] [LocalLibrary] query 'PersistedPlayQueueQuery' finished with status=4
+21:31:33 [info] [GaplessTransport] stop
+21:31:33 [info] [PipeWireOut] state changed from 3 to 2. (no additional context)
+21:31:33 [info] [PipeWireOut] shutdown started
+21:31:33 [info] [PipeWireOut] state changed from 2 to 0. (no additional context)
+21:31:33 [info] [PipeWireOut] shutdown complete

@@ -20,6 +20,8 @@ let g:spacevim_bootstrap_after = 'myspacevim#after'
 let g:spacevim_filetree_direction = 'left'
 let g:NERDTreeChDirMode = 2
 let g:spacevim_automatic_updates = 1
+let g:spacevim_enable_smooth_scrolling = "false"
+"let g:spacevim_autocomplete_method = "asyncomplete"
 
 " Custom Plugins
 
@@ -53,34 +55,40 @@ call SpaceVim#layers#load('colorscheme')
 call SpaceVim#layers#load('git')
 call SpaceVim#layers#load('telescope')
 
-call SpaceVim#layers#load('core')
-let g:spacevim_enable_filetree_gitstatus = 1
-let g:spacevim_enable_filetree_filetypeicon = 1
+call SpaceVim#layers#load('core', {
+      \ 'enable_filetree_gitstatus': 1,
+      \ 'enable_filetree_filetypeicom': 1
+      \})
 
-call SpaceVim#layers#load('autocomplete')
-let g:spacevim_auto_completion_tab_key_behavior = 'smart'
+call SpaceVim#layers#load('autocomplete',{
+      \ 'auto_completion_tab_key_behavior': 'smart'
+      \})
 
 call SpaceVim#layers#load('shell', {
                             \ 'default_position':'bottom',
                             \ 'default_height': 30,
                         \})
-"let g:spacevim_shell_default_position = 'bottom'
-"let g:spacevim_shell_default_height = 30
 let $SHELL = 'fish'
 
-call SpaceVim#layers#load('lang#rust')
-let g:spacevim_lang_rust_recommended_style = 1
-let g:spacevim_lang_rust_format_on_save = 1
-
-call SpaceVim#layers#load('lang#python')
-let g:spacevim_lang_python_recommended_style = 1
-let g:spacevim_lang_python_format_on_save = 1
+call SpaceVim#layers#load('lang#rust',{
+      \'recommended_style': 1,
+      \'format_on_save': 1,
+      \'use_nvim_lsp': 1,
+      \})
+"call SpaceVim#layers#load('lang#python')
+"let g:spacevim_lang_python_recommended_style = 1
+"let g:spacevim_lang_python_format_on_save = 1
 
 call SpaceVim#layers#load('lang#lisp')
 
-call SpaceVim#layers#load('ui')
-let g:spacevim_enable_scrollbar = 1
+call SpaceVim#layers#load('ui',{
+      \'enable_scrollbar': 1
+      \})
 
-call SpaceVim#layers#load('lsp')
-let g:spacevim_lsp_filetypes = ['rust']
-let g:spacevim_lsp_override_cmd_rust = 'rust-analyzer'
+call SpaceVim#layers#load('lsp',{
+    \})
+      "\'enabled_clients': ['rust'],
+      "\'override_client_cmds': {'rust':['rustup', 'run', 'stable', 'rust-analyzer']}
+      "\'filetypes': ["rust"],
+      "\'override_cmd': { 'rust': ['rust-analyzer'] },
+    "\'override_client_cmds': {'rust':['rust-analyzer']}

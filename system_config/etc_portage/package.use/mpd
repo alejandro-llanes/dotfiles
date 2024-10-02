@@ -1,0 +1,2 @@
+media-sound/mpd audiofile cue curl dbus eventfd ffmpeg fifo icu id3tag inotify mad network ao bzip2 chromaprint expat faad flac lame libmpdclient libsamplerate libsoxr mikmod mms modplug mpg123 openal openmpt opus pipe pipewire pulseaudio qobuz recorder snapcast soundcloud systemd twolame vorbis wavpack webdav zip zlib
+>=media-libs/libao-1.2.2-r3 pulseaudio

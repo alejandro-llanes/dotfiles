@@ -31,8 +31,8 @@
 
 ;; FONTS
 
-(setq doom-font (font-spec :family "Fira Code" :size 12 :weight 'semi-light)
-      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
+(setq doom-font (font-spec :family "Fira Code" :size 14 :weight 'semi-light)
+      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 15))
 
 
 ;; THEMES
@@ -48,6 +48,19 @@
 ;;(setq doom-theme 'doom-solarized-dark)
 ;;;(setq doom-theme 'doom-nord-light)
 
+;; SCROLLING
+
+(pixel-scroll-precision-mode)
+(setq pixel-scroll-mode 1)
+(setq mouse-wheel-tilt-scroll t)
+(setq pixel-scroll-precision-use-momentum 1)
+
+;;(good-scroll-mode 1)
+;;(global-set-key (kbd "<prior>") 'good-scroll-down)  ;; Bind PgUp to inertia scroll down
+;;(global-set-key (kbd "<next>") 'good-scroll-up)     ;; Bind PgDn to inertia scroll up
+
+;; SWITCHING
+(windmove-default-keybindings 'super)
 
 ;; CURSOR
 
@@ -149,6 +162,8 @@
 
 
 ;; IBUFFER
+
+;; https://emacs.stackexchange.com/questions/27749/how-can-i-hide-unwanted-buffers-when-cycling-with-c-x-left-right 
 
 (defun mio/ibuffer-ace-window-display ()
   "Use ace-window to select a window to display the buffer from ibuffer."
@@ -261,7 +276,9 @@
   (setq lsp-ui-doc-max-height 20)
   (setq lsp-ui-doc-enable t))
 
-(setq lsp-ui-doc-show-with-cursor t)
+(setq lsp-ui-doc-show-with-cursor 1)
+(global-set-key (kbd "<C-tab>") 'lsp-ui-doc-focus-frame)
+
 
 ;; RUST
 ;; rustic mode auto-save

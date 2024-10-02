@@ -58,6 +58,7 @@
 (package! nerd-icons-ibuffer)
 (package! ibuffer-sidebar)
 (package! lsp-ui)
+(package! good-scroll)
 (package! beacon)
 (package! apheleia)
 (package! marginalia)

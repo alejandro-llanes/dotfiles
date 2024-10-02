@@ -1,6 +1,7 @@
 configuration {
 /*	modes: "drun,run,ssh";*/
 /*	font: "mono 12";*/
+font: "Fira Code 12";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -27,6 +28,7 @@ show-icons: true;
 /*	case-sensitive: false;*/
 /*	cycle: true;*/
 /*	sidebar-mode: false;*/
+sidebar-mode: false;
 /*	hover-select: false;*/
 /*	eh: 1;*/
 /*	auto-select: false;*/
@@ -147,3 +149,8 @@ show-icons: true;
       sorting-method:    "name";
   }
 }
+
+/*@theme "Monokai"*/
+/*@theme "purple"*/
+/*@theme "solarized"*/
+@theme "simple-tokyonight"

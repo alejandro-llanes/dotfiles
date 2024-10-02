@@ -1,0 +1,1 @@
+/home/alejandro/.local/share/broot/launcher/fish/br.fish

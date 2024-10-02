@@ -1,1 +1,1 @@
-gui-apps/waybar libinput network pipewire tray wifi systemd udev upower
+gui-apps/waybar libinput network pipewire tray wifi systemd udev upower mpd mpris experimental
