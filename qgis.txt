@@ -1,0 +1,1 @@
+docker run --rm -it -p 8080:8080 -v /run/user/1000/wayland-1:/run/user/1000/wayland-0 -e WAYLAND_DISPLAY=$WAYLAND_DISPLAY -v $XDG_RUNTIME_DIR:$XDG_RUNTIME_DIR -e XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR --user 1000:1000 --volume /tmp/.X11-unix:/tmp/.X11-unix --device /dev/dri:/dev/dri --group-add video -e DISPLAY=:0 qgis/qgis qgis

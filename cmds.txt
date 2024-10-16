@@ -1,1 +1,2 @@
 busctl
+xdg-desktop-menu

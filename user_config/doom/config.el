@@ -9,7 +9,7 @@
 ;; set emacsw env for avoid tmux start inside emacs
 (setenv "EMACSW" "true")
 
-;;
+;; opacity
 (doom/set-frame-opacity 85)
 
 ;; show line numbers
@@ -25,6 +25,11 @@
 ;; max recursion
 (setq max-lisp-eval-depth 10000)
 
+;; cycling windows
+(global-set-key (kbd "C-<up>") 'enlarge-window)
+(global-set-key (kbd "C-<down>") 'shrink-window)
+(global-set-key (kbd "C-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "C-<right>") 'enlarge-window-horizontally)
 
 ;; VTERM
 ;;(define-key vterm-mode-map (kbd "C-c C-c") 'vterm--self-ctrl-c)
@@ -274,10 +279,15 @@
   (setq lsp-ui-doc-use-childframe t)
   (setq lsp-ui-doc-max-width 80)
   (setq lsp-ui-doc-max-height 20)
-  (setq lsp-ui-doc-enable t))
+  ;;(setq lsp-ui-doc-enable t)
+  (setq lsp-ui-doc-show nil)
+  )
 
 (setq lsp-ui-doc-show-with-cursor 1)
+;;(setq lsp-ui-doc-show-with-cursor nil)
 (global-set-key (kbd "<C-tab>") 'lsp-ui-doc-focus-frame)
+;;(global-set-key (kbd "s-k") 'lsp-ui-doc-show)
+;;(map! :n "s-k" #'lsp-ui-doc-show)
 
 
 ;; RUST
@@ -286,6 +296,9 @@
   :hook ((rustic-mode . (lambda()
                           (setq-local auto-save-visited-interval 1)
                           (auto-save-mode 1)))))
+
+(if buffer-file-name
+        (setq-local buffer-save-without-query t))
 
 ;; LUA
 ;; Associate .vim files with lua-mode

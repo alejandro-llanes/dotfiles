@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=
+Exec=/home/alejandro/VSCode-linux-x64/code
+Icon=/home/alejandro/VSCode-linux-x64/resources/app/resources/linux/code.png
+Name=VS Code
+NoDisplay=false
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

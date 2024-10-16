@@ -1,0 +1,16 @@
+[Unit]
+Description=Neovim Headless Mode Service
+#After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/nvim --headless --listen /run/user/1000/nvim-server
+Restart=on-failure
+RestartSec=5
+#WorkingDirectory=%h
+#User=%U
+#Environment=NVIM_LISTEN_ADDRESS=/run/user/%U/nvim-server
+
+[Install]
+WantedBy=default.target
+

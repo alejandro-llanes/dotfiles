@@ -52,7 +52,7 @@ alias astronvim="NVIM_APPNAME=astronvim nvim"
 
 # default to tmux session
 #test -n "$PS1" && test -z "$TMUX" -a -n "$SSH_TTY" && exec tmux new -ADX
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ] && [[ ! "$EMACSW" ]] ; then
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ] && [[ ! "$EMACSW" ]] && [[ ! "$NVIMON" ]] ; then
   exec tmux -u new -ADX
 fi
 
