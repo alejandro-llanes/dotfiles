@@ -5,10 +5,10 @@ local config = wezterm.config_builder()
 
 --local SOLID_LEFT_ARROW = wezterm.nerdfonts.pl_right_hard_divider
 --local SOLID_RIGHT_ARROW = wezterm.nerdfonts.pl_left_hard_divider
-
+config.enable_wayland = false
 config.color_scheme = "Tokyo Night Moon"
 config.window_background_opacity = 0.4
-config.default_prog = { "/usr/bin/fish", "-l" }
+config.default_prog = { "/usr/local/bin/fish", "-l" }
 config.window_background_image = wezterm.home_dir .. "/Pictures/synthwave2.jpg"
 --config.enable_tab_bar = false
 config.tab_bar_at_bottom = true

@@ -1,14 +1,14 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 38, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
+    //"height": 32, // Waybar height (to be removed for auto height)
+    "width": 1366, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["mpd"],
     //"modules-center": ["hyprland/window"],
-    "modules-right": ["hyprland/submap", "hyprland/language", "idle_inhibitor", "wireplumber", "backlight", "network", "cpu", "memory", "temperature", "battery", "tray", "clock"],
+    "modules-right": ["hyprland/submap", "hyprland/language", "idle_inhibitor", "tray", "wireplumber", "backlight", "cpu", "memory", "temperature", "battery","clock"],
     // Modules configuration
      "hyprland/workspaces": {
          "disable-scroll": true,
@@ -112,9 +112,10 @@
         "spacing": 0
     },
     "clock": {
-        // "timezone": "America/New_York",
+        "timezone": "America/Bogota",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
+        //"format": "{:%Y-%m-%d}"
     },
     "cpu": {
         "format": "{usage}% ",
