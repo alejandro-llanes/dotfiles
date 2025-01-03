@@ -1,1 +1,4 @@
 theme = "tokyonight"
+
+[editor.auto-save]
+focus-lost = true

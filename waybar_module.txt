@@ -1,0 +1,4 @@
+spotify
+
+playerctl -l
+playerctl -p spotify_player metadata

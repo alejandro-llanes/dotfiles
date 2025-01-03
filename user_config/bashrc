@@ -24,8 +24,11 @@ PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='[\[\e[38;5;55;3m\]\d\[\e[0m
 export PATH=$PATH:$HOME/.bin
 export PATH=$PATH:$HOME/.local/bin
 
-# Put your fun stuff here.
+
 . "$HOME/.cargo/env"
+
+# Put your fun stuff here.
+#. "$HOME/.cargo/env"
 # ziglang
 export PATH=$PATH:$HOME/zig-linux-x86_64-0.14.0-dev.1307+849c31a6c
 
@@ -57,3 +60,11 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
 fi
 
 source /home/alejandro/.config/broot/launcher/bash/br
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/alejandro/google-cloud-sdk/path.bash.inc' ]; then . '/home/alejandro/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/alejandro/google-cloud-sdk/completion.bash.inc' ]; then . '/home/alejandro/google-cloud-sdk/completion.bash.inc'; fi
+
+export PATH=$PATH:/home/alejandro/.spicetify

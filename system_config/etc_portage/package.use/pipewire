@@ -1,1 +1,1 @@
-media-video/pipewire bluetooth dbus echo-cancel extra ffmpeg gstreamer lv2 system-services systemd v4l sound-server
+media-video/pipewire bluetooth dbus echo-cancel extra ffmpeg gstreamer lv2 system-services systemd v4l sound-server jack-sdk pipewire-alsa

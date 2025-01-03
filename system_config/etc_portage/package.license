@@ -6,3 +6,9 @@
 >=net-im/discord-0.0.62 all-rights-reserved
 >=media-fonts/corefonts-1-r7 MSttfEULA
 >=app-editors/uemacs-pk-4.0 free-noncomm
+>=net-analyzer/ookla-speedtest-1.2.0 Ookla
+>=net-im/slack-4.40.128 all-rights-reserved
+>=net-print/cndrvcups-common-lb-3.70 Canon-UFR-II
+>=net-print/cnrdrvcups-lb-5.80 Canon-UFR-II
+>=media-sound/spotify-1.2.48 Spotify
+>=sys-devel/rust-std-1.83.0 || ( MIT Apache-2.0 ) BSD-1 BSD-2 BSD-4

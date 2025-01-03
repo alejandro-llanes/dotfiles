@@ -19,15 +19,15 @@
 (remove-hook 'doom-escape-hook '+popup-close-on-escape-h)
 
 ;; stop creating a new workspace at connect to server
-(after! persp-mode
-  (setq persp-emacsclient-init-frame-behaviour-override "main"))
+;(after! persp-mode
+;  (setq persp-emacsclient-init-frame-behaviour-override "main"))
 
 ;; max recursion
 (setq max-lisp-eval-depth 10000)
 
 ;; cycling windows
-(global-set-key (kbd "C-<up>") 'enlarge-window)
-(global-set-key (kbd "C-<down>") 'shrink-window)
+(global-set-key (kbd "C-<down>") 'enlarge-window)
+(global-set-key (kbd "C-<up>") 'shrink-window)
 (global-set-key (kbd "C-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "C-<right>") 'enlarge-window-horizontally)
 
@@ -36,8 +36,8 @@
 
 ;; FONTS
 
-(setq doom-font (font-spec :family "Fira Code" :size 14 :weight 'semi-light)
-      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 15))
+(setq doom-font (font-spec :family "Fira Code" :size 16 :weight 'semi-light)
+      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 18))
 
 
 ;; THEMES
@@ -153,6 +153,9 @@
   :config (treemacs-set-scope-type 'Perspectives))
 
 (add-hook 'projectile-after-switch-project-hook 'treemacs-display-current-project-exclusively)
+
+(require 'lsp-treemacs)
+(lsp-treemacs-sync-mode 1)
 
 ;; MINIBUFFER
 
@@ -270,7 +273,41 @@
   (setq pop-up-windows nil))
 
 
+(defun mio/terra ()
+  "Terraform Layout"
+  (interactive)
+  (treemacs-set-scope-type 'Perspectives)
+  (treemacs)
+  (lsp-treemacs-symbols)
+  (ibuffer-sidebar-show-sidebar)
+  (windmove-right)
+  (split-window-below (floor (* 0.80 (window-height))))
+  (windmove-down)
+  (+vterm/here ".")
+  (set-window-dedicated-p (selected-window) 1)
+  (windmove-up)
+  ;;(set-window-parameter (split-window-right (floor (* 0.95 (window-width)))) 'window-name 'special)
+  (set-window-parameter (selected-window) 'window-name 'normal)
+  (windmove-left)
+  ;;(lsp-ui-menu)
+  ;;(balance-windows-area)
+  (minimap-mode 1)
+  (setq treemacs-follow-after-init nil)
+  (setq pop-up-windows nil))
+
 ;; LANGUAGES SPECIFIC
+
+;; MAGIT FANCY
+(use-package! magit-file-icons
+  :ensure t
+  :after magit
+  :init
+  (magit-file-icons-mode 1)
+  :custom
+  ;; These are the default values:
+  (magit-file-icons-enable-diff-file-section-icons t)
+  (magit-file-icons-enable-untracked-icons t)
+  (magit-file-icons-enable-diffstat-icons t))
 
 ;; LSP
 (after! lsp-ui
@@ -300,8 +337,28 @@
 (if buffer-file-name
         (setq-local buffer-save-without-query t))
 
+;; PYTHON
+;;(add-hook 'python-mode-hook 'py-autopep8-mode)
+;;;(use-package! lsp-pyright
+;;;              :ensure t
+;;;              :custom (lsp-pyright-langserver-command "pyright")
+;;;              :hook (python-mode . (lambda () 
+;;;                                     (require 'lsp-pyright')
+;;;                                     (lsp))))
+
+;;(add-hook 'python-mode-hook 'ruff-format-on-save-mode)
+(setq ruff-format-on-save-mode 1)
+
 ;; LUA
 ;; Associate .vim files with lua-mode
 (setq auto-mode-alist
       (append '((".*\\.vim\\'" . lua-mode))
               auto-mode-alist))
+
+;; TERRAFORM
+
+(setq lsp-auto-guess-root nil)
+;;(add-to-list 'lsp-directory-blacklist "~")
+(setq lsp-disabled-clients '(tfm-ls tfls semgrep-ls))
+;;(setq lsp-enabled-clients '(terraform-ls))
+(setq ls-terraform-ls-server "/usr/local/bin/terraform-ls")

@@ -1,0 +1,6 @@
+sudo emaint sync
+sudo emerge -avuDN @world
+
+# remove pkg
+sudo emerge -C xxx/pkg
+sudo emerge -a --depclean

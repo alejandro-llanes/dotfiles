@@ -53,6 +53,7 @@
 (package! treemacs-projectile)
 (package! treemacs-perspective)
 (package! treemacs-persp)
+(package! lsp-treemacs)
 (package! ligature)
 (package! cargo)
 (package! nerd-icons-ibuffer)
@@ -64,7 +65,13 @@
 (package! marginalia)
 (package! vertico-posframe
   :recipe (:host github :repo "tumashu/vertico-posframe"))
+(package! lsp-pyright)
+(package! ruff-format)
+(package! magit-file-icons)
+;;https://github.com/gekoke/magit-file-icons
+;;(package! py-autopep8)
 ;;(package! popup)
+;;(package! terraform-mode)
 
 ;; MacOS Specific
 

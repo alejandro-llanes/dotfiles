@@ -1,12 +1,14 @@
+
+[window]
+decorations = "Full"
+dynamic_padding = true
+
+[general]
 import = [
     # https://github.com/alacritty/alacritty-theme
     #"~/.config/alacritty/themes/themes/synthwave_84.toml"
     "~/.config/alacritty/themes/themes/tokyo-night.toml"
 ]
-
-[window]
-decorations = "Full"
-dynamic_padding = true
 
 #[window.dimensions]
 #columns = 1916

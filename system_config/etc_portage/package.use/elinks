@@ -1,1 +1,1 @@
-www-client/elinks finger mouse xml bzip2 guile nlz lzma idn javascript ssl X zlib zstd
+www-client/elinks finger mouse xml bzip2 guile nlz lzma idn -javascript ssl X zlib zstd

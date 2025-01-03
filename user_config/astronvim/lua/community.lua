@@ -19,6 +19,7 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.hyprlang" },
+  { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
   --{ import = "astrocommunity.completion.coq_nvim" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },

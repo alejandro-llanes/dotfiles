@@ -23,6 +23,7 @@ enable_notify = true
 enable_cover_image_cache = true
 default_device = "spotify-player"
 notify_streaming_only = false
+#cover_img_scale = 1.8
 
 [notify_format]
 summary = "{track} • {artists}"
@@ -31,6 +32,7 @@ body = "{album}"
 [device]
 name = "spotify-player"
 device_type = "speaker"
+#device_type = "PulseAudio"
 volume = 70
 bitrate = 320
 audio_cache = false
