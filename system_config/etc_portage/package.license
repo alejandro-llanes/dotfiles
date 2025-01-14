@@ -12,3 +12,4 @@
 >=net-print/cnrdrvcups-lb-5.80 Canon-UFR-II
 >=media-sound/spotify-1.2.48 Spotify
 >=sys-devel/rust-std-1.83.0 || ( MIT Apache-2.0 ) BSD-1 BSD-2 BSD-4
+>=www-client/microsoft-edge-131.0.2903.112 microsoft-edge

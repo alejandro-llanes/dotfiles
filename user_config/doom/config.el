@@ -19,8 +19,8 @@
 (remove-hook 'doom-escape-hook '+popup-close-on-escape-h)
 
 ;; stop creating a new workspace at connect to server
-;(after! persp-mode
-;  (setq persp-emacsclient-init-frame-behaviour-override "main"))
+                                        ;(after! persp-mode
+                                        ;  (setq persp-emacsclient-init-frame-behaviour-override "main"))
 
 ;; max recursion
 (setq max-lisp-eval-depth 10000)
@@ -36,8 +36,10 @@
 
 ;; FONTS
 
-(setq doom-font (font-spec :family "Fira Code" :size 16 :weight 'semi-light)
-      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 18))
+;;(setq doom-font (font-spec :family "Fira Code" :size 16 :weight 'semi-light)
+(setq doom-font (font-spec :family "JetBrains Mono" :size 16 :weight 'semi-light)
+      ;;doom-variable-pitch-font (font-spec :family "Fira Sans" :size 18))
+      doom-variable-pitch-font (font-spec :family "JetBrains Mono" :size 18))
 
 
 ;; THEMES
@@ -281,11 +283,11 @@
   (lsp-treemacs-symbols)
   (ibuffer-sidebar-show-sidebar)
   (windmove-right)
-  (split-window-below (floor (* 0.80 (window-height))))
-  (windmove-down)
-  (+vterm/here ".")
-  (set-window-dedicated-p (selected-window) 1)
-  (windmove-up)
+  ;;(split-window-below (floor (* 0.80 (window-height))))
+  ;;(windmove-down)
+  ;;(+vterm/here ".")
+  ;;(set-window-dedicated-p (selected-window) 1)
+  ;;(windmove-up)
   ;;(set-window-parameter (split-window-right (floor (* 0.95 (window-width)))) 'window-name 'special)
   (set-window-parameter (selected-window) 'window-name 'normal)
   (windmove-left)
@@ -294,6 +296,8 @@
   (minimap-mode 1)
   (setq treemacs-follow-after-init nil)
   (setq pop-up-windows nil))
+
+(global-set-key (kbd "s-t") #'+vterm/toggle)
 
 ;; LANGUAGES SPECIFIC
 
@@ -335,7 +339,7 @@
                           (auto-save-mode 1)))))
 
 (if buffer-file-name
-        (setq-local buffer-save-without-query t))
+    (setq-local buffer-save-without-query t))
 
 ;; PYTHON
 ;;(add-hook 'python-mode-hook 'py-autopep8-mode)

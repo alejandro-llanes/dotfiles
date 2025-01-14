@@ -68,6 +68,7 @@
 (package! lsp-pyright)
 (package! ruff-format)
 (package! magit-file-icons)
+(package! prettier-js)
 ;;https://github.com/gekoke/magit-file-icons
 ;;(package! py-autopep8)
 ;;(package! popup)
