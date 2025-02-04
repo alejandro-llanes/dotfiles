@@ -1,7 +1,8 @@
 [MIME Cache]
 application/x-shellscript=lvim.desktop;
+application/x-zerosize=zed.desktop;
 text/english=lvim.desktop;
-text/plain=lvim.desktop;
+text/plain=lvim.desktop;zed.desktop;
 text/x-c=lvim.desktop;
 text/x-c++=lvim.desktop;
 text/x-c++hdr=lvim.desktop;
@@ -14,3 +15,4 @@ text/x-moc=lvim.desktop;
 text/x-pascal=lvim.desktop;
 text/x-tcl=lvim.desktop;
 text/x-tex=lvim.desktop;
+x-scheme-handler/zed=zed.desktop;

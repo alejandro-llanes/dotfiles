@@ -69,6 +69,7 @@
 (package! ruff-format)
 (package! magit-file-icons)
 (package! prettier-js)
+(package! cfn-mode)
 ;;https://github.com/gekoke/magit-file-icons
 ;;(package! py-autopep8)
 ;;(package! popup)

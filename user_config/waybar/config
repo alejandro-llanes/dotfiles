@@ -143,6 +143,7 @@
         "exec": "$HOME/.config/waybar/custom/date.sh",
         "return-type": "json",
         "format": "{}",
+	"interval": 1,
     },
     "custom/iconl":{"format": ""},
     "custom/iconr":{"format": ""},

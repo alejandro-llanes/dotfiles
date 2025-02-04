@@ -19,8 +19,8 @@
 (remove-hook 'doom-escape-hook '+popup-close-on-escape-h)
 
 ;; stop creating a new workspace at connect to server
-                                        ;(after! persp-mode
-                                        ;  (setq persp-emacsclient-init-frame-behaviour-override "main"))
+(after! persp-mode
+  (setq persp-emacsclient-init-frame-behaviour-override "main"))
 
 ;; max recursion
 (setq max-lisp-eval-depth 10000)
@@ -209,8 +209,16 @@
           (lambda ()
             (ibuffer-switch-to-saved-filter-groups "MyList")
             (setq-local display-buffer-base-action '(display-buffer-use-some-window))
+            ;;(setq nerd-icons-ibuffer-mode 1)
             ))
 
+;;(setq nerd-icons-ibuffer-icon 1)
+;;(setq nerd-icons-ibuffer-color-icon 1)
+;;(setq nerd-icons-ibuffer-icon-size 1.0)
+;;(setq  nerd-icons-ibuffer-human-readable-size 1)
+
+;;- nerd-icons-ibuffer-formats
+;;(setq inhibit-compacting-font-caches 1)
 
 ;; CUSTOM FUNCTIONS
 

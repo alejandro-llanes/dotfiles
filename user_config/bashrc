@@ -25,7 +25,7 @@ export PATH=$PATH:$HOME/.bin
 export PATH=$PATH:$HOME/.local/bin
 
 
-. "$HOME/.cargo/env"
+#. "$HOME/.cargo/env"
 
 # Put your fun stuff here.
 #. "$HOME/.cargo/env"
@@ -67,4 +67,4 @@ if [ -f '/home/alejandro/google-cloud-sdk/path.bash.inc' ]; then . '/home/alejan
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/alejandro/google-cloud-sdk/completion.bash.inc' ]; then . '/home/alejandro/google-cloud-sdk/completion.bash.inc'; fi
 
-export PATH=$PATH:/home/alejandro/.spicetify
+#export PATH=$PATH:$HOME/.spicetify
