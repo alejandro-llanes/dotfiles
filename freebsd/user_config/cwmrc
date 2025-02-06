@@ -1,0 +1,24 @@
+# uncomment for workspace like
+#sticky yes
+
+fontname fixed-11
+
+moveamount 10
+vtile 50
+htile 75
+gap 1 1 1 1
+color activeborder   blue
+color urgencyborder  red
+color inactiveborder black
+snapdist 3
+
+bind-key CM-Return "alacritty"
+bind-key CM-minus  window-vtile
+bind-key CMS-minus window-vtile
+
+## custom
+# rofi
+bind-key 4-x	"rofi -show drun"
+
+command alacritty "alacritty"
+command wezterm "wezterm"

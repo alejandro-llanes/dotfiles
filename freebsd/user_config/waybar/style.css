@@ -21,51 +21,37 @@
 }
 
 #waybar {
-	font-family: 'Source Code Pro', sans-serif;
-	font-size: 1em;
-	font-weight: 400;
-  /*color: @base04*/
+	font-family: 'Symbols Nerd Font';
+  font-size: 15px;
+  color: @base07;
   background: transparent;
-  /*background: rgba(0,0,0,0.3);*/
-  color: #ffffff;
   transition-property: background-color;
   transition-duration: .5s;
 }
 
-
-/*
-#waybar.hidden {
-  opacity: 0.2;
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
 }
-
-#waybar.empty #window {
-  background-color: transparent;
+tooltip label {
+  color: white;
 }
 
 #window {
-  margin: 2px;
-  padding-left: 8px;
-  padding-right: 8px;
-  background-color: rgba(0,0,0,0.3);
-  font-size:14px;
-  font-weight: bold;
-}
-*/
-
-#window {
-  font-size: 0.9em;
+  /*font-size: 0.9em;
 	font-weight: 400;
-	font-family: sans-serif;
+	font-family: sans-serif;*/
   /*justify-content: flex-start;
   text-align: left;*/
 }
 
 #window > * {
-  margin-right: 5px;
+  margin-right: 0px;
 }
 
 #workspaces {
   margin: 0 4px;
+  /*font-size: 20px;*/
 }
 
 #workspaces button {
@@ -79,7 +65,6 @@
 
 #workspaces button.active {
   border-radius: 4px;
-  /*background-color: @base02;*/
   background-color: @base0B;
 }
 
@@ -90,26 +75,22 @@
 #tray {
   margin: 4px 4px 4px 4px;
   border-radius: 4px;
-  background-color: @base02;
+  background: transparent;
+  border: 1px solid @base0E;
+}
+
+#tray:hover {
+  border: 1px solid @base0B;
 }
 
 #tray * {
   padding: 0 6px;
-  border-left: 1px solid @base00;
+  border: none;
+  /*border-left: 1px solid @base0E;*/
 }
 
-#tray > *{
-  background: transparent;
-}
-
-#tray *:first-child {
-  border-left: none;
-}
-
-#mode, #battery, #cpu, #memory, #network, #idle_inhibitor, #backlight, #custom-storage, #custom-updates, #custom-weather, #custom-mail, #clock, #temperature, #language, #wireplumber, #bluetooth{
-  margin: 4px 2px;
-  padding: 0 6px;
-  /*background-color: @base02;*/
+#mode, #battery, #cpu, #memory, #network, #idle_inhibitor, #backlight, #custom-storage, #custom-updates, #custom-weather, #custom-mail, #clock, #temperature, #language, #wireplumber, #bluetooth {
+  padding: 0 0;
   background-color: transparent;
   border-radius: 4px;
   min-width: 20px;
@@ -123,9 +104,15 @@
   color: @base0C;
 }
 
+#bluetooth {
+  color: @base07;
+}
+
 #clock {
+  font-weight: bold;
+  font-size: 20px;
   margin-left: 0px;
-  margin-right: 4px;
+  margin-right: 0px;
   background-color: transparent;
 }
 
@@ -134,7 +121,36 @@
 }
 
 #language {
-	font-size: 0.9em;
-	font-weight: 500;
+}
+
+#custom-power {
+  margin-left: 4px;
+}
+
+#custom-date {
+  font-size: 20px;
+  font-weight: bold;
 	letter-spacing: -1px;
+}
+
+#custom-iconl, #custom-iconr {
+  font-size: 30px;
+  color: @base07;
+  /*color: @base0E;*/
+}
+
+#mode:hover, #battery:hover, #cpu:hover, #memory:hover, #network:hover, 
+#idle_inhibitor:hover, #backlight:hover, #clock:hover, #temperature:hover, 
+#language:hover, #wireplumber:hover, #bluetooth:hover, #workspaces button:hover,
+#custom-date:hover, #custom-power:hover {
+  /*background: @base02;
+  font-size: 30px;
+  border: 1px solid rgba(100, 114, 125, 0.5);*/
+  border: none;
+  text-shadow:
+        0 0 5px #0ff,  /* Glow effect */
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #0ff,
+        0 0 80px #0ff;
 }
