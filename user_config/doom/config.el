@@ -67,7 +67,18 @@
 ;;(global-set-key (kbd "<next>") 'good-scroll-up)     ;; Bind PgDn to inertia scroll up
 
 ;; SWITCHING
-(windmove-default-keybindings 'super)
+(when (eq system-type 'gnu/linux)
+  (windmove-default-keybindings 'super))
+
+(when (eq system-type 'berkeley-unix)
+  (use-package windmove
+  ;; For readers: don't ensure means that we don't need to download it. It is built in
+  :ensure nil
+  :bind*
+  (("M-<left>" . windmove-left)
+   ("M-<right>" . windmove-right)
+   ("M-<up>" . windmove-up)
+   ("M-<down>" . windmove-down))))
 
 ;; CURSOR
 
