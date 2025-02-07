@@ -1,0 +1,21 @@
+   Xorg
+
+https://en.wikipedia.org/wiki/Category:Free_X_window_managers
+http://www.galeriawm.hol.es/
+
+Cwm (opensBSD)
+Dwm
+Bspwm
+Icewm
+Fvwm3 ?
+Xfwm
+Spectrwm
+Herbstluftwm
+i3
+Blackbox
+Fluxbox
+
+   Wayland
+
+Hikari
+Hyprland

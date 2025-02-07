@@ -4,7 +4,6 @@
       "left": [
         "dashboard",
         "workspaces",
-        "windowtitle",
         "hypridle"
       ],
       "middle": [
@@ -402,5 +401,6 @@
   "bar.workspaces.showApplicationIcons": true,
   "bar.workspaces.showWsIcons": true,
   "bar.customModules.hypridle.onIcon": "",
-  "bar.customModules.hypridle.offIcon": ""
+  "bar.customModules.hypridle.offIcon": "",
+  "bar.clock.format": "%a %b %d  %I:%M %p"
 }
