@@ -1,0 +1,9 @@
+
+pkill polybar
+#tmux new-session -d -s POLYBAR "polybar"
+polybar &
+dunst &
+setxkbmap -layout latam
+# left handed mouse
+xmodmap -e "pointer = 3 2 1"
+#sleep 10 && feh --bg-fill "$HOME/Pictures/freebsd.jpg"
