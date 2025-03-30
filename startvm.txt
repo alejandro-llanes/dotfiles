@@ -1,0 +1,1 @@
+VBoxManage startvm --type separate "Window 11"

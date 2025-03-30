@@ -1,0 +1,5 @@
+[sources]
+"Freebsd Announces" = "https://www.freebsd.org/news/feed.xml"
+"Gentoo Security" = "https://security.gentoo.org/glsa/feed.rss"
+# Write here the sources you want to get the feed from following the example below
+# New_York_Times = "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"

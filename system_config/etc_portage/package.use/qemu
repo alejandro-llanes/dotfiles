@@ -1,0 +1,1 @@
+app-emulation/qemu aio curl fdt filecaps jpeg png slirp vhost-net vnc fuse io-uring opengl pipewire plugins sdl sdl-images spice ssh udev usb usbredir vde virtfs 

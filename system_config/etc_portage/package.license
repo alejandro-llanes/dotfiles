@@ -15,3 +15,5 @@
 >=www-client/microsoft-edge-131.0.2903.112 microsoft-edge
 net-im/zoom all-rights-reserved
 net-im/teams-for-linux  MIT BSD BSD-2 BSD-4 AFL-2.1 Apache-2.0 Ms-PL GPL-2 LGPL-2.1 APSL-2 unRAR OFL-1.1 CC-BY-SA-3.0 MPL-2.0 android public-domain all-rights-reserved
+#app-emulation/virtualbox-kvm dtrace
+#>=app-emulation/virtualbox-kvm-7.1.6a_pre20250207 **

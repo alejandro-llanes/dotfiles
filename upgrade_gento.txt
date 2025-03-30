@@ -4,3 +4,9 @@ sudo emerge -avuDN @world
 # remove pkg
 sudo emerge -C xxx/pkg
 sudo emerge -a --depclean
+
+# free disk space
+eclean
+
+# reduce reserve blocks
+tune2fs -m 1 /dev/sdXY

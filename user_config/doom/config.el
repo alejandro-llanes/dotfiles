@@ -72,13 +72,13 @@
 
 (when (eq system-type 'berkeley-unix)
   (use-package windmove
-  ;; For readers: don't ensure means that we don't need to download it. It is built in
-  :ensure nil
-  :bind*
-  (("M-<left>" . windmove-left)
-   ("M-<right>" . windmove-right)
-   ("M-<up>" . windmove-up)
-   ("M-<down>" . windmove-down))))
+    ;; For readers: don't ensure means that we don't need to download it. It is built in
+    :ensure nil
+    :bind*
+    (("M-<left>" . windmove-left)
+     ("M-<right>" . windmove-right)
+     ("M-<up>" . windmove-up)
+     ("M-<down>" . windmove-down))))
 
 ;; CURSOR
 
@@ -133,6 +133,20 @@
 
 ;; TREEMACS
 
+;;(add-to-list 'display-buffer-alist
+;;             '("^\\*LSP Symbols\\*"
+;;               (display-buffer-in-side-window)
+;;               (side . right)
+;;               (slot . 0)
+;;               (window-width . 40))) ;; Adjust width as needed
+
+;;(defun mio/ltsr ()
+;;  "Open LSP Treemacs Symbols on the right side."
+;;  (interactive)
+;;  (let ((buffer (lsp-treemacs-symbols)))
+;;    (when buffer
+;;      (display-buffer-in-side-window buffer '((side . right) (window-width . 40))))))
+
 (require 'cfrs)
 (require 'treemacs)
 (setq treemacs-show-hidden-files nil)
@@ -166,6 +180,11 @@
   :config (treemacs-set-scope-type 'Perspectives))
 
 (add-hook 'projectile-after-switch-project-hook 'treemacs-display-current-project-exclusively)
+
+(setq lsp-treemacs-symbols-position-params `((side . right)
+                                             (slot . 1)
+                                             (window-width . ,treemacs-width)))
+
 
 (require 'lsp-treemacs)
 (lsp-treemacs-sync-mode 1)
@@ -230,6 +249,9 @@
 
 ;;- nerd-icons-ibuffer-formats
 ;;(setq inhibit-compacting-font-caches 1)
+
+;; CUSTOM APPS
+(load! "apps") ;; Load the form file
 
 ;; CUSTOM FUNCTIONS
 
@@ -297,6 +319,7 @@
 (defun mio/terra ()
   "Terraform Layout"
   (interactive)
+  ;;(set-popup-rule! "^\\*LSP Symbols\\*" :side 'right :width 40 :quit t)
   (treemacs-set-scope-type 'Perspectives)
   (treemacs)
   (lsp-treemacs-symbols)
@@ -312,7 +335,7 @@
   (windmove-left)
   ;;(lsp-ui-menu)
   ;;(balance-windows-area)
-  (minimap-mode 1)
+  ;;(minimap-mode 1)
   (setq treemacs-follow-after-init nil)
   (setq pop-up-windows nil))
 
@@ -321,16 +344,24 @@
 ;; LANGUAGES SPECIFIC
 
 ;; MAGIT FANCY
-(use-package! magit-file-icons
-  :ensure t
-  :after magit
-  :init
-  (magit-file-icons-mode 1)
-  :custom
-  ;; These are the default values:
-  (magit-file-icons-enable-diff-file-section-icons t)
-  (magit-file-icons-enable-untracked-icons t)
-  (magit-file-icons-enable-diffstat-icons t))
+(use-package! nerd-icons
+              :ensure t)
+
+(use-package! magit
+              :ensure t
+              :after nerd-icons
+              :custom
+              (magit-format-file-function #'magit-format-file-nerd-icons))
+;;(use-package! magit-file-icons
+;;  :ensure t
+;;  :after magit
+;;  :init
+;;  (magit-file-icons-mode 1)
+;;  :custom
+;;  ;; These are the default values:
+;;  (magit-file-icons-enable-diff-file-section-icons t)
+;;  (magit-file-icons-enable-untracked-icons t)
+;;  (magit-file-icons-enable-diffstat-icons t))
 
 ;; LSP
 (after! lsp-ui

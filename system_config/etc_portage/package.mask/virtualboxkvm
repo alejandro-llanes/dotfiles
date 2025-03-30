@@ -1,0 +1,7 @@
+# required by app-emulation/virtualbox-kvm (argument)
+# /var/db/repos/gentoo/profiles/package.mask:
+# Viorel Munteanu <ceamac@gentoo.org> (2024-10-18)
+# Experimental version, for testing purposes only.
+# Bug #941566.
+#>app-emulation/virtualbox-kvm-7.1.4
+#=app-emulation/virtualbox-kvm-7.1.6a_pre20250207

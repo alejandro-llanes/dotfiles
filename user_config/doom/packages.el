@@ -56,6 +56,7 @@
 (package! lsp-treemacs)
 (package! ligature)
 (package! cargo)
+(package! nerd-icons)
 (package! nerd-icons-ibuffer)
 (package! ibuffer-sidebar)
 (package! lsp-ui)
@@ -67,7 +68,7 @@
   :recipe (:host github :repo "tumashu/vertico-posframe"))
 (package! lsp-pyright)
 (package! ruff-format)
-(package! magit-file-icons)
+;;(package! magit-file-icons)
 (package! prettier-js)
 (package! cfn-mode)
 ;;https://github.com/gekoke/magit-file-icons

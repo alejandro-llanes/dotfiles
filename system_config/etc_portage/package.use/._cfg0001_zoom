@@ -1,0 +1,4 @@
+net-im/zoom zoom-symlink pulseaudio opencl wayland
+# required by media-sound/clementine-1.4.1_p28-r1::gentoo[mtp]
+# required by media-sound/clementine (argument)
+>=gnome-base/gvfs-1.56.1 mtp
