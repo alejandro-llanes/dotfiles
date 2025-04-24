@@ -194,4 +194,3 @@
        :config
        ;;literate
        (default +bindings +smartparens))
-:q

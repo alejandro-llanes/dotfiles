@@ -56,20 +56,20 @@
 ;;;(setq doom-theme 'doom-nord-light)
 
 ;; SCROLLING
-
-(pixel-scroll-precision-mode)
-(setq pixel-scroll-mode 1)
-(setq mouse-wheel-tilt-scroll t)
+(pixel-scroll-precision-mode 1)
+;;(setq mouse-wheel-tilt-scroll 1)
 (setq pixel-scroll-precision-use-momentum 1)
+(setq pixel-scroll-precision-interpolate-page 1)
+(setq pixel-scroll-precision-interpolation-factor 5.0)
+(setq pixel-scroll-precision-large-scroll-height 40.0)
+(setq scroll-margin 1)
+(setq scroll-conservatively 101)
 
-;;(good-scroll-mode 1)
-;;(global-set-key (kbd "<prior>") 'good-scroll-down)  ;; Bind PgUp to inertia scroll down
-;;(global-set-key (kbd "<next>") 'good-scroll-up)     ;; Bind PgDn to inertia scroll up
-
-;; SWITCHING
+;; WINDOWS SWITCHING
+;; Linux
 (when (eq system-type 'gnu/linux)
   (windmove-default-keybindings 'super))
-
+;; FreeBSD
 (when (eq system-type 'berkeley-unix)
   (use-package windmove
     ;; For readers: don't ensure means that we don't need to download it. It is built in
@@ -133,20 +133,6 @@
 
 ;; TREEMACS
 
-;;(add-to-list 'display-buffer-alist
-;;             '("^\\*LSP Symbols\\*"
-;;               (display-buffer-in-side-window)
-;;               (side . right)
-;;               (slot . 0)
-;;               (window-width . 40))) ;; Adjust width as needed
-
-;;(defun mio/ltsr ()
-;;  "Open LSP Treemacs Symbols on the right side."
-;;  (interactive)
-;;  (let ((buffer (lsp-treemacs-symbols)))
-;;    (when buffer
-;;      (display-buffer-in-side-window buffer '((side . right) (window-width . 40))))))
-
 (require 'cfrs)
 (require 'treemacs)
 (setq treemacs-show-hidden-files nil)
@@ -190,7 +176,6 @@
 (lsp-treemacs-sync-mode 1)
 
 ;; MINIBUFFER
-
 
 (require 'vertico)
 (require 'vertico-posframe)
@@ -257,7 +242,7 @@
 
 
 ;; function for duplicate line, doesn't work in org.
-(defun duplicate-line()
+(defun mio/duplicate-line()
   (interactive)
   (move-beginning-of-line 1)
   (kill-line)
@@ -266,7 +251,27 @@
   (forward-line 1)
   (yank)
   )
-(global-set-key (kbd "C-d") 'duplicate-line)
+
+(defun mio/dupregline ()
+  "Duplicate the selected region or the current line if no region is active."
+  (interactive)
+  (if (use-region-p)
+      ;; region active
+      (let ((beg (region-beginning)) (end (region-end)))
+        (copy-region-as-kill beg end)
+        (end-of-line)
+        (newline)
+        (yank))
+    (progn
+      (let ((beg (line-beginning-position))
+            (end (line-end-position)))
+        (copy-region-as-kill beg end)
+        (end-of-line)
+        (newline)
+        (yank)))))
+
+;;(global-set-key (kbd "C-d") 'mio/duplicate-line)
+(global-set-key (kbd "C-d") 'mio/dupregline)
 
 ;; Workspace layouts
 
@@ -316,8 +321,8 @@
   (setq pop-up-windows nil))
 
 
-(defun mio/terra ()
-  "Terraform Layout"
+(defun mio/ide ()
+  "Ide Layout"
   (interactive)
   ;;(set-popup-rule! "^\\*LSP Symbols\\*" :side 'right :width 40 :quit t)
   (treemacs-set-scope-type 'Perspectives)
@@ -345,23 +350,13 @@
 
 ;; MAGIT FANCY
 (use-package! nerd-icons
-              :ensure t)
+  :ensure t)
 
 (use-package! magit
-              :ensure t
-              :after nerd-icons
-              :custom
-              (magit-format-file-function #'magit-format-file-nerd-icons))
-;;(use-package! magit-file-icons
-;;  :ensure t
-;;  :after magit
-;;  :init
-;;  (magit-file-icons-mode 1)
-;;  :custom
-;;  ;; These are the default values:
-;;  (magit-file-icons-enable-diff-file-section-icons t)
-;;  (magit-file-icons-enable-untracked-icons t)
-;;  (magit-file-icons-enable-diffstat-icons t))
+  :ensure t
+  :after nerd-icons
+  :custom
+  (magit-format-file-function #'magit-format-file-nerd-icons))
 
 ;; LSP
 (after! lsp-ui
