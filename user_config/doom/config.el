@@ -290,6 +290,7 @@
 (global-set-key (kbd "s-a")
                 (lambda () (interactive)
                   (treemacs)
+                  (windmove-right)
                   (mio/toggle-window "*:Buffers:*" 'left 1 treemacs-width)
                   (mio/toggle-window "*LSP Symbols List*" 'right 0 treemacs-width)
                   ))
