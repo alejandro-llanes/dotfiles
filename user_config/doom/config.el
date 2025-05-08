@@ -273,6 +273,41 @@
 ;;(global-set-key (kbd "C-d") 'mio/duplicate-line)
 (global-set-key (kbd "C-d") 'mio/dupregline)
 
+;; hide/show windows
+(defun mio/toggle-window (buffer-name wside wslot wwidth)
+  "Toggle window side"
+  (let ((buffer (get-buffer buffer-name)))
+    (if (and buffer (get-buffer-window buffer 'visible))
+        (delete-window (get-buffer-window buffer))
+      (when buffer
+        (display-buffer-in-side-window
+         buffer
+         `((side . ,wside)
+           (slot . ,wslot)
+           (window-width . ,wwidth)))))))
+
+
+(global-set-key (kbd "s-a")
+                (lambda () (interactive)
+                  (treemacs)
+                  (mio/toggle-window "*:Buffers:*" 'left 1 treemacs-width)
+                  (mio/toggle-window "*LSP Symbols List*" 'right 0 treemacs-width)
+                  ))
+
+;;(global-set-key (kbd "C-c o i")
+(global-set-key (kbd "s-i")
+                (lambda () (interactive)
+                  (mio/toggle-window "*:Buffers:*" 'left 1 treemacs-width)))
+
+;;(global-set-key (kbd "C-c o o")
+(global-set-key (kbd "s-o")
+                (lambda () (interactive)
+                  (mio/toggle-window "*LSP Symbols List*" 'right 0 treemacs-width)))
+
+(global-set-key (kbd "s-p")
+                (lambda () (interactive)
+                  (treemacs)))
+
 ;; Workspace layouts
 
 (defun mio/dev1 ()
