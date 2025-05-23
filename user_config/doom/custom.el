@@ -4,7 +4,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(safe-local-variable-values
-   '((treemacs-default-directory . "~/Securily/projects/securily-tf-infrastructure/"))))
+   '((mio/ide)
+     (treemacs-default-directory
+      . "~/Securily/projects/securily-tf-infrastructure/"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

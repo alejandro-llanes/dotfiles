@@ -3,6 +3,12 @@
 
 ;; GENERAL
 
+;; (add-hook! 'emacs-startup-hook
+;;   (lambda ()
+;;     (cd "~/Projects/")
+;;     (setq treemacs-dir "~/Projects/")
+;;     (setq default-directory "~/Projects/")))
+
 ;; environment
 ;; set cargo colors for eshell
 (setenv "CARGO_TERM_COLOR" "always")
@@ -138,7 +144,23 @@
 (setq treemacs-show-hidden-files nil)
 (treemacs-fringe-indicator-mode t)
 (treemacs-filewatch-mode t)
+
+(setq treemacs-no-persist 1)
+(setq treemacs-project-follow-cleanup t) ;; avoid ghost projects
+
 (setq treemacs-file-event-delay 1000)
+
+;; (defun mio/treemacs-startup-dir ()
+;;   "Open Treemacs at ~/Projects if no project is selected."
+;;   (interactive)
+;;   (when (and (not (projectile-project-p))
+;;              (not (treemacs-current-workspace)))
+;;     (treemacs-do-add-project-to-workspace
+;;      (expand-file-name "~/Projects")
+;;      "Projects")
+;;     (treemacs-select-window)))
+
+;; (advice-add 'treemacs :after #'mio/treemacs-startup-dir)
 
 (require 'treemacs-project-follow-mode)
 (setq treemacs-project-follow-mode nil)
@@ -146,8 +168,9 @@
 (treemacs-git-mode 'deferred)
 (setq treemacs-is-never-other-window t)
 (setq treemacs-silent-refresh    t)
+(treemacs-set-scope-type 'Frames)
 
-(defun treemacs-ignore-example (filename absolute-path)
+(defun treemacs-ignore-example (filename _absolute-path)
   (or (string-suffix-p filename ".elc")
       ;; (string-prefix-p "/x/y/z/" absolute-path)
       ))
@@ -160,10 +183,11 @@
   :config (treemacs-icons-dired-mode))
 
 
-(use-package treemacs-persp
-  :after (treemacs persp-mode)
-  ;;:ensure t
-  :config (treemacs-set-scope-type 'Perspectives))
+;;(use-package treemacs-persp
+;;:after (treemacs persp-mode)
+;;-:ensure t
+;;:config (treemacs-set-scope-type 'Frames))
+;;-:config (treemacs-set-scope-type 'Perspectives))
 
 (add-hook 'projectile-after-switch-project-hook 'treemacs-display-current-project-exclusively)
 
@@ -314,7 +338,7 @@
 (defun mio/dev1 ()
   "Layout One"
   (interactive)
-  (treemacs-set-scope-type 'Perspectives)
+  ;;(treemacs-set-scope-type 'Perspectives)
   (treemacs)
   (ibuffer-sidebar-show-sidebar)
   (windmove-right)
@@ -360,23 +384,12 @@
 (defun mio/ide ()
   "Ide Layout"
   (interactive)
-  ;;(set-popup-rule! "^\\*LSP Symbols\\*" :side 'right :width 40 :quit t)
-  (treemacs-set-scope-type 'Perspectives)
   (treemacs)
   (lsp-treemacs-symbols)
   (ibuffer-sidebar-show-sidebar)
   (windmove-right)
-  ;;(split-window-below (floor (* 0.80 (window-height))))
-  ;;(windmove-down)
-  ;;(+vterm/here ".")
-  ;;(set-window-dedicated-p (selected-window) 1)
-  ;;(windmove-up)
-  ;;(set-window-parameter (split-window-right (floor (* 0.95 (window-width)))) 'window-name 'special)
   (set-window-parameter (selected-window) 'window-name 'normal)
   (windmove-left)
-  ;;(lsp-ui-menu)
-  ;;(balance-windows-area)
-  ;;(minimap-mode 1)
   (setq treemacs-follow-after-init nil)
   (setq pop-up-windows nil))
 

@@ -68,3 +68,6 @@ if [ -f '/home/alejandro/google-cloud-sdk/path.bash.inc' ]; then . '/home/alejan
 if [ -f '/home/alejandro/google-cloud-sdk/completion.bash.inc' ]; then . '/home/alejandro/google-cloud-sdk/completion.bash.inc'; fi
 
 #export PATH=$PATH:$HOME/.spicetify
+# kubecolor
+alias kubectl="kubecolor"
+source $HOME/.kube/completion.bash.inc
