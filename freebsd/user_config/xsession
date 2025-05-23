@@ -1,8 +1,8 @@
 
-pkill polybar
+#pkill polybar
 #tmux new-session -d -s POLYBAR "polybar"
-polybar &
-dunst &
+#polybar &
+#dunst &
 setxkbmap -layout latam
 # left handed mouse
 xmodmap -e "pointer = 3 2 1"
