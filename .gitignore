@@ -1,0 +1,6 @@
+.DS_Store
+.idea
+*.log
+tmp/
+./freebsd/user_config/fish/fish_variables
+./freebsd/user_config/leftwm/themes/Ascent
