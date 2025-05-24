@@ -77,14 +77,14 @@
   (windmove-default-keybindings 'super))
 ;; FreeBSD
 (when (eq system-type 'berkeley-unix)
-  (use-package windmove
-    ;; For readers: don't ensure means that we don't need to download it. It is built in
-    :ensure nil
-    :bind*
-    (("M-<left>" . windmove-left)
-     ("M-<right>" . windmove-right)
-     ("M-<up>" . windmove-up)
-     ("M-<down>" . windmove-down))))
+  ;; (use-package windmove
+  ;;   :ensure nil
+  ;;   :bind*
+  ;;   (("M-<left>" . windmove-left)
+  ;;    ("M-<right>" . windmove-right)
+  ;;    ("M-<up>" . windmove-up)
+  ;;    ("M-<down>" . windmove-down))))
+  (windmove-default-keybindings 'super))
 
 ;; CURSOR
 
@@ -322,7 +322,8 @@
                     )))
 ;; FreeBSD
 (when (eq system-type 'berkeley-unix)
-  (global-set-key (kbd "M-a")
+  ;;(global-set-key (kbd "M-a")
+  (global-set-key (kbd "s-a")
                   (lambda () (interactive)
                     (treemacs)
                     (windmove-right)

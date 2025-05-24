@@ -40,10 +40,15 @@ bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 # Alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+#bindsym $mod+Left focus left
+#bindsym $mod+Down focus down
+#bindsym $mod+Up focus up
+#bindsym $mod+Right focus right
+
+bindsym $mod+Control+Left focus left
+bindsym $mod+Control+Down focus down
+bindsym $mod+Control+Up focus up
+bindsym $mod+Control+Right focus right
 
 # Move focused window
 bindsym $mod+Shift+j move left
@@ -78,7 +83,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # Focus the parent container
-bindsym $mod+a focus parent
+# bindsym $mod+a focus parent
 
 # Name the workspaces
 set $workspace1 "1:  "
