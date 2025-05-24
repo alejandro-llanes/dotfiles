@@ -310,14 +310,26 @@
            (slot . ,wslot)
            (window-width . ,wwidth)))))))
 
+;; WINDOWS SWITCHING
+;; Linux
+(when (eq system-type 'gnu/linux)
+  (global-set-key (kbd "s-a")
+                  (lambda () (interactive)
+                    (treemacs)
+                    (windmove-right)
+                    (mio/toggle-window "*:Buffers:*" 'left 1 treemacs-width)
+                    (mio/toggle-window "*LSP Symbols List*" 'right 0 treemacs-width)
+                    )))
+;; FreeBSD
+(when (eq system-type 'berkeley-unix)
+  (global-set-key (kbd "M-a")
+                  (lambda () (interactive)
+                    (treemacs)
+                    (windmove-right)
+                    (mio/toggle-window "*:Buffers:*" 'left 1 treemacs-width)
+                    (mio/toggle-window "*LSP Symbols List*" 'right 0 treemacs-width)
+                    )))
 
-(global-set-key (kbd "s-a")
-                (lambda () (interactive)
-                  (treemacs)
-                  (windmove-right)
-                  (mio/toggle-window "*:Buffers:*" 'left 1 treemacs-width)
-                  (mio/toggle-window "*LSP Symbols List*" 'right 0 treemacs-width)
-                  ))
 
 ;;(global-set-key (kbd "C-c o i")
 (global-set-key (kbd "s-i")
