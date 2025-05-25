@@ -47,6 +47,15 @@
       ;;doom-variable-pitch-font (font-spec :family "Fira Sans" :size 18))
       doom-variable-pitch-font (font-spec :family "JetBrains Mono" :size 18))
 
+;; font scale for freebsd laptop 1366 x 768
+(defun mio/set-x250-resolution ()
+  "Set font based on resolution."
+  (when (and (= (display-pixel-width) 1366)
+             (= (display-pixel-height) 768))
+    (set-face-attribute 'default nil :height 100)))
+
+(add-hook! 'doom-init-ui-hook
+  (mio/set-x250-resolution))
 
 ;; THEMES
 ;; [[https://github.com/doomemacs/themes/tree/screenshots][themes]]
