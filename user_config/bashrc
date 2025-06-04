@@ -41,6 +41,8 @@ export PATH=$PATH:$HOME/.config/emacs/bin
 # systemctl --user enable --now emacs-29
 export ALTERNATE_EDITOR=''
 #alias e='emacsclient --tty --socket-name=main'
+alias emacs="emacs -nw"
+alias magit="emacs -nw --eval '(magit)'"
 alias e='emacsclient --tty'
 export EDITOR='emacsclient -t'
 export VISUAL='emacsclient -t'
