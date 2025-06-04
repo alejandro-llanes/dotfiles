@@ -14,62 +14,57 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
+# GENERAL
+export EDITOR='emacs -nw'
+export VISUAL='emacs -nw'
+export ALTERNATE_EDITOR='nvim'
+# helper to os identify
+OSN=$(uname -o)
 # Git contrib
 source ~/dotfiles/user_config/git-prompt.sh
-
 # PS1
-#PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='[\[\e[38;5;55;3m\]\d\[\e[0m\] \[\e[38;5;55;3m\]\t\[\e[0m\]][\[\e[38;5;33m\]\w\[\e[0m\]]${PS1_CMD1}> '
 PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='[\[\e[38;5;55;3m\]\d\[\e[0m\] \[\e[38;5;55;3m\]\t\[\e[0m\]][\[\e[38;5;33m\]\w\[\e[0m\]]\[\e[38;5;189;48;5;130;1;2m\]${PS1_CMD1}\[\e[0m\]> '
-# own binaries
+# local binaries
 export PATH=$PATH:$HOME/.bin
 export PATH=$PATH:$HOME/.local/bin
-
-
-#. "$HOME/.cargo/env"
-
-# Put your fun stuff here.
-#. "$HOME/.cargo/env"
 # ziglang
 export PATH=$PATH:$HOME/zig-linux-x86_64-0.14.0-dev.1307+849c31a6c
-
-# nvim -> vim
-#alias vim="/usr/bin/nvim"
-
 # doom-emacs
 export PATH=$PATH:$HOME/.config/emacs/bin
-# emacs
-# systemctl --user enable --now emacs-29
-export ALTERNATE_EDITOR=''
+# systemctl --user enable --now emacs-29'
 #alias e='emacsclient --tty --socket-name=main'
 alias emacs="emacs -nw"
 alias magit="emacs -nw --eval '(magit)'"
 alias e='emacsclient --tty'
-export EDITOR='emacsclient -t'
-export VISUAL='emacsclient -t'
-#alias vi='emacsclient -t'
-#alias vim='emacsclient -t'
-
 # lsd
 alias ls="lsd"
-
 # astronvim
 alias astronvim="NVIM_APPNAME=astronvim nvim"
-
-# default to tmux session
-#test -n "$PS1" && test -z "$TMUX" -a -n "$SSH_TTY" && exec tmux new -ADX
+# do not start a new tmux session if there another one already
+# running.
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ] && [[ ! "$EMACSW" ]] && [[ ! "$NVIMON" ]] ; then
   exec tmux -u new -ADX
 fi
-
-source /home/alejandro/.config/broot/launcher/bash/br
-
+# GCLOUD
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/alejandro/google-cloud-sdk/path.bash.inc' ]; then . '/home/alejandro/google-cloud-sdk/path.bash.inc'; fi
-
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/alejandro/google-cloud-sdk/completion.bash.inc' ]; then . '/home/alejandro/google-cloud-sdk/completion.bash.inc'; fi
 
-#export PATH=$PATH:$HOME/.spicetify
-# kubecolor
-alias kubectl="kubecolor"
-source $HOME/.kube/completion.bash.inc
+# specific for Linux
+if [[ "$OSN" == "GNU/Linux" ]]
+   then
+    #export PATH=$PATH:$HOME/.spicetify
+    # kubecolor
+    export OSN="$OSN"
+    alias kubectl="kubecolor"
+    source $HOME/.kube/completion.bash.inc
+    source /home/alejandro/.config/broot/launcher/bash/br
+fi
+
+# specific for FreeBSD
+if [[ "$OSN" == "FreeBSD" ]]
+   then
+    # make beasty dance
+    export OSN="$OSN"
+fi
