@@ -273,6 +273,17 @@
 
 ;; CUSTOM FUNCTIONS
 
+;; for 1password
+(defun mio/opread (item field)
+  "Read a field from a 1Password item using cli."
+  (string-trim
+   (shell-command-to-string
+    (format "op read op://%s/%s" item field ))))
+
+;; for gists
+
+;; (setq gist-github-user (mio/opread "Personal/emacsgists" "username"))
+;; (setq gist-auth-token (mio/opread "Personal/emacsgists" "token"))
 
 ;; function for duplicate line, doesn't work in org.
 (defun mio/duplicate-line()
@@ -292,7 +303,8 @@
       ;; region active
       (let ((beg (region-beginning)) (end (region-end)))
         (copy-region-as-kill beg end)
-        (end-of-line)
+        ;;(end-of-line)
+        (goto-char end)
         (newline)
         (yank))
     (progn

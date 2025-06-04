@@ -1,5 +1,0 @@
-net-im/zoom zoom-symlink pulseaudio opencl wayland
-# required by net-libs/libnma-1.10.6-r1::gentoo[vala]
-# required by @selected
-# required by @world (argument)
->=net-misc/networkmanager-1.48.10-r1 vala
