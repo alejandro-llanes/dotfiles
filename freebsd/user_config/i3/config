@@ -177,6 +177,13 @@ mode "resize"
 bindsym $mod+r mode "resize"
 #bindsym $mod+Shift+e exec "~/.config/i3blocks/blocks/shutdown_menu/shutdown_menu"
 
+# GENERAL
+gaps inner 4
+gaps outer 0
+smart_gaps on
+smart_gaps inverse_outer
+default_border pixel 4
+
 # TOKIO SKYLINE THEME
 
 set $grey     #212121
@@ -187,31 +194,18 @@ set $cyan     #6da3a1
 set $black    #000000
 set $white    #b7bbbd
 set $yellow   #27c282
-set $red      #aa0e50
+set $red      #e74c3c
 set $green    #1dcc9f
+set $orange   #f07010
 
-# theme colors
-set $bg-color            #212121
-set $inactive-bg-color   #212121
-set $text-color          #ffffff
-set $inactive-text-color #212121
-set $urgent-bg-color     #e64a19
-
-# class                 border  bground text    indicator child_border
-#client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
-#client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-#client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
-#client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder #282A36 #282A36 #F8F8F2 #282A36   #282A36
+client.focused $red $red #FFFFFF $red
+client.unfocused         #595959 #595959 #FFFFFF   #595959
+client.focused_inactive  #595959 #595959 #FFFFFF   #595959
+client.urgent            #FF0000 #FF0000 #FFFFFF #FF0000
+#client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 #client.background       #F8F8F2
 
-client.focused $bg-color $bg-color $white $bg-color
-client.unfocused $inactive-bg-color $inactive-bg-color $inactive-text-color $bg-color
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color $bg-color
-client.urgent $urgent-bg-color $urgent-bg-color $text-color $bg-color
-client.background $bg-color
-
-for_window [class="^.*"] border pixel 5
+#for_window [class="^.*"] border pixel 5
 
 # Start i3blocks to display a workspace bar
 # bar {
@@ -279,7 +273,7 @@ exec_always --no-startup-id xrandr --output default --mode 1366x768
 exec_always --no-startup-id feh --bg-fill ~/Pictures/freebsd.jpg
 ## exec_always --no-startup-id polybar
 ## exec_always --no-startup-id bash ~/.config/polybar/launch.sh --shapes
-exec_always --no-startup-id polybar -c ~/.config/polybar/shapes/config.ini
+exec_always --no-startup-id pkill polybar && polybar -c ~/.config/polybar/shapes/config.ini
 exec_always --no-startup-id compton
 #exec_always --no-startup-id ~/.scripts/wallpapers.sh
 #exec --no-startup-id betterlockscreen -w dim
