@@ -72,10 +72,7 @@
 (package! prettier-js)
 (package! cfn-mode)
 (package! gist)
-;;https://github.com/gekoke/magit-file-icons
-;;(package! py-autopep8)
-;;(package! popup)
-;;(package! terraform-mode)
+(package! sublime-themes)
 (package! ws-butler
   :recipe (:host github :repo "lewang/ws-butler"))
 

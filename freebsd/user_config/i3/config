@@ -122,20 +122,20 @@ bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace0
 
 # Always open some programs on specified workspace
-assign [class="^Firefox"]          $workspace1
-assign [class="^Emacs"]            $workspace2
-assign [class="^Gimp"]             $workspace4
-assign [class="^Nautilus"]         $workspace4
-assign [class="^Slack"]            $workspace7
+assign [class="^Firefox"] $workspace1
+assign [class="^Emacs"] $workspace2
+assign [class="^Gimp"] $workspace4
+assign [class="^Nautilus"] $workspace4
+assign [class="^Slack"] $workspace7
 assign [class="^Telegram-desktop"] $workspace7
-assign [class="^Cmus"]             $workspace8
-assign [class="^Spotify"]          $workspace8
-assign [class="^Thunderbird"]      $workspace9
+assign [class="^Cmus"] $workspace8
+assign [class="^Spotify"] $workspace8
+assign [class="^Thunderbird"] $workspace9
 
 # Enable float for some windows
-for_window [class="^Pavucontrol$"]  floating enable
+for_window [class="^Pavucontrol$"] floating enable
 for_window [class="^Lxappearance$"] floating enable
-for_window [class="^Arandr$"]       floating enable
+for_window [class="^Arandr$"] floating enable
 
 # Always open workspaces in certain outputs
 workspace "1:  " output primary
@@ -164,10 +164,10 @@ bindsym $mod+Alt+l exec betterlockscreen -l dimblur
 mode "resize"
 {
     # Resize with the arrow keys
-    bindsym Left  resize shrink width  1 px or 1 ppt
-    bindsym Down  resize grow   height 1 px or 1 ppt
-    bindsym Up    resize shrink height 1 px or 1 ppt
-    bindsym Right resize grow   width  1 px or 1 ppt
+    bindsym Left resize shrink width 1 px or 1 ppt
+    bindsym Down resize grow height 1 px or 1 ppt
+    bindsym Up resize shrink height 1 px or 1 ppt
+    bindsym Right resize grow width 1 px or 1 ppt
 
     # Back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -179,19 +179,19 @@ bindsym $mod+r mode "resize"
 
 # TOKIO SKYLINE THEME
 
-set $grey                #212121
-set $valencia            #e64a19
-set $magenta             #a673a6
-set $blue                #7182A8
-set $cyan                #6da3a1
-set $black               #000000
-set $white               #b7bbbd
-set $yellow              #27c282
-set $red                 #aa0e50
-set $green               #1dcc9f
+set $grey     #212121
+set $valencia #e64a19
+set $magenta  #a673a6
+set $blue     #7182A8
+set $cyan     #6da3a1
+set $black    #000000
+set $white    #b7bbbd
+set $yellow   #27c282
+set $red      #aa0e50
+set $green    #1dcc9f
 
 # theme colors
-set $bg-color 	         #212121
+set $bg-color            #212121
 set $inactive-bg-color   #212121
 set $text-color          #ffffff
 set $inactive-text-color #212121
@@ -202,81 +202,84 @@ set $urgent-bg-color     #e64a19
 #client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
 #client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
 #client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+client.placeholder #282A36 #282A36 #F8F8F2 #282A36   #282A36
 #client.background       #F8F8F2
 
-client.focused          $bg-color           $bg-color          $white               $bg-color
-client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color $bg-color
-client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color $bg-color
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $bg-color
-client.background       $bg-color
+client.focused $bg-color $bg-color $white $bg-color
+client.unfocused $inactive-bg-color $inactive-bg-color $inactive-text-color $bg-color
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color $bg-color
+client.urgent $urgent-bg-color $urgent-bg-color $text-color $bg-color
+client.background $bg-color
 
 for_window [class="^.*"] border pixel 5
 
 # Start i3blocks to display a workspace bar
-bar {
-    #font pango: SauceCodePro Nerd Font 9
-    font pango: Jetbrains Mono 10
-    i3bar_command i3bar -t
-    output primary
-    position top
-    #status_command i3blocks
-    status_command i3status
-    strip_workspace_numbers yes
-    tray_output nonprimary
+# bar {
+#     #font pango: SauceCodePro Nerd Font 9
+#     font pango: Jetbrains Mono 10
+#     i3bar_command i3bar -t
+#     output primary
+#     position top
+#     #status_command i3blocks
+#     status_command i3status
+#     strip_workspace_numbers yes
+#     tray_output nonprimary
 
-    colors {
-        background #282A36
-        statusline #F8F8F2
-        separator  #44475A
+#     colors {
+#         background #282A36
+#         statusline #F8F8F2
+#         separator  #44475A
 
-        focused_workspace  #44475A #44475A #F8F8F2
-        active_workspace   #282A36 #44475A #F8F8F2
-        inactive_workspace #282A36 #282A36 #BFBFBF
-        urgent_workspace   #FF5555 #FF5555 #F8F8F2
-        binding_mode       #FF5555 #FF5555 #F8F8F2
-    }
-}
+#         focused_workspace  #44475A #44475A #F8F8F2
+#         active_workspace   #282A36 #44475A #F8F8F2
+#         inactive_workspace #282A36 #282A36 #BFBFBF
+#         urgent_workspace   #FF5555 #FF5555 #F8F8F2
+#         binding_mode       #FF5555 #FF5555 #F8F8F2
+#     }
+# }
 
-bar {
-    font pango: SauceCodePro Nerd Font 10
-    i3bar_command i3bar --transparency
-    output nonprimary
-    position top
-    strip_workspace_numbers yes
-    tray_output DP-4
-    tray_padding 3
-    height 25
+# bar {
+#     font pango: SauceCodePro Nerd Font 10
+#     i3bar_command i3bar --transparency
+#     output nonprimary
+#     position top
+#     strip_workspace_numbers yes
+#     tray_output DP-4
+#     tray_padding 3
+#     height 25
 
-    # colors {
-    #     background #282A36
-    #     statusline #F8F8F2
-    #     separator  #44475A
+#     # colors {
+#     #     background #282A36
+#     #     statusline #F8F8F2
+#     #     separator  #44475A
 
-    #     focused_workspace  #44475A #44475A #F8F8F2
-    #     active_workspace   #282A36 #44475A #F8F8F2
-    #     inactive_workspace #282A36 #282A36 #BFBFBF
-    #     urgent_workspace   #FF5555 #FF5555 #F8F8F2
-    #     binding_mode       #FF5555 #FF5555 #F8F8F2
-    # }
-	colors {
-		# whole color settings
-		background   $black
-		statusline   $white
-		separator    $grey
-        
-		# type             border      backgr.     font
-		focused_workspace  $grey       $white      $black
-		active_workspace   $grey       $white      $black
-		inactive_workspace $grey       $black      $white
-		urgent_workspace   $valencia   $valencia   $black
-	}
-}
+#     #     focused_workspace  #44475A #44475A #F8F8F2
+#     #     active_workspace   #282A36 #44475A #F8F8F2
+#     #     inactive_workspace #282A36 #282A36 #BFBFBF
+#     #     urgent_workspace   #FF5555 #FF5555 #F8F8F2
+#     #     binding_mode       #FF5555 #FF5555 #F8F8F2
+#     # }
+# 	colors {
+# 		# whole color settings
+# 		background   $black
+# 		statusline   $white
+# 		separator    $grey
+
+# 		# type             border      backgr.     font
+# 		focused_workspace  $grey       $white      $black
+# 		active_workspace   $grey       $white      $black
+# 		inactive_workspace $grey       $black      $white
+# 		urgent_workspace   $valencia   $valencia   $black
+# 	}
+# }
 
 # Startup programs
 #exec_always --no-startup-id ~/.scripts/monitors.sh
 exec_always --no-startup-id xrandr --output default --mode 1366x768
 exec_always --no-startup-id feh --bg-fill ~/Pictures/freebsd.jpg
+## exec_always --no-startup-id polybar
+## exec_always --no-startup-id bash ~/.config/polybar/launch.sh --shapes
+exec_always --no-startup-id polybar -c ~/.config/polybar/shapes/config.ini
 exec_always --no-startup-id compton
 #exec_always --no-startup-id ~/.scripts/wallpapers.sh
 #exec --no-startup-id betterlockscreen -w dim

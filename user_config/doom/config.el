@@ -70,6 +70,13 @@
 ;;(setq doom-theme 'doom-solarized-dark)
 ;;;(setq doom-theme 'doom-nord-light)
 
+(when (eq system-type 'gnu/linux)
+  (setq doom-theme 'doom-laserwave))
+;; FreeBSD
+(when (eq system-type 'berkeley-unix)
+  (setq doom-theme 'doom-henna))
+  ;;(load-theme 'orangey-bits))
+
 ;; SCROLLING
 (pixel-scroll-precision-mode 1)
 ;;(setq mouse-wheel-tilt-scroll 1)
