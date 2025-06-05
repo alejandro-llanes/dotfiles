@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Microsoft Edge
+Icon=/compat/linux/opt/microsoft/msedge/product_logo_24.png
+#TryExec=/usr/bin/emacsclient -c
+Exec=/compat/linux/opt/microsoft/msedge/msedge --no-sandbox --no-zygote --test-type --v=0
+#Terminal=false
+MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;
+Categories=Application;Network;WebBrowser;
+StartupWMClass=MsEdge
