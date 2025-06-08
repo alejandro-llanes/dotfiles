@@ -1,0 +1,13 @@
+cd /usr/src
+
+git pull
+
+make -j$(nproc) buildkernel
+make -j$(nproc) buildworld
+make -j$(nproc) installkernel
+reboot safe
+set zfs readonly off
+cd /usr/src
+make installworld
+reboot
+reinstall i915 drm from binaries
