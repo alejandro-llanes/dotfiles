@@ -1,0 +1,18 @@
+[ 6369.157560] usb 1-1: New USB device found, idVendor=0bda, idProduct=c820, bcdDevice= 2.00
+[ 6369.157577] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 6369.157585] usb 1-1: Product: 802.11ac NIC
+[ 6369.157592] usb 1-1: Manufacturer: Realtek
+[ 6369.157598] usb 1-1: SerialNumber: 123456
+[ 6369.164970] Bluetooth: hci1: RTL: examining hci_ver=08 hci_rev=000c lmp_ver=08 lmp_subver=8821
+[ 6369.166000] Bluetooth: hci1: RTL: rom_version status=0 version=1
+[ 6369.166017] Bluetooth: hci1: RTL: loading rtl_bt/rtl8821c_fw.bin
+[ 6369.166028] Loading firmware: rtl_bt/rtl8821c_fw.bin
+[ 6369.170858] Bluetooth: hci1: RTL: loading rtl_bt/rtl8821c_config.bin
+[ 6369.170881] Loading firmware: rtl_bt/rtl8821c_config.bin
+[ 6369.171651] Bluetooth: hci1: RTL: cfg_sz 10, total sz 34926
+[ 6369.222185] Loading firmware: rtw88/rtw8821c_fw.bin
+[ 6369.223154] rtw_8821cu 1-1:1.2: Firmware version 24.11.0, H2C version 12
+[ 6369.573077] usbcore: registered new interface driver rtw_8821cu
+[ 6369.588953] rtw_8821cu 1-1:1.2 wlp0s20f0u1i2: renamed from wlan0
+[ 6369.766983] Bluetooth: hci1: RTL: fw version 0x75b8f098
+[ 6369.841351] Bluetooth: MGMT ver 1.23
