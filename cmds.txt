@@ -1,2 +1,5 @@
 busctl
 xdg-desktop-menu
+gdbus introspect -y -r --dest org.freedesktop.UPower --object-path /org/freedesktop/UPower/devices/battery_devxbatteryx1
+sudo chmod 4555 /sbin/reboot
+gdbus introspect -y -r --dest org.freedesktop.UPower --object-path /org/freedesktop/UPower/devices/battery_devxbatteryx1
