@@ -1,0 +1,2 @@
+Xephyr -screen 800x600 -host-cursor -resizeable :1
+icewm -d :1
