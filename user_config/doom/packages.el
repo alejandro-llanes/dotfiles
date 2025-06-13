@@ -48,6 +48,7 @@
 ;; (unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
+(package! dap-mode)
 (package! treemacs-icons-dired)
 (package! treemacs-all-the-icons)
 (package! treemacs-projectile)

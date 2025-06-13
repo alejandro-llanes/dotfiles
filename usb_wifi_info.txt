@@ -16,3 +16,8 @@
 [ 6369.588953] rtw_8821cu 1-1:1.2 wlp0s20f0u1i2: renamed from wlan0
 [ 6369.766983] Bluetooth: hci1: RTL: fw version 0x75b8f098
 [ 6369.841351] Bluetooth: MGMT ver 1.23
+sudo iwmbtfw -DI -d ugen0.4 -f /usr/local/share/intel
+git clone https://github.com/wkennington/linux-firmware.git
+sudo ngctl list
+hccontrol inquiry
+sudo bluetooth-config scan
