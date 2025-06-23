@@ -142,13 +142,6 @@ run_command_sync = function(command)
   return result
 end
 
-get_os_name = function()
-  local f = io.popen("uname -sr|cut -d' ' -f1")
-  local result = f:read("*all")
-  f:close()
-  return { result:gsub("\n", "") }
-end
-
 get_percent_number_digits_count = function(number)
   return number < 10 and 1 or (number < 100 and 2 or 3)
 end

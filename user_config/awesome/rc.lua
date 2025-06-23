@@ -1,4 +1,5 @@
 require("utils")
+require("helper")
 require("modules/create_class")
 require("modules/screen")
 require("modules/tag")
@@ -130,6 +131,10 @@ end
 
 local screen_0_panel = Panel()
 screen_0_panel.position = "top"
+
+if current_os == "Linux" then
+	screen_0_panel.thickness = 32
+end
 screen_0_panel.tags.list = {
   Tag("1", awful.layout.suit.spiral),
   Tag("2", awful.layout.suit.spiral),
@@ -144,6 +149,21 @@ screen_0_panel.tags.key_bindings = awful.util.table.join(
 screen_0_panel.tasks.key_bindings = awful.util.table.join(
   awful.button({}, 1, task_left_button_press_action)
 )
+if current_os == "Linux" then
+screen_0_panel.widgets = {
+  keyboard_layout_widget,
+  cpu_widget,
+  memory_widget,
+  microphone_widget,
+  brightness_widget,
+  {
+    calendar_widget,
+    clock_widget,
+  },
+  menu_widget
+}
+end
+if current_os == "FreeBSD" then
 screen_0_panel.widgets = {
   cpu_widget,
   memory_widget,
@@ -160,6 +180,7 @@ screen_0_panel.widgets = {
   },
   menu_widget
 }
+end
 screen_0_panel.launcher = launch_widget
 
 -- | Screens | --
@@ -660,7 +681,11 @@ end
 
 if current_os == "Linux" then
   executer.execute_commands({
-  "xmodmap -e 'pointer = 3 2 1'"
+  "xmodmap -e 'pointer = 3 2 1'",
+  "nm-applet",
+  "blueman-applet",
+  "pasystray",
+  "xfce4-power-manager"
 })
 end
 
@@ -668,7 +693,8 @@ if current_os == "FreeBSD" then
 	executer.execute_commands({
   "xmodmap -e 'pointer = 3 2 1'",
   "setxkbmap -layout latam",
-  --"xfce4-power-manager",
+  "picom",
+  "xfce4-power-manager"
   --"picom --usr backend",
   --"/glx/lib/mate-polkit/polkit-mate-authentication-agent-1",
   --"/usr/lib/geoclue-2.0/demos/agent",
