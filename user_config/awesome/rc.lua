@@ -682,10 +682,13 @@ end
 if current_os == "Linux" then
   executer.execute_commands({
   "xmodmap -e 'pointer = 3 2 1'",
+  "picom",
   "nm-applet",
   "blueman-applet",
   "pasystray",
-  "xfce4-power-manager"
+  "xfce4-power-manager",
+  "/usr/libexec/polkit-gnome-authentication-agent-1",
+  "/usr/bin/1password --silent"
 })
 end
 
