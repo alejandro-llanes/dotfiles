@@ -53,8 +53,15 @@ local geolocation = {
   latitude = 0,
   longitude = 0
 }
-local wired_interface = em0
-local wireless_interface = wlan0
+if current_os == "Linux" then
+  local wired_interface = "enp58s0u1u1"
+  local wireless_interface = "wlp59s0"
+end
+
+if current_os == "FreeBSD" then
+  local wired_interface = "em0"
+  local wireless_interface = "wlan0"
+end
 
 local numpad_key_codes = { 87, 88, 89, 83, 84, 85, 79, 80, 81 }
 
@@ -650,13 +657,24 @@ end
 
 -- | Autostart | --
 
-executer.execute_commands({
-  --"wmname LG3D",
-  "xfce4-power-manager",
-  --"picom --backend glx",
-  --"/usr/lib/mate-polkit/polkit-mate-authentication-agent-1",
+
+if current_os == "Linux" then
+  executer.execute_commands({
+  "xmodmap -e 'pointer = 3 2 1'"
+})
+end
+
+if current_os == "FreeBSD" then
+	executer.execute_commands({
+  "xmodmap -e 'pointer = 3 2 1'",
+  "setxkbmap -layout latam",
+  --"xfce4-power-manager",
+  --"picom --usr backend",
+  --"/glx/lib/mate-polkit/polkit-mate-authentication-agent-1",
   --"/usr/lib/geoclue-2.0/demos/agent",
   --"xfce4-clipman",
   --"nm-applet",
   --"ulauncher"
 })
+
+end

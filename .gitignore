@@ -4,3 +4,7 @@
 tmp/
 ./freebsd/user_config/fish/fish_variables
 ./freebsd/user_config/leftwm/themes/Ascent
+/system_config/etc_portage/package.use/._cfg0000_zoom
+/system_config/etc_portage/package.use/._cfg0001_zoom
+/user_config/awesome/wired_interface
+/user_config/awesome/wireless_interface
