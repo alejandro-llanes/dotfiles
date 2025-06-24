@@ -437,8 +437,7 @@ awful.rules.rules = {
       --tag = "5"
     }
   },
-  {-- TODO change to rule_any
-   -- https://awesomewm.org/doc/api/libraries/awful.rules.html
+  {
     rule_any = {},
     except_any = { type = {"normal"}, class = {"Emacs"} },
     properties = {
@@ -485,7 +484,7 @@ awful.rules.rules = {
   -- },
   {
     rule_any = { type = { "normal" }, class = { "Emacs" } },
-    except_any = { class ~= {"Alacritty"} },
+    except_any = { class = {"Alacritty"} },
     properties = {
       maximized  = true,
       switchtotag = true,

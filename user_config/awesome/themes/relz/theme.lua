@@ -61,8 +61,10 @@ theme.tooltip_border_color = theme.text_color
 
 theme.border_width = dpi(4)
 theme.border_gaps = 4
+--theme.useless_gaps = 4
 --theme.border_normal = theme.background_color .. "ee"
 theme.border_normal =  "#00332e"
+theme.border_active =  "#00E4C5"
 --theme.border_focus = theme.background_color .. "ee"
 theme.border_focus =  "#00E4C5"
 --theme.border_marked = theme.background_color .. "ee"
