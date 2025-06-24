@@ -347,10 +347,10 @@ get_system_brightness = function(callback)
 end
 
 set_system_brightness = function(step_percent, increase, callback)
-  --awful.spawn.easy_async("xfpm-power-backlight-helper --get-brightness", function(current_brightness_string)
-  awful.spawn.easy_async("backlight |cut -d' ' -f2", function(current_brightness_string)
-    --awful.spawn.easy_async("xfpm-power-backlight-helper --get-max-brightness", function(max_brightness_string)
-    awful.spawn.easy_async("printf '100'", function(max_brightness_string)
+  awful.spawn.easy_async("xfpm-power-backlight-helper --get-brightness", function(current_brightness_string)
+  --awful.spawn.easy_async("backlight |cut -d' ' -f2", function(current_brightness_string)
+    awful.spawn.easy_async("xfpm-power-backlight-helper --get-max-brightness", function(max_brightness_string)
+    --awful.spawn.easy_async("printf '100'", function(max_brightness_string)
       local current_brightness = tonumber(current_brightness_string)
       local max_brightness = tonumber(max_brightness_string)
 
@@ -364,8 +364,8 @@ set_system_brightness = function(step_percent, increase, callback)
       end
       local new_brightness = math.min(math.max(new_brightness, 0), max_brightness)
 
-      --awful.spawn.easy_async("pkexec xfpm-power-backlight-helper --set-brightness=" .. new_brightness, function()
-      awful.spawn.easy_async("backlight " .. new_brightness, function()
+      awful.spawn.easy_async("pkexec xfpm-power-backlight-helper --set-brightness=" .. new_brightness, function()
+      --awful.spawn.easy_async("backlight " .. new_brightness, function()
         callback(math.floor(new_brightness / max_brightness * 100))
       end)
     end)

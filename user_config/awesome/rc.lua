@@ -41,7 +41,8 @@ local browser = "google-chrome-stable"
 local file_manager = "nautilus"
 local graphic_text_editor = "emacs"
 local music_player = "spotify"
-local session_lock_command = "dm-tool lock"
+--local session_lock_command = "dm-tool lock"
+local session_lock_command = "slock"
 local calendar_command = "/opt/google/chrome/google-chrome --profile-directory='Profile 2' --app=https://calendar.google.com/calendar"
 local power_manager_settings_command = "xfce4-power-manager-settings"
 local system_monitor_command = "gnome-system-monitor"
@@ -136,11 +137,11 @@ if current_os == "Linux" then
 	screen_0_panel.thickness = 32
 end
 screen_0_panel.tags.list = {
-  Tag("1", awful.layout.suit.spiral),
-  Tag("2", awful.layout.suit.spiral),
-  Tag("3", awful.layout.suit.spiral),
-  Tag("4", awful.layout.suit.spiral),
-  Tag("5", awful.layout.suit.spiral),
+  Tag("1", awful.layout.suit.spiral)--,
+--  Tag("2", awful.layout.suit.spiral),
+--  Tag("3", awful.layout.suit.spiral),
+--  Tag("4", awful.layout.suit.spiral),
+--  Tag("5", awful.layout.suit.spiral),
 }
 screen_0_panel.tags.key_bindings = awful.util.table.join(
   awful.button({}, 1, awful.tag.viewonly),
@@ -196,7 +197,7 @@ update_screens = function(card)
   local is_secondary_output_in_use = false
   local is_screen_duplicated = false
 
-  for _,secondary_output_name in ipairs({"HDMI", "DisplayPort", "DVI"}) do
+  for _,secondary_output_name in ipairs({"HDMI", "DisplayPort", "DVI", "DP"}) do
     is_secondary_output_in_use = is_secondary_output_in_use or string.match(xrandr_output, secondary_output_name .. "[0-9-]+ connected [^(]") ~= nil
     local unused_secondary_output = xrandr_output:match("(" .. secondary_output_name .. "[0-9-]+) connected [(]")
     local used_secondary_output = xrandr_output:match("(" .. secondary_output_name .. "[0-9-]+) connected [^(]")
@@ -275,7 +276,7 @@ local global_keys = gears.table.join(
 
   awful.key({ "Mod4", "Shift" }, "q", awesome.quit, { description="Quit awesome", group="Awesome" }),
 
-  awful.key({ "Mod4" }, "l", function() awful.spawn(session_lock_command) end, { description="Lock the session", group="Session" }),
+  awful.key({"Control", "Mod1" }, "l", function() awful.spawn(session_lock_command) end, { description="Lock the session", group="Session" }),
 
   awful.key({ "Mod4" }, "Return", function() awful.spawn(terminal) end, { description="Execute default terminal (" .. terminal .. ")", group="Application" }),
 
@@ -432,128 +433,71 @@ awful.rules.rules = {
       keys = client_keys,
       buttons = client_buttons,
       titlebars_enabled = false,
-      placement = awful.placement.no_overlap+awful.placement.no_offscreen
+      placement = awful.placement.no_overlap+awful.placement.no_offscreen,
+      --tag = "5"
     }
   },
-  {
-    rule = { class = "Ulauncher" },
+  {-- TODO change to rule_any
+   -- https://awesomewm.org/doc/api/libraries/awful.rules.html
+    rule_any = {},
+    except_any = { type = {"normal"}, class = {"Emacs"} },
     properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
+      floating = true,
+      skip_taskbar = true,
+      ontop = true,
+      focusable = false,
+    },
+    callback = function(c)
+      awful.placement.centered(c.focus)
+    end
   },
   {
-    rule = { class = "Evince" },
+    rule = { class = "Alacritty" },
     properties = {
-      border_width = 0,
-      titlebars_enabled = false
+      tag = "1",
+      switchtotag = true,
+      focus = true
     }
   },
+  -- {
+  --   rule = { class = "Microsoft-edge" },
+  --   properties = {
+  --     tag = "2",
+  --     switchtotag = true,
+  --     focus = true
+  --   }
+  -- },
+  -- {
+  --   rule = { class = "Emacs" },
+  --   properties = {
+  --     tag = "3",
+  --     switchtotag = true,
+  --     focus = true
+  --   }
+  -- },
+  -- {
+  --   rule = { class = "Spotify" },
+  --   properties = {
+  --     tag = "4",
+  --     switchtotag = true,
+  --     focus = true
+  --   }
+  -- },
   {
-    rule = { class = "Eog" },
+    rule_any = { type = { "normal" }, class = { "Emacs" } },
+    except_any = { class ~= {"Alacritty"} },
     properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "Google-chrome" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "code-oss" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "Code" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "TelegramDesktop" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "Org.gnome.Nautilus" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "Xfce4-power-manager-settings" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "Xfce4-clipman-settings" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "Gnome-system-monitor" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "gnome-calculator" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "Gcm-viewer" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "org.remmina.Remmina" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "Gnome-network-displays" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "Blueberry.py" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
-    }
-  },
-  {
-    rule = { class = "org.gnome.Nautilus" },
-    properties = {
-      border_width = 0,
-      titlebars_enabled = false
+      maximized  = true,
+      switchtotag = true,
+      focus = true,
+      new_tag = {
+        volatile = true,
+        layout = awful.layout.suit.spiral,
+        --screen = 0
+      }
     }
   }
+
 }
 
 -- Add a titlebar if titlebars_enabled is set to true in the rules.

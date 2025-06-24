@@ -62,11 +62,11 @@ theme.tooltip_border_color = theme.text_color
 theme.border_width = dpi(4)
 theme.border_gaps = 4
 --theme.border_normal = theme.background_color .. "ee"
-theme.border_normal =  "#00332eee"
+theme.border_normal =  "#00332e"
 --theme.border_focus = theme.background_color .. "ee"
-theme.border_focus =  "#00E4C5ee"
+theme.border_focus =  "#00E4C5"
 --theme.border_marked = theme.background_color .. "ee"
-theme.border_marked = "#7AFFF0ee"
+theme.border_marked = "#7AFFF0"
 
 -- | Hotkeys popup | --
 
@@ -148,7 +148,7 @@ theme.widget_menu_icon = gears.color.recolor_image(theme.icons_path .. "/widgets
 
 -- | Launch | --
 
-theme.widget_launch_icon = gears.color.recolor_image(theme.icons_path .. "/widgets/launch.svg", theme.text_color)
+--theme.widget_launch_icon = gears.color.recolor_image(theme.icons_path .. "/widgets/launch.svg", theme.text_color)
 
 -- | Client's titlebar | --
 
