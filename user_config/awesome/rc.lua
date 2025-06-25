@@ -1,6 +1,7 @@
 require("utils")
 require("helper")
 require("modules/create_class")
+require("modules/modal_prompt")
 require("modules/screen")
 require("modules/tag")
 require("modules/panel")
@@ -260,12 +261,22 @@ end)
 local global_keys = gears.table.join(
   awful.key({ "Mod4" }, "/", show_help, { description="Show hotkeys", group="Awesome" }),
   awful.key({ "Mod4" }, ".", show_help),
+
   awful.key({ "Mod4", "Mod1" }, "t", function()
       naughty.notify({title="test os",text=tostring(current_os)})
   end ),
 
   awful.key({ "Mod4" }, "x", function() awful.spawn("rofi -show drun -columns 3")  end, {description="Launcher", group = "launcher"}),
+  awful.key({ "Mod4", "Shift" }, "e", function() toggle_prompt_modal()  end, {description="Modal Code Eval", group = "Awesome"}),
 
+  awful.key({"Mod4", "Control", "Shift"}, "n", function()
+      awful.tag.add("new", {
+                      screen = awful.screen.focused(),
+                      layout = awful.layout.suit.spiral,
+                      volatile = true,
+      }):view_only()
+  end ),
+  
   awful.key({ "Mod4" }, "Tab", function() change_focused_client(1) end, { description="Change focused client to next", group="Client" }),
   awful.key({ "Mod4", "Shift" }, "Tab", function() change_focused_client(-1) end, { description="Change focused client to previous", group="Client" }),
 
@@ -300,40 +311,40 @@ local global_keys = gears.table.join(
   awful.key({}, "XF86AudioStop", function() audio_stop() end, { description="Stop audio", group="Audio" }),
 
   -- Applications running
-  awful.key({ "Mod4", "Control", "Shift" }, "b", function() awful.spawn(browser) end, { description="Execute default web browser (" .. browser .. ")", group="Application" }),
+  -- awful.key({ "Mod4", "Control", "Shift" }, "b", function() awful.spawn(browser) end, { description="Execute default web browser (" .. browser .. ")", group="Application" }),
 
-  awful.key({ "Mod4", "Control", "Shift" }, "t", function() awful.spawn("telegram-desktop") end, { description="Execute Telegram", group="Application" }),
+  -- awful.key({ "Mod4", "Control", "Shift" }, "t", function() awful.spawn("telegram-desktop") end, { description="Execute Telegram", group="Application" }),
 
-  awful.key({ "Mod4", "Control", "Shift" }, "l", function() awful.spawn("libreoffice") end, { description="Execute LibreOffice", group="Application" }),
+  -- awful.key({ "Mod4", "Control", "Shift" }, "l", function() awful.spawn("libreoffice") end, { description="Execute LibreOffice", group="Application" }),
 
-  awful.key({ "Mod4", "Control", "Shift" }, "e", function() awful.spawn(graphic_text_editor) end, { description="Execute default graphic text editor (" .. graphic_text_editor .. ")", group="Application" }),
+  -- awful.key({ "Mod4", "Control", "Shift" }, "e", function() awful.spawn(graphic_text_editor) end, { description="Execute default graphic text editor (" .. graphic_text_editor .. ")", group="Application" }),
 
-  awful.key({ "Mod4", "Control", "Shift" }, "m", function() awful.spawn(music_player) end, { description="Execute default music player (" .. music_player .. ")", group="Application" }),
+  -- awful.key({ "Mod4", "Control", "Shift" }, "m", function() awful.spawn(music_player) end, { description="Execute default music player (" .. music_player .. ")", group="Application" }),
 
-  awful.key({ "Mod4", "Control", "Shift" }, "f", function() awful.spawn(file_manager) end, { description="Execute default file manager (" .. file_manager .. ")", group="Application" }),
+  -- awful.key({ "Mod4", "Control", "Shift" }, "f", function() awful.spawn(file_manager) end, { description="Execute default file manager (" .. file_manager .. ")", group="Application" }),
 
-  awful.key({ "Mod4", "Control", "Shift" }, "j", function() awful.spawn("jetbrains-toolbox") end, { description="Execute Jetbrains-Toolbox", group="Application" }),
+  -- awful.key({ "Mod4", "Control", "Shift" }, "j", function() awful.spawn("jetbrains-toolbox") end, { description="Execute Jetbrains-Toolbox", group="Application" }),
 
   awful.key({ "Mod4" }, "k", function() awful.spawn("xkill") end, { description="Execute XKill", group="Application" }),
 
   awful.key({ "Mod4" }, "\\", function() awful.spawn("arandr") end, { description="Execute ARandr", group="Application" }),
 
-  awful.key({ "Mod4", "Control", "Shift" }, "d", function() awful.spawn("discord") end, { description="Execute Discord", group="Application" }),
+  -- awful.key({ "Mod4", "Control", "Shift" }, "d", function() awful.spawn("discord") end, { description="Execute Discord", group="Application" }),
 
-  awful.key({ "Mod4", "Control", "Shift" }, "]", function() awful.spawn("obs") end, { description="Execute OBS Studio", group="Application" }),
+  -- awful.key({ "Mod4", "Control", "Shift" }, "]", function() awful.spawn("obs") end, { description="Execute OBS Studio", group="Application" }),
 
-  awful.key({ }, "Print", function() awful.spawn("deepin-screenshot --no-notification --fullscreen") end, { description="Take a screenshot the whole screen", group="Application" }),
-  awful.key({ "Mod4" }, "Print", function() awful.util.spawn_with_shell("sleep 2 && deepin-screenshot --no-notification --fullscreen") end, { description="Take a screenshot the whole screen after 2 seconds", group="Application" }),
+  -- awful.key({ }, "Print", function() awful.spawn("deepin-screenshot --no-notification --fullscreen") end, { description="Take a screenshot the whole screen", group="Application" }),
+  -- awful.key({ "Mod4" }, "Print", function() awful.util.spawn_with_shell("sleep 2 && deepin-screenshot --no-notification --fullscreen") end, { description="Take a screenshot the whole screen after 2 seconds", group="Application" }),
 
-  awful.key({ "Mod4", "Control", "Shift" }, "s", function() awful.spawn("deepin-screenshot --no-notification") end, { description="Execute Deepin Screen Capture", group="Application" }),
+  -- awful.key({ "Mod4", "Control", "Shift" }, "s", function() awful.spawn("deepin-screenshot --no-notification") end, { description="Execute Deepin Screen Capture", group="Application" }),
 
-  awful.key({ "Mod4", "Control", "Shift" }, "v", function() awful.spawn("viber") end, { description="Execute Viber", group="Application" }),
+--  awful.key({ "Mod4", "Control", "Shift" }, "v", function() awful.spawn("viber") end, { description="Execute Viber", group="Application" }),
 
-  awful.key({ "Mod4", "Control", "Shift" }, "`", function() awful.spawn(system_monitor_command) end, { description="Execute System Monitor (" .. system_monitor_command .. ")", group="Application" }),
+  -- awful.key({ "Mod4", "Control", "Shift" }, "`", function() awful.spawn(system_monitor_command) end, { description="Execute System Monitor (" .. system_monitor_command .. ")", group="Application" }),
 
-  awful.key({ "Mod4", "Control", "Shift" }, "k", function() awful.spawn("gitkraken") end, { description="Execute GitKraken", group="Application" }),
+  -- awful.key({ "Mod4", "Control", "Shift" }, "k", function() awful.spawn("gitkraken") end, { description="Execute GitKraken", group="Application" }),
 
-  awful.key({ "Mod4", "Control", "Shift" }, "c", function() awful.spawn("code") end, { description="Execute VSCode", group="Application" }),
+  -- awful.key({ "Mod4", "Control", "Shift" }, "c", function() awful.spawn("code") end, { description="Execute VSCode", group="Application" }),
 
   awful.key({ "Mod4" }, "d", toogle_minimize_restore_clients, { description="Toggle minimize restore clients", group="Client" })
 
@@ -631,7 +642,7 @@ if current_os == "Linux" then
   "pasystray",
   "xfce4-power-manager",
   "/usr/libexec/polkit-gnome-authentication-agent-1",
-  "/usr/bin/1password --silent"
+ -- "/usr/bin/1password --silent"
 })
 end
 
