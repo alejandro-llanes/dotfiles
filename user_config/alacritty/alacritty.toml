@@ -10,6 +10,9 @@ import = [
     "~/.config/alacritty/themes/themes/tokyo-night.toml",
 ]
 
+[env]
+WINIT_X11_SCALE_FACTOR = "1.0"
+
 [font]
 #normal.family = "Fira Code"
 normal.family = "JetBrains Mono"

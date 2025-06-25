@@ -61,11 +61,10 @@ if [[ "$OSN" == "GNU/Linux" ]]
     alias kubectl="kubecolor"
     source $HOME/.kube/completion.bash.inc
     source /home/alejandro/.config/broot/launcher/bash/br
-    sleep 3
-    if [[ -v "ALACRITTY_SOCKET" ]]
-       then
-        alacritty msg config 'font.size=10.0' -w -1
-    fi
+    # if [[ -v "ALACRITTY_SOCKET" ]]
+    #    then
+    #     alacritty msg config 'font.size=10.0' -w -1
+    #fi
 fi
 
 # specific for FreeBSD
