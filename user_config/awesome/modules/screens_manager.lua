@@ -251,6 +251,7 @@ local function apply_panels(screen_index, panels)
       widget = create_main_layout(screen_index, panel),
       opacity = panel.opacity
     })
+    screen[screen_index].panel = wibar
     wibar:struts {
       top = panel.position == "top" and wibar.height or 0,
       right = panel.position == "right" and wibar.width or 0,

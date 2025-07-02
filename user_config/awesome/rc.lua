@@ -256,6 +256,13 @@ screen.connect_signal("added", function()
   screens_manager.apply_screen(screens_manager.get_screen_count())
 end)
 
+local toggle_panel = function()
+  local panel_ref = awful.screen.focused().panel
+  if panel_ref ~= nil and panel_ref.visible ~= nil then
+    panel_ref.visible = not panel_ref.visible
+  end
+end
+
 -- | Key bindings | --
 
 local global_keys = gears.table.join(
@@ -267,7 +274,8 @@ local global_keys = gears.table.join(
   end ),
 
   awful.key({ "Mod4" }, "x", function() awful.spawn("rofi -show drun -columns 3")  end, {description="Launcher", group = "launcher"}),
-  awful.key({ "Mod4", "Shift" }, "e", function() toggle_prompt_modal()  end, {description="Modal Code Eval", group = "Awesome"}),
+  awful.key({ "Mod4", "Shift" }, "e", function() repl_modal()  end, {description="Modal Code Eval", group = "Awesome"}),
+  awful.key({ "Mod4", "Shift" }, "b", function() toggle_panel()  end, {description="Toggle Panel", group = "Awesome"}),
 
   awful.key({"Mod4", "Control", "Shift"}, "n", function()
       awful.tag.add("new", {

@@ -1,0 +1,2439 @@
+<1>{
+  _connect_everything = <function 1>,
+  _global_receivers = {},
+  _private = {
+    by_id = {},
+    dir = "v",
+    extra_space = 0,
+    fps = 20,
+    max_size = 10000,
+    opacity = 1,
+    paused = false,
+    scroll_timer = {
+      _connect_everything = <function 1>,
+      _global_receivers = {},
+      _signals = {
+        ["property::timeout"] = {
+          strong = {},
+          weak = {
+            <metatable> = {
+              __mode = "kv"
+            }
+          }
+        },
+        start = {
+          strong = {},
+          weak = {
+            <metatable> = {
+              __mode = "kv"
+            }
+          }
+        },
+        timeout = {
+          strong = {
+            [<function 2>] = true
+          },
+          weak = {
+            <metatable> = {
+              __mode = "kv"
+            }
+          }
+        }
+      },
+      add_signal = <function 3>,
+      connect_signal = <function 4>,
+      data = {
+        source_id = 2092.0,
+        timeout = 0.05
+      },
+      disconnect_signal = <function 5>,
+      emit_signal = <function 6>,
+      modulename = <function 7>,
+      weak_connect_signal = <function 8>,
+      <metatable> = {
+        __index = <function 9>,
+        __newindex = <function 10>
+      }
+    },
+    space_for_scrolling = inf,
+    speed = 1,
+    step_function = <function 11>,
+    timer = <userdata 1>,
+    visible = true,
+    widget = {
+      _connect_everything = <function 1>,
+      _global_receivers = {},
+      _private = {
+        by_id = {},
+        ctx = <userdata 2>,
+        dpi = 96.252631578947,
+        layout = <userdata 3>,
+        opacity = 1,
+        valign = "top",
+        visible = true,
+        widget_buttons = {},
+        widget_caches = {
+          fit = {
+            _cache = {
+              [<2>{
+                dpi = 96.252631578947,
+                drawable = <3>{
+                  _connect_everything = <function 1>,
+                  _dirty_area = <userdata 4>,
+                  _do_complete_repaint = <function 12>,
+                  _do_redraw = <function 13>,
+                  _force_screen = <function 14>,
+                  _forced_screen = <screen 1>,
+                  _global_receivers = {},
+                  _inform_visible = <function 15>,
+                  _layout_callback = <function 16>,
+                  _need_complete_repaint = false,
+                  _need_relayout = true,
+                  _redraw_callback = <function 17>,
+                  _redraw_on_move = false,
+                  _redraw_pending = true,
+                  _set_systray_widget = <function 18>,
+                  _signals = {
+                    ["button::press"] = {
+                      strong = {
+                        [<function 19>] = true
+                      },
+                      weak = {
+                        <metatable> = {
+                          __mode = "kv"
+                        }
+                      }
+                    },
+                    ["button::release"] = {
+                      strong = {
+                        [<function 20>] = true
+                      },
+                      weak = {
+                        <metatable> = {
+                          __mode = "kv"
+                        }
+                      }
+                    },
+                    ["mouse::enter"] = {
+                      strong = {
+                        [<function 21>] = true
+                      },
+                      weak = {
+                        <metatable> = {
+                          __mode = "kv"
+                        }
+                      }
+                    },
+                    ["mouse::leave"] = {
+                      strong = {
+                        [<function 22>] = true
+                      },
+                      weak = {
+                        <metatable> = {
+                          __mode = "kv"
+                        }
+                      }
+                    },
+                    ["mouse::move"] = {
+                      strong = {
+                        [<function 23>] = true
+                      },
+                      weak = {
+                        <metatable> = {
+                          __mode = "kv"
+                        }
+                      }
+                    },
+                    ["property::surface"] = {
+                      strong = {
+                        [<function 24>] = true
+                      },
+                      weak = {
+                        <metatable> = {
+                          __mode = "kv"
+                        }
+                      }
+                    },
+                    ["property::x"] = {
+                      strong = {},
+                      weak = {
+                        <metatable> = {
+                          __mode = "kv"
+                        }
+                      }
+                    },
+                    ["property::y"] = {
+                      strong = {},
+                      weak = {
+                        <metatable> = {
+                          __mode = "kv"
+                        }
+                      }
+                    }
+                  },
+                  _visible = true,
+                  _widget_context = <table 2>,
+                  _widget_context_skeleton = {
+                    wibox = <4>{
+                      _apply_shape = <function 25>,
+                      _connect_everything = <function 1>,
+                      _drawable = <table 3>,
+                      _global_receivers = {},
+                      _input_passthrough = false,
+                      _shape = <function 26>,
+                      _signals = {
+                        ["mouse::enter"] = {
+                          strong = {},
+                          weak = {
+                            <metatable> = {
+                              __mode = "kv"
+                            }
+                          }
+                        },
+                        ["mouse::move"] = {
+                          strong = {},
+                          weak = {
+                            <metatable> = {
+                              __mode = "kv"
+                            }
+                          }
+                        },
+                        ["property::border_width"] = {
+                          strong = {
+                            [<function 25>] = true
+                          },
+                          weak = {
+                            <metatable> = {
+                              __mode = "kv"
+                            }
+                          }
+                        },
+                        ["property::geometry"] = {
+                          strong = {
+                            [<function 25>] = true
+                          },
+                          weak = {
+                            <metatable> = {
+                              __mode = "kv"
+                            }
+                          }
+                        },
+                        ["property::input_passthrough"] = {
+                          strong = {},
+                          weak = {
+                            <metatable> = {
+                              __mode = "kv"
+                            }
+                          }
+                        },
+                        ["property::shape_bounding"] = {
+                          strong = {},
+                          weak = {
+                            <metatable> = {
+                              __mode = "kv"
+                            }
+                          }
+                        },
+                        ["property::shape_clip"] = {
+                          strong = {},
+                          weak = {
+                            <metatable> = {
+                              __mode = "kv"
+                            }
+                          }
+                        },
+                        ["property::shape_input"] = {
+                          strong = {},
+                          weak = {
+                            <metatable> = {
+                              __mode = "kv"
+                            }
+                          }
+                        },
+                        ["property::x"] = {
+                          strong = {},
+                          weak = {
+                            <metatable> = {
+                              __mode = "kv"
+                            }
+                          }
+                        },
+                        ["property::y"] = {
+                          strong = {},
+                          weak = {
+                            <metatable> = {
+                              __mode = "kv"
+                            }
+                          }
+                        }
+                      },
+                      add_signal = <function 3>,
+                      buttons = <function 27>,
+                      connect_signal = <function 4>,
+                      disconnect_signal = <function 5>,
+                      draw = <function 28>,
+                      drawin = <drawin 1>,
+                      emit_signal = <function 6>,
+                      find_widgets = <function 29>,
+                      geometry = <function 30>,
+                      get_children_by_id = <function 31>,
+                      get_input_passthrough = <function 32>,
+                      get_screen = <function 33>,
+                      get_shape = <function 34>,
+                      get_widget = <function 35>,
+                      get_xproperty = <function 36>,
+                      modulename = <function 7>,
+                      save_to_svg = <function 37>,
+                      screen_assigned = <screen 1>,
+                      set_bg = <function 38>,
+                      set_bgimage = <function 39>,
+                      set_fg = <function 40>,
+                      set_input_passthrough = <function 41>,
+                      set_screen = <function 42>,
+                      set_shape = <function 43>,
+                      set_widget = <function 44>,
+                      set_xproperty = <function 45>,
+                      setup = <function 46>,
+                      struts = <function 47>,
+                      to_widget = <function 48>,
+                      weak_connect_signal = <function 8>,
+                      <metatable> = {
+                        __index = <function 49>,
+                        __newindex = <function 50>
+                      }
+                    }
+                  },
+                  _widget_hierarchy = <5>{
+                    _callback_arg = <6>{},
+                    _children = { <7>{
+                        _callback_arg = <table 6>,
+                        _children = { {
+                            _callback_arg = <table 6>,
+                            _children = {},
+                            _context = <table 2>,
+                            _draw_extents = {
+                              height = 30,
+                              width = 980,
+                              x = 0,
+                              y = 0
+                            },
+                            _emit_recursive = <function 51>,
+                            _layout = <function 52>,
+                            _layout_callback = <function 16>,
+                            _matrix = <8>{
+                              x0 = 10,
+                              xx = 1,
+                              xy = 0,
+                              y0 = 10,
+                              yx = 0,
+                              yy = 1,
+                              <metatable> = <9>{
+                                __eq = <function 53>,
+                                __index = {
+                                  create = <function 54>,
+                                  create_rotate = <function 55>,
+                                  create_rotate_at = <function 56>,
+                                  create_scale = <function 57>,
+                                  create_translate = <function 58>,
+                                  equals = <function 53>,
+                                  from_cairo_matrix = <function 59>,
+                                  identity = <10>{
+                                    x0 = 0,
+                                    xx = 1,
+                                    xy = 0,
+                                    y0 = 0,
+                                    yx = 0,
+                                    yy = 1,
+                                    <metatable> = <table 9>
+                                  },
+                                  invert = <function 60>,
+                                  multiply = <function 61>,
+                                  rotate = <function 62>,
+                                  rotate_at = <function 63>,
+                                  scale = <function 64>,
+                                  to_cairo_matrix = <function 65>,
+                                  tostring = <function 66>,
+                                  transform_distance = <function 67>,
+                                  transform_point = <function 68>,
+                                  transform_rectangle = <function 69>,
+                                  translate = <function 70>
+                                },
+                                __mul = <function 61>,
+                                __newindex = <function 71>,
+                                __tostring = <function 66>
+                              }
+                            },
+                            _matrix_to_device = {
+                              x0 = 10,
+                              xx = 1,
+                              xy = 0,
+                              y0 = 10,
+                              yx = 0,
+                              yy = 1,
+                              <metatable> = <table 9>
+                            },
+                            _need_update = true,
+                            _parent = <table 7>,
+                            _redraw = <function 72>,
+                            _redraw_callback = <function 17>,
+                            _size = {
+                              height = 30,
+                              width = 980
+                            },
+                            _widget = <11>{
+                              _connect_everything = <function 1>,
+                              _global_receivers = {},
+                              _private = {
+                                by_id = {},
+                                ctx = <userdata 5>,
+                                dpi = 96.252631578947,
+                                layout = <userdata 6>,
+                                markup = 'AWRepl> <span background="#f4feff" foreground="#1e293d" underline="none"> </span>',
+                                opacity = 1,
+                                valign = "top",
+                                visible = true,
+                                widget_buttons = {},
+                                widget_caches = {}
+                              },
+                              _signals = {
+                                ["button::press"] = {
+                                  strong = {
+                                    [<function 73>] = true
+                                  },
+                                  weak = {
+                                    <metatable> = {
+                                      __mode = "kv"
+                                    }
+                                  }
+                                },
+                                ["button::release"] = {
+                                  strong = {
+                                    [<function 74>] = true
+                                  },
+                                  weak = {
+                                    <metatable> = {
+                                      __mode = "kv"
+                                    }
+                                  }
+                                },
+                                ["mouse::enter"] = {
+                                  strong = {},
+                                  weak = {
+                                    <metatable> = {
+                                      __mode = "kv"
+                                    }
+                                  }
+                                },
+                                ["mouse::leave"] = {
+                                  strong = {},
+                                  weak = {
+                                    <metatable> = {
+                                      __mode = "kv"
+                                    }
+                                  }
+                                },
+                                ["widget::emit_recursive"] = {
+                                  strong = {},
+                                  weak = {
+                                    [<function 75>] = <function 75>,
+                                    [<function 51>] = <function 51>,
+                                    <metatable> = {
+                                      __mode = "kv"
+                                    }
+                                  }
+                                },
+                                ["widget::layout_changed"] = {
+                                  strong = {
+                                    [<function 76>] = true
+                                  },
+                                  weak = {
+                                    [<function 52>] = <function 52>,
+                                    [<function 77>] = <function 77>,
+                                    <metatable> = {
+                                      __mode = "kv"
+                                    }
+                                  }
+                                },
+                                ["widget::redraw_needed"] = {
+                                  strong = {},
+                                  weak = {
+                                    [<function 78>] = <function 78>,
+                                    [<function 72>] = <function 72>,
+                                    <metatable> = {
+                                      __mode = "kv"
+                                    }
+                                  }
+                                },
+                                ["widget::updated"] = {
+                                  strong = {
+                                    [<function 79>] = true
+                                  },
+                                  weak = {
+                                    <metatable> = {
+                                      __mode = "kv"
+                                    }
+                                  }
+                                }
+                              },
+                              add_signal = <function 3>,
+                              buttons = <function 80>,
+                              connect_signal = <function 4>,
+                              disconnect_signal = <function 5>,
+                              draw = <function 81>,
+                              emit_signal = <function 6>,
+                              emit_signal_recursive = <function 82>,
+                              fit = <function 83>,
+                              get_all_children = <function 84>,
+                              get_children = <function 85>,
+                              get_children_by_id = <function 86>,
+                              get_forced_height = <function 87>,
+                              get_forced_width = <function 88>,
+                              get_height_for_width = <function 89>,
+                              get_height_for_width_at_dpi = <function 90>,
+                              get_markup = <function 91>,
+                              get_opacity = <function 92>,
+                              get_preferred_size = <function 93>,
+                              get_preferred_size_at_dpi = <function 94>,
+                              get_text = <function 95>,
+                              get_visible = <function 96>,
+                              index = <function 97>,
+                              is_widget = true,
+                              modulename = <function 7>,
+                              mt = <12>{
+                                __call = <function 98>
+                              },
+                              set_align = <function 99>,
+                              set_children = <function 100>,
+                              set_ellipsize = <function 101>,
+                              set_font = <function 102>,
+                              set_forced_height = <function 103>,
+                              set_forced_width = <function 104>,
+                              set_markup = <function 105>,
+                              set_markup_silently = <function 106>,
+                              set_opacity = <function 107>,
+                              set_text = <function 108>,
+                              set_valign = <function 109>,
+                              set_visible = <function 110>,
+                              set_wrap = <function 111>,
+                              setup = <function 46>,
+                              weak_connect_signal = <function 8>,
+                              widget_name = "wibox.widget.textbox",
+                              <metatable> = {
+                                __index = <function 112>,
+                                __newindex = <function 113>,
+                                __tostring = <function 114>
+                              }
+                            },
+                            _widget_counts = {},
+                            count_widget = <function 115>,
+                            draw = <function 116>,
+                            get_children = <function 117>,
+                            get_count = <function 118>,
+                            get_draw_extents = <function 119>,
+                            get_matrix_from_device = <function 120>,
+                            get_matrix_from_parent = <function 121>,
+                            get_matrix_to_device = <function 122>,
+                            get_matrix_to_parent = <function 123>,
+                            get_size = <function 124>,
+                            get_widget = <function 125>,
+                            new = <function 126>,
+                            update = <function 127>
+                          } },
+                        _context = <table 2>,
+                        _draw_extents = {
+                          height = 50,
+                          width = 1000,
+                          x = 0,
+                          y = 0
+                        },
+                        _emit_recursive = <function 128>,
+                        _layout = <function 129>,
+                        _layout_callback = <function 16>,
+                        _matrix = <13>{
+                          x0 = 0,
+                          xx = 1,
+                          xy = 0,
+                          y0 = 0,
+                          yx = 0,
+                          yy = 1,
+                          <metatable> = <table 9>
+                        },
+                        _matrix_to_device = {
+                          x0 = 0,
+                          xx = 1,
+                          xy = 0,
+                          y0 = 0,
+                          yx = 0,
+                          yy = 1,
+                          <metatable> = <table 9>
+                        },
+                        _need_update = true,
+                        _parent = <table 5>,
+                        _redraw = <function 130>,
+                        _redraw_callback = <function 17>,
+                        _size = {
+                          height = 50,
+                          width = 1000
+                        },
+                        _widget = <14>{
+                          _connect_everything = <function 1>,
+                          _global_receivers = {},
+                          _private = {
+                            bottom = 10,
+                            left = 10,
+                            opacity = 1,
+                            right = 10,
+                            top = 10,
+                            visible = true,
+                            widget = <table 11>,
+                            widget_buttons = {},
+                            widget_caches = {
+                              layout = {
+                                _cache = {
+                                  [<table 2>] = {
+                                    [1000] = {
+                                      [50] = {
+                                        _entry = { { {
+                                              _height = 30,
+                                              _matrix = <table 8>,
+                                              _widget = <table 11>,
+                                              _width = 980
+                                            } } }
+                                      }
+                                    }
+                                  },
+                                  [<15>{
+                                    dpi = 96.252631578947,
+                                    drawable = <16>{
+                                      _connect_everything = <function 1>,
+                                      _dirty_area = <userdata 7>,
+                                      _do_complete_repaint = <function 131>,
+                                      _do_redraw = <function 132>,
+                                      _force_screen = <function 14>,
+                                      _forced_screen = <screen 1>,
+                                      _global_receivers = {},
+                                      _inform_visible = <function 15>,
+                                      _layout_callback = <function 133>,
+                                      _need_complete_repaint = false,
+                                      _need_relayout = true,
+                                      _redraw_callback = <function 134>,
+                                      _redraw_on_move = false,
+                                      _redraw_pending = false,
+                                      _set_systray_widget = <function 18>,
+                                      _signals = {
+                                        ["button::press"] = {
+                                          strong = {
+                                            [<function 135>] = true
+                                          },
+                                          weak = {
+                                            <metatable> = {
+                                              __mode = "kv"
+                                            }
+                                          }
+                                        },
+                                        ["button::release"] = {
+                                          strong = {
+                                            [<function 136>] = true
+                                          },
+                                          weak = {
+                                            <metatable> = {
+                                              __mode = "kv"
+                                            }
+                                          }
+                                        },
+                                        ["mouse::enter"] = {
+                                          strong = {
+                                            [<function 137>] = true
+                                          },
+                                          weak = {
+                                            <metatable> = {
+                                              __mode = "kv"
+                                            }
+                                          }
+                                        },
+                                        ["mouse::leave"] = {
+                                          strong = {
+                                            [<function 138>] = true
+                                          },
+                                          weak = {
+                                            <metatable> = {
+                                              __mode = "kv"
+                                            }
+                                          }
+                                        },
+                                        ["mouse::move"] = {
+                                          strong = {
+                                            [<function 139>] = true
+                                          },
+                                          weak = {
+                                            <metatable> = {
+                                              __mode = "kv"
+                                            }
+                                          }
+                                        },
+                                        ["property::surface"] = {
+                                          strong = {
+                                            [<function 140>] = true
+                                          },
+                                          weak = {
+                                            <metatable> = {
+                                              __mode = "kv"
+                                            }
+                                          }
+                                        },
+                                        ["property::x"] = {
+                                          strong = {},
+                                          weak = {
+                                            <metatable> = {
+                                              __mode = "kv"
+                                            }
+                                          }
+                                        },
+                                        ["property::y"] = {
+                                          strong = {},
+                                          weak = {
+                                            <metatable> = {
+                                              __mode = "kv"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      _visible = false,
+                                      _widget_context = <table 15>,
+                                      _widget_context_skeleton = {
+                                        wibox = <17>{
+                                          _apply_shape = <function 25>,
+                                          _connect_everything = <function 1>,
+                                          _drawable = <table 16>,
+                                          _global_receivers = {},
+                                          _input_passthrough = false,
+                                          _shape = <function 26>,
+                                          _signals = {
+                                            ["button::press"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["button::release"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["mouse::enter"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["mouse::leave"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["mouse::move"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["property::border_width"] = {
+                                              strong = {
+                                                [<function 25>] = true
+                                              },
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["property::geometry"] = {
+                                              strong = {
+                                                [<function 25>] = true
+                                              },
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["property::input_passthrough"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["property::shape_bounding"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["property::shape_clip"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["property::shape_input"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["property::visible"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["property::x"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["property::y"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          add_signal = <function 3>,
+                                          buttons = <function 27>,
+                                          connect_signal = <function 4>,
+                                          disconnect_signal = <function 5>,
+                                          draw = <function 141>,
+                                          drawin = <drawin 2>,
+                                          emit_signal = <function 6>,
+                                          find_widgets = <function 29>,
+                                          geometry = <function 30>,
+                                          get_children_by_id = <function 31>,
+                                          get_input_passthrough = <function 32>,
+                                          get_screen = <function 33>,
+                                          get_shape = <function 34>,
+                                          get_widget = <function 35>,
+                                          get_xproperty = <function 36>,
+                                          modulename = <function 7>,
+                                          save_to_svg = <function 37>,
+                                          screen_assigned = <screen 1>,
+                                          set_bg = <function 38>,
+                                          set_bgimage = <function 39>,
+                                          set_fg = <function 40>,
+                                          set_input_passthrough = <function 41>,
+                                          set_screen = <function 42>,
+                                          set_shape = <function 43>,
+                                          set_widget = <function 44>,
+                                          set_xproperty = <function 45>,
+                                          setup = <function 46>,
+                                          struts = <function 47>,
+                                          to_widget = <function 48>,
+                                          weak_connect_signal = <function 8>,
+                                          <metatable> = {
+                                            __index = <function 142>,
+                                            __newindex = <function 143>
+                                          }
+                                        }
+                                      },
+                                      _widget_hierarchy = <18>{
+                                        _callback_arg = <19>{},
+                                        _children = { <20>{
+                                            _callback_arg = <table 19>,
+                                            _children = { {
+                                                _callback_arg = <table 19>,
+                                                _children = {},
+                                                _context = <table 15>,
+                                                _draw_extents = {
+                                                  height = 30,
+                                                  width = 980,
+                                                  x = 0,
+                                                  y = 0
+                                                },
+                                                _emit_recursive = <function 75>,
+                                                _layout = <function 77>,
+                                                _layout_callback = <function 133>,
+                                                _matrix = <21>{
+                                                  x0 = 10,
+                                                  xx = 1,
+                                                  xy = 0,
+                                                  y0 = 10,
+                                                  yx = 0,
+                                                  yy = 1,
+                                                  <metatable> = <table 9>
+                                                },
+                                                _matrix_to_device = {
+                                                  x0 = 10,
+                                                  xx = 1,
+                                                  xy = 0,
+                                                  y0 = 10,
+                                                  yx = 0,
+                                                  yy = 1,
+                                                  <metatable> = <table 9>
+                                                },
+                                                _need_update = true,
+                                                _parent = <table 20>,
+                                                _redraw = <function 78>,
+                                                _redraw_callback = <function 134>,
+                                                _size = {
+                                                  height = 30,
+                                                  width = 980
+                                                },
+                                                _widget = <table 11>,
+                                                _widget_counts = {},
+                                                count_widget = <function 115>,
+                                                draw = <function 116>,
+                                                get_children = <function 117>,
+                                                get_count = <function 118>,
+                                                get_draw_extents = <function 119>,
+                                                get_matrix_from_device = <function 120>,
+                                                get_matrix_from_parent = <function 121>,
+                                                get_matrix_to_device = <function 122>,
+                                                get_matrix_to_parent = <function 123>,
+                                                get_size = <function 124>,
+                                                get_widget = <function 125>,
+                                                new = <function 126>,
+                                                update = <function 127>
+                                              } },
+                                            _context = <table 15>,
+                                            _draw_extents = {
+                                              height = 50,
+                                              width = 1000,
+                                              x = 0,
+                                              y = 0
+                                            },
+                                            _emit_recursive = <function 144>,
+                                            _layout = <function 145>,
+                                            _layout_callback = <function 133>,
+                                            _matrix = {
+                                              x0 = 0,
+                                              xx = 1,
+                                              xy = 0,
+                                              y0 = 0,
+                                              yx = 0,
+                                              yy = 1,
+                                              <metatable> = <table 9>
+                                            },
+                                            _matrix_to_device = {
+                                              x0 = 0,
+                                              xx = 1,
+                                              xy = 0,
+                                              y0 = 0,
+                                              yx = 0,
+                                              yy = 1,
+                                              <metatable> = <table 9>
+                                            },
+                                            _need_update = true,
+                                            _parent = <table 18>,
+                                            _redraw = <function 146>,
+                                            _redraw_callback = <function 134>,
+                                            _size = {
+                                              height = 50,
+                                              width = 1000
+                                            },
+                                            _widget = <table 14>,
+                                            _widget_counts = {},
+                                            count_widget = <function 115>,
+                                            draw = <function 116>,
+                                            get_children = <function 117>,
+                                            get_count = <function 118>,
+                                            get_draw_extents = <function 119>,
+                                            get_matrix_from_device = <function 120>,
+                                            get_matrix_from_parent = <function 121>,
+                                            get_matrix_to_device = <function 122>,
+                                            get_matrix_to_parent = <function 123>,
+                                            get_size = <function 124>,
+                                            get_widget = <function 125>,
+                                            new = <function 126>,
+                                            update = <function 127>
+                                          }, {
+                                            _callback_arg = <table 19>,
+                                            _children = {},
+                                            _context = <table 15>,
+                                            _draw_extents = {
+                                              height = 10,
+                                              width = 1000,
+                                              x = 0,
+                                              y = 0
+                                            },
+                                            _emit_recursive = <function 147>,
+                                            _layout = <function 148>,
+                                            _layout_callback = <function 133>,
+                                            _matrix = {
+                                              x0 = 0,
+                                              xx = 1,
+                                              xy = 0,
+                                              y0 = 50,
+                                              yx = 0,
+                                              yy = 1,
+                                              <metatable> = <table 9>
+                                            },
+                                            _matrix_to_device = {
+                                              x0 = 0,
+                                              xx = 1,
+                                              xy = 0,
+                                              y0 = 50,
+                                              yx = 0,
+                                              yy = 1,
+                                              <metatable> = <table 9>
+                                            },
+                                            _need_update = false,
+                                            _parent = <table 18>,
+                                            _redraw = <function 149>,
+                                            _redraw_callback = <function 134>,
+                                            _size = {
+                                              height = 10,
+                                              width = 1000
+                                            },
+                                            _widget = <22>{
+                                              _connect_everything = <function 1>,
+                                              _global_receivers = {},
+                                              _private = {
+                                                by_id = {},
+                                                opacity = 1,
+                                                orientation = "auto",
+                                                shape = <function 150>,
+                                                visible = true,
+                                                widget_buttons = {},
+                                                widget_caches = {}
+                                              },
+                                              _signals = {
+                                                ["button::press"] = {
+                                                  strong = {
+                                                    [<function 73>] = true
+                                                  },
+                                                  weak = {
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["button::release"] = {
+                                                  strong = {
+                                                    [<function 74>] = true
+                                                  },
+                                                  weak = {
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["mouse::enter"] = {
+                                                  strong = {},
+                                                  weak = {
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["mouse::leave"] = {
+                                                  strong = {},
+                                                  weak = {
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["property::shape"] = {
+                                                  strong = {},
+                                                  weak = {
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["widget::emit_recursive"] = {
+                                                  strong = {},
+                                                  weak = {
+                                                    [<function 147>] = <function 147>,
+                                                    [<function 151>] = <function 151>,
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["widget::layout_changed"] = {
+                                                  strong = {
+                                                    [<function 152>] = true
+                                                  },
+                                                  weak = {
+                                                    [<function 153>] = <function 153>,
+                                                    [<function 148>] = <function 148>,
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["widget::redraw_needed"] = {
+                                                  strong = {},
+                                                  weak = {
+                                                    [<function 154>] = <function 154>,
+                                                    [<function 149>] = <function 149>,
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["widget::updated"] = {
+                                                  strong = {
+                                                    [<function 155>] = true
+                                                  },
+                                                  weak = {
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              add_signal = <function 3>,
+                                              buttons = <function 80>,
+                                              connect_signal = <function 4>,
+                                              disconnect_signal = <function 5>,
+                                              draw = <function 156>,
+                                              emit_signal = <function 6>,
+                                              emit_signal_recursive = <function 82>,
+                                              fit = <function 157>,
+                                              get_all_children = <function 84>,
+                                              get_border_color = <function 158>,
+                                              get_border_width = <function 159>,
+                                              get_children = <function 85>,
+                                              get_children_by_id = <function 86>,
+                                              get_color = <function 160>,
+                                              get_forced_height = <function 87>,
+                                              get_forced_width = <function 88>,
+                                              get_opacity = <function 92>,
+                                              get_orientation = <function 161>,
+                                              get_shape = <function 162>,
+                                              get_span_ratio = <function 163>,
+                                              get_thickness = <function 164>,
+                                              get_visible = <function 96>,
+                                              index = <function 97>,
+                                              is_widget = true,
+                                              modulename = <function 7>,
+                                              set_border_color = <function 165>,
+                                              set_border_width = <function 166>,
+                                              set_children = <function 100>,
+                                              set_color = <function 167>,
+                                              set_forced_height = <function 103>,
+                                              set_forced_width = <function 104>,
+                                              set_opacity = <function 107>,
+                                              set_orientation = <function 168>,
+                                              set_shape = <function 169>,
+                                              set_span_ratio = <function 170>,
+                                              set_thickness = <function 171>,
+                                              set_visible = <function 110>,
+                                              setup = <function 46>,
+                                              weak_connect_signal = <function 8>,
+                                              widget_name = "wibox.widget.separator",
+                                              <metatable> = {
+                                                __index = <function 112>,
+                                                __newindex = <function 113>,
+                                                __tostring = <function 172>
+                                              }
+                                            },
+                                            _widget_counts = {},
+                                            count_widget = <function 115>,
+                                            draw = <function 116>,
+                                            get_children = <function 117>,
+                                            get_count = <function 118>,
+                                            get_draw_extents = <function 119>,
+                                            get_matrix_from_device = <function 120>,
+                                            get_matrix_from_parent = <function 121>,
+                                            get_matrix_to_device = <function 122>,
+                                            get_matrix_to_parent = <function 123>,
+                                            get_size = <function 124>,
+                                            get_widget = <function 125>,
+                                            new = <function 126>,
+                                            update = <function 127>
+                                          }, <23>{
+                                            _callback_arg = <table 19>,
+                                            _children = { {
+                                                _callback_arg = <table 19>,
+                                                _children = {},
+                                                _context = <table 15>,
+                                                _draw_extents = {
+                                                  height = 430,
+                                                  width = 980,
+                                                  x = 0,
+                                                  y = 0
+                                                },
+                                                _emit_recursive = <function 173>,
+                                                _layout = <function 174>,
+                                                _layout_callback = <function 133>,
+                                                _matrix = <24>{
+                                                  x0 = 10,
+                                                  xx = 1,
+                                                  xy = 0,
+                                                  y0 = 10,
+                                                  yx = 0,
+                                                  yy = 1,
+                                                  <metatable> = <table 9>
+                                                },
+                                                _matrix_to_device = {
+                                                  x0 = 10,
+                                                  xx = 1,
+                                                  xy = 0,
+                                                  y0 = 70,
+                                                  yx = 0,
+                                                  yy = 1,
+                                                  <metatable> = <table 9>
+                                                },
+                                                _need_update = true,
+                                                _parent = <table 23>,
+                                                _redraw = <function 175>,
+                                                _redraw_callback = <function 134>,
+                                                _size = {
+                                                  height = 430,
+                                                  width = 980
+                                                },
+                                                _widget = <table 1>,
+                                                _widget_counts = {},
+                                                count_widget = <function 115>,
+                                                draw = <function 116>,
+                                                get_children = <function 117>,
+                                                get_count = <function 118>,
+                                                get_draw_extents = <function 119>,
+                                                get_matrix_from_device = <function 120>,
+                                                get_matrix_from_parent = <function 121>,
+                                                get_matrix_to_device = <function 122>,
+                                                get_matrix_to_parent = <function 123>,
+                                                get_size = <function 124>,
+                                                get_widget = <function 125>,
+                                                new = <function 126>,
+                                                update = <function 127>
+                                              } },
+                                            _context = <table 15>,
+                                            _draw_extents = {
+                                              height = 450,
+                                              width = 1000,
+                                              x = 0,
+                                              y = 0
+                                            },
+                                            _emit_recursive = <function 176>,
+                                            _layout = <function 177>,
+                                            _layout_callback = <function 133>,
+                                            _matrix = {
+                                              x0 = 0,
+                                              xx = 1,
+                                              xy = 0,
+                                              y0 = 60,
+                                              yx = 0,
+                                              yy = 1,
+                                              <metatable> = <table 9>
+                                            },
+                                            _matrix_to_device = {
+                                              x0 = 0,
+                                              xx = 1,
+                                              xy = 0,
+                                              y0 = 60,
+                                              yx = 0,
+                                              yy = 1,
+                                              <metatable> = <table 9>
+                                            },
+                                            _need_update = true,
+                                            _parent = <table 18>,
+                                            _redraw = <function 178>,
+                                            _redraw_callback = <function 134>,
+                                            _size = {
+                                              height = 450,
+                                              width = 1000
+                                            },
+                                            _widget = <25>{
+                                              _connect_everything = <function 1>,
+                                              _global_receivers = {},
+                                              _private = {
+                                                bottom = 10,
+                                                left = 10,
+                                                opacity = 1,
+                                                right = 10,
+                                                top = 10,
+                                                visible = true,
+                                                widget = <table 1>,
+                                                widget_buttons = {},
+                                                widget_caches = {
+                                                  layout = {
+                                                    _cache = {
+                                                      [<table 2>] = {
+                                                        [1000] = {
+                                                          [450] = {
+                                                            _entry = { { {
+                                                                  _height = 430,
+                                                                  _matrix = <26>{
+                                                                    x0 = 10,
+                                                                    xx = 1,
+                                                                    xy = 0,
+                                                                    y0 = 10,
+                                                                    yx = 0,
+                                                                    yy = 1,
+                                                                    <metatable> = <table 9>
+                                                                  },
+                                                                  _widget = <table 1>,
+                                                                  _width = 980
+                                                                } } }
+                                                          }
+                                                        }
+                                                      },
+                                                      [<table 15>] = {
+                                                        [1000] = {
+                                                          [450] = {
+                                                            _entry = { { {
+                                                                  _height = 430,
+                                                                  _matrix = <table 24>,
+                                                                  _widget = <table 1>,
+                                                                  _width = 980
+                                                                } } }
+                                                          }
+                                                        }
+                                                      },
+                                                      <metatable> = {
+                                                        __mode = "v"
+                                                      }
+                                                    },
+                                                    _creation_cb = <function 179>,
+                                                    <metatable> = {
+                                                      __index = <27>{
+                                                        get = <function 180>,
+                                                        new = <function 181>,
+                                                        <metatable> = {
+                                                          __call = <function 182>
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              _signals = {
+                                                ["button::press"] = {
+                                                  strong = {
+                                                    [<function 73>] = true
+                                                  },
+                                                  weak = {
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["button::release"] = {
+                                                  strong = {
+                                                    [<function 74>] = true
+                                                  },
+                                                  weak = {
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["mouse::enter"] = {
+                                                  strong = {},
+                                                  weak = {
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["mouse::leave"] = {
+                                                  strong = {},
+                                                  weak = {
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["widget::emit_recursive"] = {
+                                                  strong = {},
+                                                  weak = {
+                                                    [<function 176>] = <function 176>,
+                                                    [<function 183>] = <function 183>,
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["widget::layout_changed"] = {
+                                                  strong = {
+                                                    [<function 184>] = true
+                                                  },
+                                                  weak = {
+                                                    [<function 185>] = <function 185>,
+                                                    [<function 177>] = <function 177>,
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["widget::redraw_needed"] = {
+                                                  strong = {},
+                                                  weak = {
+                                                    [<function 186>] = <function 186>,
+                                                    [<function 178>] = <function 178>,
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                },
+                                                ["widget::updated"] = {
+                                                  strong = {
+                                                    [<function 187>] = true
+                                                  },
+                                                  weak = {
+                                                    <metatable> = {
+                                                      __mode = "kv"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              add_signal = <function 3>,
+                                              buttons = <function 80>,
+                                              connect_signal = <function 4>,
+                                              disconnect_signal = <function 5>,
+                                              draw = <function 188>,
+                                              emit_signal = <function 6>,
+                                              emit_signal_recursive = <function 82>,
+                                              fit = <function 189>,
+                                              get_all_children = <function 84>,
+                                              get_bottom = <function 190>,
+                                              get_children = <function 191>,
+                                              get_color = <function 192>,
+                                              get_draw_empty = <function 193>,
+                                              get_forced_height = <function 87>,
+                                              get_forced_width = <function 88>,
+                                              get_left = <function 194>,
+                                              get_opacity = <function 92>,
+                                              get_right = <function 195>,
+                                              get_top = <function 196>,
+                                              get_visible = <function 96>,
+                                              get_widget = <function 197>,
+                                              index = <function 97>,
+                                              is_widget = true,
+                                              layout = <function 198>,
+                                              modulename = <function 7>,
+                                              mt = <28>{
+                                                __call = <function 199>
+                                              },
+                                              reset = <function 200>,
+                                              set_bottom = <function 201>,
+                                              set_children = <function 202>,
+                                              set_color = <function 203>,
+                                              set_draw_empty = <function 204>,
+                                              set_forced_height = <function 103>,
+                                              set_forced_width = <function 104>,
+                                              set_left = <function 205>,
+                                              set_margins = <function 206>,
+                                              set_opacity = <function 107>,
+                                              set_right = <function 207>,
+                                              set_top = <function 208>,
+                                              set_visible = <function 110>,
+                                              set_widget = <function 209>,
+                                              setup = <function 46>,
+                                              weak_connect_signal = <function 8>,
+                                              widget_name = "wibox.container.margin",
+                                              <metatable> = {
+                                                __index = <function 112>,
+                                                __newindex = <function 113>,
+                                                __tostring = <function 210>
+                                              }
+                                            },
+                                            _widget_counts = {},
+                                            count_widget = <function 115>,
+                                            draw = <function 116>,
+                                            get_children = <function 117>,
+                                            get_count = <function 118>,
+                                            get_draw_extents = <function 119>,
+                                            get_matrix_from_device = <function 120>,
+                                            get_matrix_from_parent = <function 121>,
+                                            get_matrix_to_device = <function 122>,
+                                            get_matrix_to_parent = <function 123>,
+                                            get_size = <function 124>,
+                                            get_widget = <function 125>,
+                                            new = <function 126>,
+                                            update = <function 127>
+                                          } },
+                                        _context = <table 15>,
+                                        _draw_extents = {
+                                          height = 510,
+                                          width = 1000,
+                                          x = 0,
+                                          y = 0
+                                        },
+                                        _emit_recursive = <function 211>,
+                                        _layout = <function 212>,
+                                        _layout_callback = <function 133>,
+                                        _matrix = <table 10>,
+                                        _matrix_to_device = <table 10>,
+                                        _need_update = true,
+                                        _redraw = <function 213>,
+                                        _redraw_callback = <function 134>,
+                                        _size = {
+                                          height = 500,
+                                          width = 1000
+                                        },
+                                        _widget = <29>{
+                                          _connect_everything = <function 1>,
+                                          _global_receivers = {},
+                                          _private = {
+                                            by_id = {},
+                                            dir = "y",
+                                            opacity = 1,
+                                            ratios = { 0.1, 0.9 },
+                                            spacing = 10,
+                                            spacing_widget = <table 22>,
+                                            visible = true,
+                                            widget_buttons = {},
+                                            widget_caches = {
+                                              layout = {
+                                                _cache = {
+                                                  [<table 2>] = {
+                                                    [1000] = {
+                                                      [500] = {
+                                                        _entry = { { {
+                                                              _height = 50,
+                                                              _matrix = <table 13>,
+                                                              _widget = <table 14>,
+                                                              _width = 1000
+                                                            }, {
+                                                              _height = 10,
+                                                              _matrix = <30>{
+                                                                x0 = 0,
+                                                                xx = 1,
+                                                                xy = 0,
+                                                                y0 = 50,
+                                                                yx = 0,
+                                                                yy = 1,
+                                                                <metatable> = <table 9>
+                                                              },
+                                                              _widget = <table 22>,
+                                                              _width = 1000
+                                                            }, {
+                                                              _height = 450,
+                                                              _matrix = <31>{
+                                                                x0 = 0,
+                                                                xx = 1,
+                                                                xy = 0,
+                                                                y0 = 60,
+                                                                yx = 0,
+                                                                yy = 1,
+                                                                <metatable> = <table 9>
+                                                              },
+                                                              _widget = <table 25>,
+                                                              _width = 1000
+                                                            } } }
+                                                      }
+                                                    }
+                                                  },
+                                                  <metatable> = {
+                                                    __mode = "v"
+                                                  }
+                                                },
+                                                _creation_cb = <function 214>,
+                                                <metatable> = {
+                                                  __index = <table 27>
+                                                }
+                                              }
+                                            },
+                                            widgets = { <table 14>, <table 25> }
+                                          },
+                                          _signals = {
+                                            ["button::press"] = {
+                                              strong = {
+                                                [<function 73>] = true
+                                              },
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["button::release"] = {
+                                              strong = {
+                                                [<function 74>] = true
+                                              },
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["mouse::enter"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["mouse::leave"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["widget::added"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["widget::emit_recursive"] = {
+                                              strong = {},
+                                              weak = {
+                                                [<function 211>] = <function 211>,
+                                                [<function 215>] = <function 215>,
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["widget::layout_changed"] = {
+                                              strong = {
+                                                [<function 216>] = true
+                                              },
+                                              weak = {
+                                                [<function 212>] = <function 212>,
+                                                [<function 217>] = <function 217>,
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["widget::redraw_needed"] = {
+                                              strong = {},
+                                              weak = {
+                                                [<function 218>] = <function 218>,
+                                                [<function 213>] = <function 213>,
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["widget::reseted"] = {
+                                              strong = {},
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            },
+                                            ["widget::updated"] = {
+                                              strong = {
+                                                [<function 219>] = true
+                                              },
+                                              weak = {
+                                                <metatable> = {
+                                                  __mode = "kv"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          add = <function 220>,
+                                          add_signal = <function 3>,
+                                          ajust_ratio = <function 221>,
+                                          ajust_widget_ratio = <function 222>,
+                                          buttons = <function 80>,
+                                          connect_signal = <function 4>,
+                                          disconnect_signal = <function 5>,
+                                          emit_signal = <function 6>,
+                                          emit_signal_recursive = <function 82>,
+                                          fill_space = <function 223>,
+                                          fit = <function 224>,
+                                          get_all_children = <function 84>,
+                                          get_children = <function 225>,
+                                          get_children_by_id = <function 86>,
+                                          get_forced_height = <function 87>,
+                                          get_forced_width = <function 88>,
+                                          get_inner_fill_strategy = <function 226>,
+                                          get_opacity = <function 92>,
+                                          get_ratio = <function 227>,
+                                          get_spacing = <function 228>,
+                                          get_visible = <function 96>,
+                                          horizontal = <function 229>,
+                                          inc_ratio = <function 230>,
+                                          inc_widget_ratio = <function 231>,
+                                          index = <function 97>,
+                                          insert = <function 232>,
+                                          is_widget = true,
+                                          layout = <function 233>,
+                                          modulename = <function 7>,
+                                          remove = <function 234>,
+                                          remove_widgets = <function 235>,
+                                          replace_widget = <function 236>,
+                                          reset = <function 237>,
+                                          set = <function 238>,
+                                          set_children = <function 239>,
+                                          set_forced_height = <function 103>,
+                                          set_forced_width = <function 104>,
+                                          set_inner_fill_strategy = <function 240>,
+                                          set_max_widget_size = <function 241>,
+                                          set_opacity = <function 107>,
+                                          set_ratio = <function 242>,
+                                          set_spacing = <function 243>,
+                                          set_spacing_widget = <function 244>,
+                                          set_visible = <function 110>,
+                                          set_widget_ratio = <function 245>,
+                                          setup = <function 46>,
+                                          swap = <function 246>,
+                                          swap_widgets = <function 247>,
+                                          vertical = <function 248>,
+                                          weak_connect_signal = <function 8>,
+                                          widget_name = "wibox.layout.fixed",
+                                          <metatable> = {
+                                            __index = <function 112>,
+                                            __newindex = <function 113>,
+                                            __tostring = <function 249>
+                                          }
+                                        },
+                                        _widget_counts = {},
+                                        count_widget = <function 115>,
+                                        draw = <function 116>,
+                                        get_children = <function 117>,
+                                        get_count = <function 118>,
+                                        get_draw_extents = <function 119>,
+                                        get_matrix_from_device = <function 120>,
+                                        get_matrix_from_parent = <function 121>,
+                                        get_matrix_to_device = <function 122>,
+                                        get_matrix_to_parent = <function 123>,
+                                        get_size = <function 124>,
+                                        get_widget = <function 125>,
+                                        new = <function 126>,
+                                        update = <function 127>
+                                      },
+                                      _widget_hierarchy_callback_arg = <table 19>,
+                                      _widgets_under_mouse = {},
+                                      add_signal = <function 3>,
+                                      background_color = <userdata 8>,
+                                      connect_signal = <function 4>,
+                                      disconnect_signal = <function 5>,
+                                      draw = <function 141>,
+                                      drawable = <drawable 1>,
+                                      drawable_name = "wibox drawable (@.home.alejandro..config.awesome.modules.modal_prompt)",
+                                      emit_signal = <function 6>,
+                                      find_widgets = <function 250>,
+                                      foreground_color = <userdata 9>,
+                                      get_wibox = <function 251>,
+                                      modulename = <function 7>,
+                                      new = <function 252>,
+                                      set_bg = <function 253>,
+                                      set_bgimage = <function 254>,
+                                      set_fg = <function 255>,
+                                      set_widget = <function 256>,
+                                      weak_connect_signal = <function 8>,
+                                      widget = <table 29>,
+                                      <metatable> = {
+                                        __tostring = <function 257>
+                                      }
+                                    },
+                                    screen = <screen 1>,
+                                    wibox = <table 17>
+                                  }] = {
+                                    [1000] = {
+                                      [50] = {
+                                        _entry = { { {
+                                              _height = 30,
+                                              _matrix = <table 21>,
+                                              _widget = <table 11>,
+                                              _width = 980
+                                            } } }
+                                      }
+                                    }
+                                  },
+                                  <metatable> = {
+                                    __mode = "v"
+                                  }
+                                },
+                                _creation_cb = <function 258>,
+                                <metatable> = {
+                                  __index = <table 27>
+                                }
+                              }
+                            }
+                          },
+                          _signals = {
+                            ["button::press"] = {
+                              strong = {
+                                [<function 73>] = true
+                              },
+                              weak = {
+                                <metatable> = {
+                                  __mode = "kv"
+                                }
+                              }
+                            },
+                            ["button::release"] = {
+                              strong = {
+                                [<function 74>] = true
+                              },
+                              weak = {
+                                <metatable> = {
+                                  __mode = "kv"
+                                }
+                              }
+                            },
+                            ["mouse::enter"] = {
+                              strong = {},
+                              weak = {
+                                <metatable> = {
+                                  __mode = "kv"
+                                }
+                              }
+                            },
+                            ["mouse::leave"] = {
+                              strong = {},
+                              weak = {
+                                <metatable> = {
+                                  __mode = "kv"
+                                }
+                              }
+                            },
+                            ["widget::emit_recursive"] = {
+                              strong = {},
+                              weak = {
+                                [<function 128>] = <function 128>,
+                                [<function 144>] = <function 144>,
+                                <metatable> = {
+                                  __mode = "kv"
+                                }
+                              }
+                            },
+                            ["widget::layout_changed"] = {
+                              strong = {
+                                [<function 259>] = true
+                              },
+                              weak = {
+                                [<function 145>] = <function 145>,
+                                [<function 129>] = <function 129>,
+                                <metatable> = {
+                                  __mode = "kv"
+                                }
+                              }
+                            },
+                            ["widget::redraw_needed"] = {
+                              strong = {},
+                              weak = {
+                                [<function 146>] = <function 146>,
+                                [<function 130>] = <function 130>,
+                                <metatable> = {
+                                  __mode = "kv"
+                                }
+                              }
+                            },
+                            ["widget::updated"] = {
+                              strong = {
+                                [<function 260>] = true
+                              },
+                              weak = {
+                                <metatable> = {
+                                  __mode = "kv"
+                                }
+                              }
+                            }
+                          },
+                          add_signal = <function 3>,
+                          buttons = <function 80>,
+                          connect_signal = <function 4>,
+                          disconnect_signal = <function 5>,
+                          draw = <function 188>,
+                          emit_signal = <function 6>,
+                          emit_signal_recursive = <function 82>,
+                          fit = <function 189>,
+                          get_all_children = <function 84>,
+                          get_bottom = <function 190>,
+                          get_children = <function 191>,
+                          get_color = <function 192>,
+                          get_draw_empty = <function 193>,
+                          get_forced_height = <function 87>,
+                          get_forced_width = <function 88>,
+                          get_left = <function 194>,
+                          get_opacity = <function 92>,
+                          get_right = <function 195>,
+                          get_top = <function 196>,
+                          get_visible = <function 96>,
+                          get_widget = <function 197>,
+                          index = <function 97>,
+                          is_widget = true,
+                          layout = <function 198>,
+                          modulename = <function 7>,
+                          mt = <table 28>,
+                          reset = <function 200>,
+                          set_bottom = <function 201>,
+                          set_children = <function 202>,
+                          set_color = <function 203>,
+                          set_draw_empty = <function 204>,
+                          set_forced_height = <function 103>,
+                          set_forced_width = <function 104>,
+                          set_left = <function 205>,
+                          set_margins = <function 206>,
+                          set_opacity = <function 107>,
+                          set_right = <function 207>,
+                          set_top = <function 208>,
+                          set_visible = <function 110>,
+                          set_widget = <function 209>,
+                          setup = <function 46>,
+                          weak_connect_signal = <function 8>,
+                          widget_name = "wibox.container.margin",
+                          <metatable> = {
+                            __index = <function 112>,
+                            __newindex = <function 113>,
+                            __tostring = <function 261>
+                          }
+                        },
+                        _widget_counts = {},
+                        count_widget = <function 115>,
+                        draw = <function 116>,
+                        get_children = <function 117>,
+                        get_count = <function 118>,
+                        get_draw_extents = <function 119>,
+                        get_matrix_from_device = <function 120>,
+                        get_matrix_from_parent = <function 121>,
+                        get_matrix_to_device = <function 122>,
+                        get_matrix_to_parent = <function 123>,
+                        get_size = <function 124>,
+                        get_widget = <function 125>,
+                        new = <function 126>,
+                        update = <function 127>
+                      }, {
+                        _callback_arg = <table 6>,
+                        _children = {},
+                        _context = <table 2>,
+                        _draw_extents = {
+                          height = 10,
+                          width = 1000,
+                          x = 0,
+                          y = 0
+                        },
+                        _emit_recursive = <function 151>,
+                        _layout = <function 153>,
+                        _layout_callback = <function 16>,
+                        _matrix = <table 30>,
+                        _matrix_to_device = {
+                          x0 = 0,
+                          xx = 1,
+                          xy = 0,
+                          y0 = 50,
+                          yx = 0,
+                          yy = 1,
+                          <metatable> = <table 9>
+                        },
+                        _need_update = false,
+                        _parent = <table 5>,
+                        _redraw = <function 154>,
+                        _redraw_callback = <function 17>,
+                        _size = {
+                          height = 10,
+                          width = 1000
+                        },
+                        _widget = <table 22>,
+                        _widget_counts = {},
+                        count_widget = <function 115>,
+                        draw = <function 116>,
+                        get_children = <function 117>,
+                        get_count = <function 118>,
+                        get_draw_extents = <function 119>,
+                        get_matrix_from_device = <function 120>,
+                        get_matrix_from_parent = <function 121>,
+                        get_matrix_to_device = <function 122>,
+                        get_matrix_to_parent = <function 123>,
+                        get_size = <function 124>,
+                        get_widget = <function 125>,
+                        new = <function 126>,
+                        update = <function 127>
+                      }, <32>{
+                        _callback_arg = <table 6>,
+                        _children = { <33>{
+                            _callback_arg = <table 6>,
+                            _children = {},
+                            _context = <table 2>,
+                            _draw_extents = {
+                              height = 430,
+                              width = 980,
+                              x = 0,
+                              y = 0
+                            },
+                            _emit_recursive = <function 262>,
+                            _layout = <function 263>,
+                            _layout_callback = <function 16>,
+                            _matrix = <table 26>,
+                            _matrix_to_device = {
+                              x0 = 10,
+                              xx = 1,
+                              xy = 0,
+                              y0 = 70,
+                              yx = 0,
+                              yy = 1,
+                              <metatable> = <table 9>
+                            },
+                            _need_update = false,
+                            _parent = <table 32>,
+                            _redraw = <function 264>,
+                            _redraw_callback = <function 17>,
+                            _size = {
+                              height = 430,
+                              width = 980
+                            },
+                            _widget = <table 1>,
+                            _widget_counts = {},
+                            count_widget = <function 115>,
+                            draw = <function 116>,
+                            get_children = <function 117>,
+                            get_count = <function 118>,
+                            get_draw_extents = <function 119>,
+                            get_matrix_from_device = <function 120>,
+                            get_matrix_from_parent = <function 121>,
+                            get_matrix_to_device = <function 122>,
+                            get_matrix_to_parent = <function 123>,
+                            get_size = <function 124>,
+                            get_widget = <function 125>,
+                            new = <function 126>,
+                            update = <function 127>
+                          } },
+                        _context = <table 2>,
+                        _draw_extents = {
+                          height = 450,
+                          width = 1000,
+                          x = 0,
+                          y = 0
+                        },
+                        _emit_recursive = <function 183>,
+                        _layout = <function 185>,
+                        _layout_callback = <function 16>,
+                        _matrix = <table 31>,
+                        _matrix_to_device = {
+                          x0 = 0,
+                          xx = 1,
+                          xy = 0,
+                          y0 = 60,
+                          yx = 0,
+                          yy = 1,
+                          <metatable> = <table 9>
+                        },
+                        _need_update = false,
+                        _parent = <table 5>,
+                        _redraw = <function 186>,
+                        _redraw_callback = <function 17>,
+                        _size = {
+                          height = 450,
+                          width = 1000
+                        },
+                        _widget = <table 25>,
+                        _widget_counts = {},
+                        count_widget = <function 115>,
+                        draw = <function 116>,
+                        get_children = <function 117>,
+                        get_count = <function 118>,
+                        get_draw_extents = <function 119>,
+                        get_matrix_from_device = <function 120>,
+                        get_matrix_from_parent = <function 121>,
+                        get_matrix_to_device = <function 122>,
+                        get_matrix_to_parent = <function 123>,
+                        get_size = <function 124>,
+                        get_widget = <function 125>,
+                        new = <function 126>,
+                        update = <function 127>
+                      } },
+                    _context = <table 2>,
+                    _draw_extents = {
+                      height = 510,
+                      width = 1000,
+                      x = 0,
+                      y = 0
+                    },
+                    _emit_recursive = <function 215>,
+                    _layout = <function 217>,
+                    _layout_callback = <function 16>,
+                    _matrix = <table 10>,
+                    _matrix_to_device = <table 10>,
+                    _need_update = true,
+                    _redraw = <function 218>,
+                    _redraw_callback = <function 17>,
+                    _size = {
+                      height = 500,
+                      width = 1000
+                    },
+                    _widget = <table 29>,
+                    _widget_counts = {},
+                    count_widget = <function 115>,
+                    draw = <function 116>,
+                    get_children = <function 117>,
+                    get_count = <function 118>,
+                    get_draw_extents = <function 119>,
+                    get_matrix_from_device = <function 120>,
+                    get_matrix_from_parent = <function 121>,
+                    get_matrix_to_device = <function 122>,
+                    get_matrix_to_parent = <function 123>,
+                    get_size = <function 124>,
+                    get_widget = <function 125>,
+                    new = <function 126>,
+                    update = <function 127>
+                  },
+                  _widget_hierarchy_callback_arg = <table 6>,
+                  _widgets_under_mouse = { {
+                      drawable = <table 3>,
+                      height = 500,
+                      hierarchy = <table 5>,
+                      widget = <table 29>,
+                      widget_height = 500,
+                      widget_width = 1000,
+                      width = 1000,
+                      x = 0,
+                      y = 0
+                    }, {
+                      drawable = <table 3>,
+                      height = 450,
+                      hierarchy = <table 32>,
+                      widget = <table 25>,
+                      widget_height = 450,
+                      widget_width = 1000,
+                      width = 1000,
+                      x = 0,
+                      y = 60
+                    }, {
+                      drawable = <table 3>,
+                      height = 430,
+                      hierarchy = <table 33>,
+                      widget = <table 1>,
+                      widget_height = 430,
+                      widget_width = 980,
+                      width = 980,
+                      x = 10,
+                      y = 70
+                    } },
+                  add_signal = <function 3>,
+                  background_color = <userdata 10>,
+                  connect_signal = <function 4>,
+                  disconnect_signal = <function 5>,
+                  draw = <function 28>,
+                  drawable = <drawable 2>,
+                  drawable_name = "wibox drawable (@.home.alejandro..config.awesome.modules.modal_prompt)",
+                  emit_signal = <function 6>,
+                  find_widgets = <function 250>,
+                  foreground_color = <userdata 11>,
+                  get_wibox = <function 265>,
+                  modulename = <function 7>,
+                  new = <function 252>,
+                  set_bg = <function 253>,
+                  set_bgimage = <function 254>,
+                  set_fg = <function 255>,
+                  set_widget = <function 256>,
+                  weak_connect_signal = <function 8>,
+                  widget = <table 29>,
+                  <metatable> = {
+                    __tostring = <function 266>
+                  }
+                },
+                screen = <screen 1>,
+                wibox = <table 4>
+              }] = {
+                [980] = {
+                  [inf] = {
+                    _entry = { 978.0, 129560.0 }
+                  }
+                }
+              },
+              <metatable> = {
+                __mode = "v"
+              }
+            },
+            _creation_cb = <function 267>,
+            <metatable> = {
+              __index = <table 27>
+            }
+          }
+        }
+      },
+      _signals = {
+        ["button::press"] = {
+          strong = {
+            [<function 73>] = true
+          },
+          weak = {
+            <metatable> = {
+              __mode = "kv"
+            }
+          }
+        },
+        ["button::release"] = {
+          strong = {
+            [<function 74>] = true
+          },
+          weak = {
+            <metatable> = {
+              __mode = "kv"
+            }
+          }
+        },
+        ["widget::emit_recursive"] = {
+          strong = {},
+          weak = {
+            [<function 268>] = <function 268>,
+            [<function 269>] = <function 269>,
+            [<function 270>] = <function 270>,
+            [<function 271>] = <function 271>,
+            [<function 272>] = <function 272>,
+            [<function 273>] = <function 273>,
+            [<function 274>] = <function 274>,
+            [<function 275>] = <function 275>,
+            [<function 276>] = <function 276>,
+            <metatable> = {
+              __mode = "kv"
+            }
+          }
+        },
+        ["widget::layout_changed"] = {
+          strong = {
+            [<function 277>] = true
+          },
+          weak = {
+            [<function 278>] = <function 278>,
+            [<function 279>] = <function 279>,
+            [<function 280>] = <function 280>,
+            [<function 281>] = <function 281>,
+            [<function 282>] = <function 282>,
+            [<function 283>] = <function 283>,
+            [<function 284>] = <function 284>,
+            [<function 285>] = <function 285>,
+            [<function 286>] = <function 286>,
+            <metatable> = {
+              __mode = "kv"
+            }
+          }
+        },
+        ["widget::redraw_needed"] = {
+          strong = {},
+          weak = {
+            [<function 287>] = <function 287>,
+            [<function 288>] = <function 288>,
+            [<function 289>] = <function 289>,
+            [<function 290>] = <function 290>,
+            [<function 291>] = <function 291>,
+            [<function 292>] = <function 292>,
+            [<function 293>] = <function 293>,
+            [<function 294>] = <function 294>,
+            [<function 295>] = <function 295>,
+            <metatable> = {
+              __mode = "kv"
+            }
+          }
+        },
+        ["widget::updated"] = {
+          strong = {
+            [<function 296>] = true
+          },
+          weak = {
+            <metatable> = {
+              __mode = "kv"
+            }
+          }
+        }
+      },
+      add_signal = <function 3>,
+      buttons = <function 80>,
+      connect_signal = <function 4>,
+      disconnect_signal = <function 5>,
+      draw = <function 81>,
+      emit_signal = <function 6>,
+      emit_signal_recursive = <function 82>,
+      fit = <function 83>,
+      get_all_children = <function 84>,
+      get_children = <function 85>,
+      get_children_by_id = <function 86>,
+      get_forced_height = <function 87>,
+      get_forced_width = <function 88>,
+      get_height_for_width = <function 89>,
+      get_height_for_width_at_dpi = <function 90>,
+      get_markup = <function 91>,
+      get_opacity = <function 92>,
+      get_preferred_size = <function 93>,
+      get_preferred_size_at_dpi = <function 94>,
+      get_text = <function 95>,
+      get_visible = <function 96>,
+      index = <function 97>,
+      is_widget = true,
+      modulename = <function 7>,
+      mt = <table 12>,
+      set_align = <function 99>,
+      set_children = <function 100>,
+      set_ellipsize = <function 101>,
+      set_font = <function 102>,
+      set_forced_height = <function 103>,
+      set_forced_width = <function 104>,
+      set_markup = <function 105>,
+      set_markup_silently = <function 106>,
+      set_opacity = <function 107>,
+      set_text = <function 108>,
+      set_valign = <function 109>,
+      set_visible = <function 110>,
+      set_wrap = <function 111>,
+      setup = <function 46>,
+      weak_connect_signal = <function 8>,
+      widget_name = "wibox.widget.textbox",
+      <metatable> = {
+        __index = <function 112>,
+        __newindex = <function 113>,
+        __tostring = <function 297>
+      }
+    },
+    widget_buttons = {},
+    widget_caches = {}
+  },
+  _signals = {
+    ["button::press"] = {
+      strong = {
+        [<function 73>] = true
+      },
+      weak = {
+        <metatable> = {
+          __mode = "kv"
+        }
+      }
+    },
+    ["button::release"] = {
+      strong = {
+        [<function 74>] = true
+      },
+      weak = {
+        <metatable> = {
+          __mode = "kv"
+        }
+      }
+    },
+    ["mouse::enter"] = {
+      strong = {},
+      weak = {
+        <metatable> = {
+          __mode = "kv"
+        }
+      }
+    },
+    ["mouse::leave"] = {
+      strong = {},
+      weak = {
+        <metatable> = {
+          __mode = "kv"
+        }
+      }
+    },
+    ["widget::emit_recursive"] = {
+      strong = {},
+      weak = {
+        [<function 173>] = <function 173>,
+        [<function 262>] = <function 262>,
+        <metatable> = {
+          __mode = "kv"
+        }
+      }
+    },
+    ["widget::layout_changed"] = {
+      strong = {
+        [<function 298>] = true
+      },
+      weak = {
+        [<function 263>] = <function 263>,
+        [<function 174>] = <function 174>,
+        <metatable> = {
+          __mode = "kv"
+        }
+      }
+    },
+    ["widget::redraw_needed"] = {
+      strong = {},
+      weak = {
+        [<function 175>] = <function 175>,
+        [<function 264>] = <function 264>,
+        <metatable> = {
+          __mode = "kv"
+        }
+      }
+    },
+    ["widget::updated"] = {
+      strong = {
+        [<function 299>] = true
+      },
+      weak = {
+        <metatable> = {
+          __mode = "kv"
+        }
+      }
+    }
+  },
+  add_signal = <function 3>,
+  buttons = <function 80>,
+  connect_signal = <function 4>,
+  continue = <function 300>,
+  disconnect_signal = <function 5>,
+  draw = <function 301>,
+  emit_signal = <function 6>,
+  emit_signal_recursive = <function 82>,
+  fit = <function 302>,
+  get_all_children = <function 84>,
+  get_children = <function 303>,
+  get_children_by_id = <function 86>,
+  get_forced_height = <function 87>,
+  get_forced_width = <function 88>,
+  get_opacity = <function 92>,
+  get_visible = <function 96>,
+  get_widget = <function 304>,
+  horizontal = <function 305>,
+  index = <function 97>,
+  is_widget = true,
+  modulename = <function 7>,
+  pause = <function 306>,
+  reset_scrolling = <function 307>,
+  set_children = <function 308>,
+  set_direction = <function 309>,
+  set_expand = <function 310>,
+  set_extra_space = <function 311>,
+  set_forced_height = <function 103>,
+  set_forced_width = <function 104>,
+  set_fps = <function 312>,
+  set_max_size = <function 313>,
+  set_opacity = <function 107>,
+  set_space_for_scrolling = <function 314>,
+  set_speed = <function 315>,
+  set_step_function = <function 316>,
+  set_visible = <function 110>,
+  set_widget = <function 317>,
+  setup = <function 46>,
+  step_functions = {
+    linear_back_and_forth = <function 318>,
+    linear_decrease = <function 319>,
+    linear_increase = <function 320>,
+    nonlinear_back_and_forth = <function 321>,
+    waiting_nonlinear_back_and_forth = <function 11>
+  },
+  vertical = <function 322>,
+  weak_connect_signal = <function 8>,
+  widget_name = "wibox.container.scroll",
+  <metatable> = {
+    __index = <function 112>,
+    __newindex = <function 113>,
+    __tostring = <function 323>
+  }
+}
