@@ -72,9 +72,9 @@ if [[ "$OSN" == "FreeBSD" ]]
    then
     # make beasty dance
     export OSN="$OSN"
-    sleep 3
-    if [[ -v "ALACRITTY_SOCKET" ]]
-       then
-        alacritty msg config 'font.size=9.0' -w -1
-    fi
+    # sleep 3
+    # if [[ -v "ALACRITTY_SOCKET" ]]
+    #    then
+    #     alacritty msg config 'font.size=9.0' -w -1
+    # fi
 fi
