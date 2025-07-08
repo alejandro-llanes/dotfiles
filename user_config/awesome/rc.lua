@@ -369,6 +369,14 @@ local client_keys = awful.util.table.join(
 
   awful.key({ "Mod4" }, "m", maximize_client, { description="Maximize client", group="Client" }),
 
+  awful.key({ "Mod4", "Control", "Mod1" }, "Right", function()
+    swap_clients_between_tags(1) end,
+    {description = "swap clients with next tag", group = "tag"}),
+
+  awful.key({ "Mod4", "Control", "Mod1" }, "Left", function()
+    swap_clients_between_tags(-1) end,
+    {description = "swap clients with previous tag", group = "tag"}),
+
   awful.key({ "Mod4", "Control" }, "m", maximize_client_to_multiple_monitor, { description="Maximize client to miltiple monitors", group="Client" }),
 
   -- Snap to edge/corner - Use arrow keys
@@ -401,6 +409,44 @@ for i = 1, 9 do
     awful.key({ "Mod4", "Control" }, "#" .. i + 9, function() do_for_tag(i, function(tag) awful.tag.viewtoggle(tag) end) end, { description="Add view tag #", group="Tag" })
   )
 end
+
+swap_clients_between_tags = function(direction)
+    local screen = awful.screen.focused()
+    local tags = screen.tags
+    local current_tag = screen.selected_tag
+    if not current_tag then return end
+
+    local index = current_tag.index
+    local next_index = index + direction
+
+    if next_index < 1 or next_index > #tags then return end
+
+    local target_tag = tags[next_index]
+    local current_clients = current_tag:clients()
+    local target_clients = target_tag:clients()
+
+    -- Backup and disable volatile
+    local was_current_volatile = current_tag.volatile
+    local was_target_volatile = target_tag.volatile
+    current_tag.volatile = false
+    target_tag.volatile = false
+
+    -- Swap clients
+    for _, c in ipairs(current_clients) do
+        c:move_to_tag(target_tag)
+    end
+    for _, c in ipairs(target_clients) do
+        c:move_to_tag(current_tag)
+    end
+
+    -- Restore volatile status
+    current_tag.volatile = was_current_volatile
+    target_tag.volatile = was_target_volatile
+
+    -- Focus the target tag
+    target_tag:view_only()
+end
+
 
 awful.menu.menu_keys = {
   up    = { "Up" },
