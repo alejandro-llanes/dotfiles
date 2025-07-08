@@ -441,6 +441,15 @@ hotkeys_popup.add_hotkeys({
 })
 hotkeys_popup.add_group_rules("Client")
 
+client.connect_signal("property::urgent", function(c)
+    if c.urgent then
+        local t = c.first_tag
+        if t then
+            t:view_only()
+        end
+    end
+end)
+
 awful.rules.rules = {
   {
     rule = { },

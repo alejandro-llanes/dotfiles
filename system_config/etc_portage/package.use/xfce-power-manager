@@ -1,1 +1,1 @@
-xfce-base/xfce4-power-manager X -wayland
+xfce-base/xfce4-power-manager X -wayland panel-plugin policykit

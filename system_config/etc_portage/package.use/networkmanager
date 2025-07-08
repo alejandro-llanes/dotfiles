@@ -1,1 +1,1 @@
-net-misc/networkmanager bluetooth concheck connection-sharing dhcpcd modemmanager nftables nss ofono resolvconf systemd tools wifi vala
+net-misc/networkmanager bluetooth concheck connection-sharing -dhcpcd dhclient modemmanager nftables nss ofono resolvconf systemd tools wifi vala
