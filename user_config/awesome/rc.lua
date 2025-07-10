@@ -1,5 +1,6 @@
 require("utils")
 require("helper")
+require("modules/icons")
 require("modules/create_class")
 require("modules/modal_prompt")
 require("modules/screen")
@@ -27,6 +28,7 @@ local wibox = require("wibox")
 local vicious = require("vicious")
 local beautiful = require("beautiful")
 local naughty = require("naughty")
+local cairo = require("lgi").cairo
 
 require("modules/error_handling")
 
@@ -262,6 +264,21 @@ local toggle_panel = function()
     panel_ref.visible = not panel_ref.visible
   end
 end
+
+--local inspect = require("modules/inspect")
+
+client.connect_signal("manage", function(c)
+    if c and c.valid and not c.icon and class_icons[c.class] then
+        naughty.notify({text =  c.class .. " does not have valid icon." })
+        local sf = gears.surface(class_icons[c.class])
+        local img = cairo.ImageSurface.create(cairo.Format.ARGB32, sf:get_width(), sf:get_height())
+        local cr = cairo.Context(img)
+        cr:set_source_surface(sf, 0, 0)
+        cr:paint()
+        c.icon = img and img._native or nil
+    end
+end)
+
 
 -- | Key bindings | --
 
@@ -704,6 +721,7 @@ if current_os == "Linux" then
   "blueman-applet",
   "pasystray",
   "xfce4-power-manager",
+  "xfce4-clipman",
   "/usr/libexec/polkit-gnome-authentication-agent-1",
  -- "/usr/bin/1password --silent"
 })
@@ -714,6 +732,7 @@ if current_os == "FreeBSD" then
   "xmodmap -e 'pointer = 3 2 1'",
   "setxkbmap -layout latam",
   "picom",
+  "pasystray",
   "xfce4-power-manager"
   --"picom --usr backend",
   --"/glx/lib/mate-polkit/polkit-mate-authentication-agent-1",

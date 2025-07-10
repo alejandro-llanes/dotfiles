@@ -64,14 +64,15 @@
 ;;(setq doom-theme 'doom-acario-dark)
 ;;;(setq doom-theme 'doom-dracula)
 ;;(setq doom-theme 'doom-gruvbox)
-(setq doom-theme 'doom-laserwave)
-;;(setq doom-theme 'doom-gruvbox)
+;;(setq doom-theme 'doom-laserwave)
+;;(setq doom-theme 'doom-henna)
 ;;(setq doom-theme 'doom-outrun-electric)
 ;;(setq doom-theme 'doom-solarized-dark)
 ;;;(setq doom-theme 'doom-nord-light)
 
 (when (eq system-type 'gnu/linux)
-  (setq doom-theme 'doom-laserwave))
+  ;;(setq doom-theme 'doom-laserwave))
+  (setq doom-theme 'doom-henna))
 ;; FreeBSD
 (when (eq system-type 'berkeley-unix)
   (setq doom-theme 'doom-henna))
