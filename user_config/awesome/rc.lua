@@ -45,7 +45,7 @@ local file_manager = "nautilus"
 local graphic_text_editor = "emacs"
 local music_player = "spotify"
 --local session_lock_command = "dm-tool lock"
-local session_lock_command = "slock"
+local session_lock_command = "xfce4-screensaver-command -l"
 local calendar_command = "/opt/google/chrome/google-chrome --profile-directory='Profile 2' --app=https://calendar.google.com/calendar"
 local power_manager_settings_command = "xfce4-power-manager-settings"
 local system_monitor_command = "gnome-system-monitor"
@@ -721,6 +721,7 @@ if current_os == "Linux" then
   "blueman-applet",
   "pasystray",
   "xfce4-power-manager",
+  "xfce4-screensaver",
   "xfce4-clipman",
   "/usr/libexec/polkit-gnome-authentication-agent-1",
  -- "/usr/bin/1password --silent"
@@ -733,7 +734,8 @@ if current_os == "FreeBSD" then
   "setxkbmap -layout latam",
   "picom",
   "pasystray",
-  "xfce4-power-manager"
+  "xfce4-power-manager",
+  "xfce4-screensaver"
   --"picom --usr backend",
   --"/glx/lib/mate-polkit/polkit-mate-authentication-agent-1",
   --"/usr/lib/geoclue-2.0/demos/agent",
