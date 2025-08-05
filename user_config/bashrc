@@ -43,7 +43,7 @@ alias ls="lsd"
 alias astronvim="NVIM_APPNAME=astronvim nvim"
 # do not start a new tmux session if there another one already
 # running.
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ] && [[ ! "$EMACSW" ]] && [[ ! "$NVIMON" ]] ; then
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ] && [[ ! "$EMACSW" ]] && [[ ! "$NVIMON" ]] && [[ ! "$SSH_TTY" ]] ; then
   exec tmux -u new -ADX
 fi
 # GCLOUD
