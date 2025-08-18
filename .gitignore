@@ -8,3 +8,4 @@ tmp/
 /system_config/etc_portage/package.use/._cfg0001_zoom
 /user_config/awesome/wired_interface
 /user_config/awesome/wireless_interface
+/system_config/etc_portage/savedconfig/sys-kernel/linux-firmware-20250627

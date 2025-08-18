@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=vlc %f
+Exec=vlc %f
+Categories=Other;
+NoDisplay=true
+MimeType=image/x-hdr
+Terminal=false

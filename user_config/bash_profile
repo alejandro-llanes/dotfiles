@@ -1,0 +1,18 @@
+# /etc/skel/.bash_profile
+
+# This file is sourced by bash for login shells.  The following line
+# runs your .bashrc and is recommended by the bash info pages.
+if [[ -f ~/.bashrc ]] ; then
+	. ~/.bashrc
+fi
+
+#source /home/alejandro/.config/broot/launcher/bash/br
+
+export PATH=$PATH:/home/alejandro/.spicetify
+
+# add go binaries
+export PATH=$HOME/go/bin:$PATH
+
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+export PATH="$HOME/.avm/bin:$PATH"
+. "$HOME/.cargo/env"
