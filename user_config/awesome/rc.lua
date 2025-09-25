@@ -46,8 +46,9 @@ local graphic_text_editor = "emacs"
 local music_player = "spotify"
 --local session_lock_command = "dm-tool lock"
 local session_lock_command = "xfce4-screensaver-command -l"
-local calendar_command =
-	"/opt/google/chrome/google-chrome --profile-directory='Profile 2' --app=https://calendar.google.com/calendar"
+--local calendar_command =
+--	"/opt/google/chrome/google-chrome --profile-directory='Profile 2' --app=https://calendar.google.com/calendar"
+local calendar_command = ""
 local power_manager_settings_command = "xfce4-power-manager-settings"
 local system_monitor_command = "gnome-system-monitor"
 local network_configuration_command = "nm-connection-editor"
@@ -683,7 +684,7 @@ awful.rules.rules = {
 			border_width = beautiful.border_width,
 			border_color = beautiful.border_normal,
 			focus = awful.client.focus.filter,
-			raise = true,
+			--raise = true,
 			keys = client_keys,
 			buttons = client_buttons,
 			titlebars_enabled = false,
@@ -695,9 +696,9 @@ awful.rules.rules = {
 		rule_any = {},
 		except_any = { type = { "normal" }, class = { "Emacs" } },
 		properties = {
-			floating = true,
+			--floating = true,
 			skip_taskbar = true,
-			ontop = true,
+			--ontop = true,
 			focusable = false,
 		},
 		callback = function(c)
@@ -710,6 +711,16 @@ awful.rules.rules = {
 			tag = "1",
 			switchtotag = true,
 			focus = true,
+		},
+	},
+	{
+		rule = { class = "org.remmina.Remmina" },
+		properties = {
+			--tag = "1",
+			--switchtotag = true,
+			--focus = true,
+			minimized = true,
+			skip_taskbar = true,
 		},
 	},
 	-- {
@@ -741,7 +752,7 @@ awful.rules.rules = {
 		except_any = { class = { "Alacritty" } },
 		properties = {
 			floating = false,
-			maximized = true,
+			--maximized = true,
 			switchtotag = true,
 			focus = true,
 			new_tag = {
@@ -889,6 +900,7 @@ if current_os == "Linux" then
 		"xfce4-screensaver",
 		"xfce4-clipman",
 		"/usr/libexec/polkit-gnome-authentication-agent-1",
+		"remmina",
 		-- "/usr/bin/1password --silent"
 	})
 end

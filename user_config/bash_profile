@@ -10,6 +10,9 @@ fi
 
 export PATH=$PATH:/home/alejandro/.spicetify
 
+# add cuda binaries
+export PATH=/opt/cuda/bin:$PATH
+
 # add go binaries
 export PATH=$HOME/go/bin:$PATH
 
