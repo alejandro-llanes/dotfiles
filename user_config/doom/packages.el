@@ -74,8 +74,8 @@
 (package! cfn-mode)
 (package! gist)
 (package! sublime-themes)
-(package! ws-butler
-  :recipe (:host github :repo "lewang/ws-butler"))
+;;(package! ws-butler
+;;  :recipe (:host github :repo "lewang/ws-butler"))
 
 ;; MacOS Specific
 
