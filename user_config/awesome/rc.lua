@@ -56,7 +56,8 @@ local launch_command = "ulauncher"
 
 --local wallpaper_image_path = config_path .. "/themes/relz/wallpapers/cosmos_purple.jpg";
 --gears.wallpaper.maximized("/home/alejandro/.config/awesome/themes/relz/wallpapers/9matter.jpg", screen[2])
-local wallpaper_image_path = config_path .. "/themes/relz/wallpapers/9matter.jpg"
+--local wallpaper_image_path = config_path .. "/themes/relz/wallpapers/9matter.jpg"
+local wallpaper_image_path = config_path .. "/themes/relz/wallpapers/tokyo.jpg"
 local geolocation = {
 	latitude = 0,
 	longitude = 0,
@@ -137,6 +138,7 @@ screen_0_panel.position = "top"
 
 if current_os == "Linux" then
 	screen_0_panel.thickness = 32
+	screen_0_panel.opacity = 0.9
 end
 screen_0_panel.tags.list = {
 	Tag("1", awful.layout.suit.spiral), --,

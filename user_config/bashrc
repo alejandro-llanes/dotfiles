@@ -76,7 +76,7 @@ if [[ "$OSN" == "GNU/Linux" ]]
     export OSN="$OSN"
     alias kubectl="kubecolor"
     source $HOME/.kube/completion.bash.inc
-    source /home/alejandro/.config/broot/launcher/bash/br
+    #source /home/alejandro/.config/broot/launcher/bash/br
     # if [[ -v "ALACRITTY_SOCKET" ]]
     #    then
     #     alacritty msg config 'font.size=10.0' -w -1

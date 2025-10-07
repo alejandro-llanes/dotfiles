@@ -42,10 +42,10 @@
 
 ;; FONTS
 
-;;(setq doom-font (font-spec :family "Fira Code" :size 16 :weight 'semi-light)
-(setq doom-font (font-spec :family "JetBrains Mono" :size 16 :weight 'semi-light)
-      ;;doom-variable-pitch-font (font-spec :family "Fira Sans" :size 18))
-      doom-variable-pitch-font (font-spec :family "JetBrains Mono" :size 18))
+(setq doom-font (font-spec :family "JetBrainsMono" :size 16 :slant 'normal :weight 'light)
+      doom-variable-pitch-font (font-spec :family "Fira Code" :size 12)
+      doom-unicode-font (font-spec :family "Fira Code" :size 11)
+      doom-big-font (font-spec :family "Fira Code" :size 19))
 
 ;; font scale for freebsd laptop 1366 x 768
 (defun mio/set-x250-resolution ()
