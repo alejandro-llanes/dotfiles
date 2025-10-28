@@ -10,3 +10,5 @@ tmp/
 /system_config/etc_portage/savedconfig/sys-kernel/linux-firmware-20250627
 /user_config/tmux/plugins
 /user_config/lazyvim
+/user_config/crontabs/*.txt
+/user_config/systemd/user/timers.target.wants/

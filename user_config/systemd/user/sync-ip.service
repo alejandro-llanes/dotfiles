@@ -1,0 +1,7 @@
+[Unit]
+Description=Upload ifconfig output to Google Drive
+
+[Service]
+Type=oneshot
+ExecStart=%h/dotfiles/user_config/crontabs/sync_ip.sh
+
