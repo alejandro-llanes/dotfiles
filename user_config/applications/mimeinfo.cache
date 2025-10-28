@@ -22,4 +22,7 @@ text/xml=edge.desktop;
 x-scheme-handler/ftp=edge.desktop;
 x-scheme-handler/http=edge.desktop;
 x-scheme-handler/https=edge.desktop;
+x-scheme-handler/psi=psi-bridge-secure-browser.desktop;
+x-scheme-handler/psibr=psi-bridge-secure-browser.desktop;
+x-scheme-handler/psiexam=psi-bridge-secure-browser.desktop;
 x-scheme-handler/zed=zed.desktop;

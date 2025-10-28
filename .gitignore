@@ -4,8 +4,9 @@
 tmp/
 ./freebsd/user_config/fish/fish_variables
 ./freebsd/user_config/leftwm/themes/Ascent
-/system_config/etc_portage/package.use/._cfg0000_zoom
-/system_config/etc_portage/package.use/._cfg0001_zoom
+/system_config/etc_portage/package.use/._cfg*
 /user_config/awesome/wired_interface
 /user_config/awesome/wireless_interface
 /system_config/etc_portage/savedconfig/sys-kernel/linux-firmware-20250627
+/user_config/tmux/plugins
+/user_config/lazyvim
