@@ -81,6 +81,10 @@ if [[ "$OSN" == "GNU/Linux" ]]
     #    then
     #     alacritty msg config 'font.size=10.0' -w -1
     #fi
+    if [[ -e "$HOME/.local.vars.inc" ]]
+    then
+     source $HOME/.local.vars.inc
+    fi
 fi
 
 # specific for FreeBSD
