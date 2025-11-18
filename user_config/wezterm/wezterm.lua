@@ -1,5 +1,4 @@
-
-local wezterm = require 'wezterm'
+local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
@@ -7,10 +6,12 @@ local config = wezterm.config_builder()
 --local SOLID_RIGHT_ARROW = wezterm.nerdfonts.pl_left_hard_divider
 
 config.color_scheme = "Tokyo Night Moon"
-config.window_background_opacity = 0.4
-config.default_prog = { "/usr/bin/fish", "-l" }
+config.window_background_opacity = 0.9
+--config.default_prog = { "/usr/bin/fish", "-l" }
+--config.default_prog = { "/usr/bin/zellij" }
+config.default_prog = { "/usr/bin/nu" }
 --config.window_background_image = wezterm.home_dir .. "/Pictures/synthwave2.jpg"
---config.enable_tab_bar = false
+config.enable_tab_bar = true
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
 

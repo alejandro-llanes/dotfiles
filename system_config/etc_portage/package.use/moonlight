@@ -1,0 +1,1 @@
+net-misc/moonlight X -embedded glslow soundio vkslow vdpau -wayland -lib

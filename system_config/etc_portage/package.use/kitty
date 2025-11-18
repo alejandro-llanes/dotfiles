@@ -1,1 +1,1 @@
-x11-terms/kitty wayland -X
+x11-terms/kitty -wayland X

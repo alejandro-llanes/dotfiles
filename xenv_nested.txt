@@ -1,0 +1,44 @@
+
+Xorg -noreset -nolisten tcp -logfile /tmp/xorg.log \
+  +extension GLX +extension RANDR +extension RENDER \
+  -config /etc/X11/xorg-xdummy.conf :1
+
+
+Xvfb
+
+Xephyr :101 -ac -screen  1920x1080x24
+Xephyr :101 -ac -screen  1920x1080x24 -mouse evdev,,device=/dev/input/event1 -keybd evdev,,device=/dev/input/event0 -dpi 100
+
+Xnest -geometry 3440x1415
+
+docker build -t alejandrollanes/xdummy
+
+docker run --name xorg --gpus all -it -d -v /tmp/.X11-unix:/tmp/.X11-unix alejandrollanes/xdummy
+docker run --name xorg --device /dev/dri:/dev/dri -it -d -v /tmp/.X11-unix:/tmp/.X11-unix alejandrollanes/xdummy
+
+xrandr --output DUMMY0 --mode "1920x1080"
+
+xrandr --newmode "1920x1080_60.00"  172.80  1920 2040 2248 2576  1080 1081 1084 1118  -HSync +Vsync
+xrandr --addmode DUMMY0 "1920x1080_60.00"
+xrandr --output DUMMY0 --mode "1920x1080_60.00"
+
+
+
+HDMI-2 connected 3840x2160+640+0 (normal left inverted right x axis y axis) 608mm x 345mm
+   3840x2160     30.00*+  25.00    24.00    29.97    23.98
+   2560x1440     59.95
+   1920x1080     60.00    50.00    59.94    30.00    24.00    29.97    23.98
+   1680x1050     59.88
+   1600x900      60.00
+   1280x1024     75.02    60.02
+   1440x900      59.90
+   1280x800      59.91
+   1152x864      75.00
+   1280x720      60.00    50.00    59.94
+   1024x768      75.03    70.07    60.00
+   832x624       74.55
+   800x600       72.19    75.00    60.32    56.25
+   720x576       50.00
+   720x480       60.00    59.94
+   640x480       75.00    72.81    66.67    60.00    59.94
+   720x400       70.08

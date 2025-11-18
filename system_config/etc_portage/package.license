@@ -19,3 +19,5 @@ net-im/teams-for-linux  MIT BSD BSD-2 BSD-4 AFL-2.1 Apache-2.0 Ms-PL GPL-2 LGPL-
 #>=app-emulation/virtualbox-kvm-7.1.6a_pre20250207 **
 dev-util/android-studio  Apache-2.0 android BSD BSD-2 CDDL-1.1 CPL-0.5 EPL-1.0 GPL-2 GPL-2+ JDOM IJG LGPL-2.1 MIT MPL-1.1 MPL-2.0 NPL-1.1 OFL-1.1 ZLIB
 dev-util/android-sdk-cmdline-tools android
+media-libs/faac MPEG-4
+=media-video/ffmpeg-7.1.2 all-rights-reserved

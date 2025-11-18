@@ -74,6 +74,7 @@
 (package! cfn-mode)
 (package! gist)
 (package! sublime-themes)
+(package! kdl-mode)
 ;;(package! ws-butler
 ;;  :recipe (:host github :repo "lewang/ws-butler"))
 
