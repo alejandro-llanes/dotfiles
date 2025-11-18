@@ -1,0 +1,15 @@
+[Unit]
+Description=Headless Xvfb for Sunshine
+After=graphical-session.target
+
+[Service]
+Environment=DISPLAY=:101
+Environment=XDG_RUNTIME_DIR=/run/user/%U
+Environment=XAUTHORITY=%h/.Xauthority
+#ExecStart=/usr/libexec/Xorg :101 -nolisten tcp -keeptty -config %h/dotfiles/X11/10-fake-monitor.conf t7
+ExecStart=/usr/bin/Xvfb :101 -ac -screen 0 1920x1080x24 +extension XTEST
+#ExecStart=Xorg :101 -noreset -nolisten tcp -logfile /tmp/xorg.log +extension GLX +extension RANDR +extension RENDER -config /home/alejandro/dotfiles/xdummy.conf
+Restart=always
+
+[Install]
+WantedBy=default.target

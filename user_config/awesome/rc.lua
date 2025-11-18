@@ -213,17 +213,17 @@ update_screens = function(card)
 		if (not is_secondary_output_in_use and unused_secondary_output) or is_screen_duplicated then
 			local secondary_output = is_screen_duplicated and used_secondary_output or unused_secondary_output
 
-			run_command_sync(
-				"xrandr "
-					.. "--output "
-					.. primary_output
-					.. " --preferred --primary "
-					.. "--output "
-					.. secondary_output
-					.. " --right-of "
-					.. primary_output
-					.. " --preferred "
-			)
+--			run_command_sync(
+--				"xrandr "
+--					.. "--output "
+--					.. primary_output
+--					.. " --preferred --primary "
+--					.. "--output "
+--					.. secondary_output
+--					.. " --right-of "
+--					.. primary_output
+--					.. " --preferred "
+--			)
 			break
 		else
 			if is_secondary_output_disconnected and disconnected_secondary_output_rect then
@@ -902,9 +902,11 @@ if current_os == "Linux" then
 		"xfce4-screensaver",
 		"xfce4-clipman",
 		"/usr/libexec/polkit-gnome-authentication-agent-1",
-		"remmina",
+		--"sudo chvt 2"
+		--"remmina",
 		-- "/usr/bin/1password --silent"
 	})
+	--awful.spawn.once(session_lock_command)
 end
 
 if current_os == "FreeBSD" then

@@ -4,7 +4,18 @@
 # including some apparently interactive shells such as scp and rcp
 # that can't tolerate any output.  So make sure this doesn't display
 # anything or bad things will happen !
+# BPID=$BASHPID
+# PPID="$(ps -o ppid= $BPID)"
+#CTTY="$(ps -o tty= $PPID)"
 
+#if [ -z "$DISPLAY" ] && [ "$CTTY" = "tty7" ]; then
+#   exec startx -- vt07
+#fi
+
+if [[ "$XTERM_VERSION" ]] && [[ ! "$XTERM_ONCE" ]] ; then
+ XTERM_ONCE="$(date)"
+ Xephyr :101 -ac -screen 1920x1080x24 -dpi 100 &> $HOME/xephyr.err
+fi
 
 # Test for an interactive shell.  There is no need to set anything
 # past this point for scp and rcp, and it's important to refrain from
@@ -85,6 +96,7 @@ if [[ "$OSN" == "GNU/Linux" ]]
     then
      source $HOME/.local.vars.inc
     fi
+
 fi
 
 # specific for FreeBSD
