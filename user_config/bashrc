@@ -77,9 +77,10 @@ export PATH=$PATH:$HOME/zig-linux-x86_64-0.14.0-dev.1307+849c31a6c
 export PATH=$PATH:$HOME/.config/emacs/bin
 # systemctl --user enable --now emacs-29'
 #alias e='emacsclient --tty --socket-name=main'
-alias emacs="emacs -nw"
+#alias emacs="emacs -nw"
 alias magit="emacs -nw --eval '(magit)'"
-alias e='emacsclient --tty'
+#alias e='emacsclient --tty'
+alias e='emacs -nw'
 # lsd
 alias ls="lsd"
 # astronvim
