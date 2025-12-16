@@ -1,0 +1,1 @@
+net-misc/rdesktop -alsa ao pulseaudio xrandr

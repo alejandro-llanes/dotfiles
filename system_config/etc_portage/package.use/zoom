@@ -379,3 +379,44 @@ net-im/zoom zoom-symlink pulseaudio opencl wayland
 # required by dev-python/pipenv-2024.0.2-r1::gentoo[-test]
 # required by dev-python/dparse-0.6.4::gentoo
 >=dev-python/cerberus-1.3.7 python_targets_python3_12
+# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[-python_targets_python3_11,python_targets_python3_12,native-extensions,-python_targets_python3_14,python_targets_python3_13]
+# required by app-text/pdfminer-20240706::gentoo
+# required by app-text/OCRmyPDF-16.10.2::guru
+# required by @selected
+# required by @world (argument)
+>=dev-python/mypy-1.19.0 python_targets_python3_12
+# required by dev-python/mypy-1.19.0::gentoo[native-extensions,-test]
+# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[-python_targets_python3_11,python_targets_python3_12,native-extensions,-python_targets_python3_14,python_targets_python3_13]
+# required by app-text/pdfminer-20240706::gentoo
+# required by app-text/OCRmyPDF-16.10.2::guru
+# required by @selected
+# required by @world (argument)
+>=dev-python/librt-0.6.3 python_targets_python3_12
+# required by dev-python/mypy-1.19.0::gentoo[native-extensions,-test]
+# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[-python_targets_python3_11,python_targets_python3_12,native-extensions,-python_targets_python3_14,python_targets_python3_13]
+# required by app-text/pdfminer-20240706::gentoo
+# required by app-text/OCRmyPDF-16.10.2::guru
+# required by @selected
+# required by @world (argument)
+>=dev-python/mypy-extensions-1.1.0 python_targets_python3_12
+# required by dev-python/mypy-1.19.0::gentoo[native-extensions,-test]
+# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[-python_targets_python3_11,python_targets_python3_12,native-extensions,-python_targets_python3_14,python_targets_python3_13]
+# required by app-text/pdfminer-20240706::gentoo
+# required by app-text/OCRmyPDF-16.10.2::guru
+# required by @selected
+# required by @world (argument)
+>=dev-python/psutil-7.1.3 python_targets_python3_12
+# required by dev-python/mypy-1.19.0::gentoo[native-extensions]
+# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[-python_targets_python3_11,python_targets_python3_12,native-extensions,-python_targets_python3_14,python_targets_python3_13]
+# required by app-text/pdfminer-20240706::gentoo
+# required by app-text/OCRmyPDF-16.10.2::guru
+# required by @selected
+# required by @world (argument)
+>=dev-python/types-psutil-7.1.3.20251130 python_targets_python3_12
+# required by dev-python/mypy-1.19.0::gentoo[native-extensions]
+# required by dev-python/charset-normalizer-3.4.4-r1::gentoo[-python_targets_python3_11,python_targets_python3_12,native-extensions,-python_targets_python3_14,python_targets_python3_13]
+# required by app-text/pdfminer-20240706::gentoo
+# required by app-text/OCRmyPDF-16.10.2::guru
+# required by @selected
+# required by @world (argument)
+>=dev-python/types-setuptools-80.9.0.20250822 python_targets_python3_12

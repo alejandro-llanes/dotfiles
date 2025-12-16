@@ -1,0 +1,1 @@
+net-fs/samba -regedit -system-mitkrb5 -acl -addc -ads -ceph -cluster -cups -debug -fam -glusterfs -gpg -iprint -json -ldap -llvm-libunwind -lmdb -pam -profiling-data -python -quota -selinux -snapper -spotlight -syslog -system-heimdal -systemd -test -unwind -winbind -zeroconf
