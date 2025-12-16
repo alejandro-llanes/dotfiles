@@ -12,4 +12,5 @@ tmp/
 /user_config/lazyvim
 /user_config/crontabs/*.txt
 /user_config/systemd/user/timers.target.wants/
-user_config/fish/fish_variables
+/user_config/fish/fish_variables
+/freebsd/user_config/leftwm
