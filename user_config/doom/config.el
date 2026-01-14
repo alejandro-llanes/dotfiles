@@ -16,7 +16,8 @@
 (setenv "EMACSW" "true")
 
 ;; opacity
-(doom/set-frame-opacity 85)
+;;(doom/set-frame-opacity 85)
+(doom/set-frame-opacity 0.8)
 
 ;; show line numbers
 (setq display-line-numbers-type t)
@@ -32,10 +33,10 @@
 (setq max-lisp-eval-depth 10000)
 
 ;; cycling windows
-(global-set-key (kbd "C-<down>") 'enlarge-window)
-(global-set-key (kbd "C-<up>") 'shrink-window)
-(global-set-key (kbd "C-<left>") 'shrink-window-horizontally)
-(global-set-key (kbd "C-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "C-S-<down>") 'enlarge-window)
+(global-set-key (kbd "C-S-<up>") 'shrink-window)
+(global-set-key (kbd "C-S-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "C-S-<right>") 'enlarge-window-horizontally)
 
 ;; VTERM
 ;;(define-key vterm-mode-map (kbd "C-c C-c") 'vterm--self-ctrl-c)
@@ -91,7 +92,15 @@
 ;; WINDOWS SWITCHING
 ;; Linux
 (when (eq system-type 'gnu/linux)
-  (windmove-default-keybindings 'super))
+  (windmove-default-keybindings 'control))
+;;(windmove-default-keybindings 'super))
+;; (use-package windmove
+;;   :ensure nil
+;;   :bind*
+;;   (("C-S-<left>" . windmove-left)
+;;    ("C-S-<right>" . windmove-right)
+;;    ("C-S-<up>" . windmove-up)
+;;   ("C-S-<down>" . windmove-down))))
 ;; FreeBSD
 (when (eq system-type 'berkeley-unix)
   ;; (use-package windmove
@@ -223,9 +232,25 @@
 (require 'marginalia)
 (vertico-mode)
 (vertico-posframe-mode 1)
+(vertico-multiform-mode 1)
 (marginalia-mode)
 (setq vertico-posframe-poshandler #'posframe-poshandler-frame-top-center)
 
+(setq vertico-multiform-commands
+      '((consult-line
+         posframe
+         (vertico-posframe-poshandler . posframe-poshandler-frame-top-center)
+         (vertico-posframe-border-width . 10)
+         ;; NOTE: This is useful when emacs is used in both in X and
+         ;; terminal, for posframe do not work well in terminal, so
+         ;; vertico-buffer-mode will be used as fallback at the
+         ;; moment.
+         (vertico-posframe-fallback-mode . vertico-buffer-mode))
+        (t posframe)))
+
+(setq vertico-posframe-parameters
+      '((left-fringe . 8)
+        (right-fringe . 8)))
 
 ;; IBUFFER
 
@@ -342,7 +367,7 @@
 ;; WINDOWS SWITCHING
 ;; Linux
 (when (eq system-type 'gnu/linux)
-  (global-set-key (kbd "s-a")
+  (global-set-key (kbd "C-s-a")
                   (lambda () (interactive)
                     (treemacs)
                     (windmove-right)
@@ -362,16 +387,16 @@
 
 
 ;;(global-set-key (kbd "C-c o i")
-(global-set-key (kbd "s-i")
+(global-set-key (kbd "C-s-i")
                 (lambda () (interactive)
                   (mio/toggle-window "*:Buffers:*" 'left 1 treemacs-width)))
 
 ;;(global-set-key (kbd "C-c o o")
-(global-set-key (kbd "s-o")
+(global-set-key (kbd "C-s-o")
                 (lambda () (interactive)
                   (mio/toggle-window "*LSP Symbols List*" 'right 0 treemacs-width)))
 
-(global-set-key (kbd "s-p")
+(global-set-key (kbd "C-s-p")
                 (lambda () (interactive)
                   (treemacs)))
 
