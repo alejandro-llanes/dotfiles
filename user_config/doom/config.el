@@ -73,7 +73,8 @@
 
 (when (eq system-type 'gnu/linux)
   ;;(setq doom-theme 'doom-laserwave))
-  (setq doom-theme 'doom-henna))
+  ;;(setq doom-theme 'doom-henna))
+  (setq doom-theme 'doom-horizon))
 ;; FreeBSD
 (when (eq system-type 'berkeley-unix)
   (setq doom-theme 'doom-henna))
