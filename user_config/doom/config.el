@@ -232,26 +232,27 @@
 (require 'vertico-posframe)
 (require 'marginalia)
 (vertico-mode)
-(vertico-posframe-mode 1)
 (vertico-multiform-mode 1)
 (marginalia-mode)
 (setq vertico-posframe-poshandler #'posframe-poshandler-frame-top-center)
+(vertico-posframe-mode 1)
 
-(setq vertico-multiform-commands
-      '((consult-line
-         posframe
-         (vertico-posframe-poshandler . posframe-poshandler-frame-top-center)
-         (vertico-posframe-border-width . 10)
-         ;; NOTE: This is useful when emacs is used in both in X and
-         ;; terminal, for posframe do not work well in terminal, so
-         ;; vertico-buffer-mode will be used as fallback at the
-         ;; moment.
-         (vertico-posframe-fallback-mode . vertico-buffer-mode))
-        (t posframe)))
+;; (let ((v (getenv "XDG_CURRENT_SESSION")))
+;;   (when (and v (not (eq v 'COSMIC)))
+;;     (vertico-posframe-mode 1)
+;;     (setq posframe-mouse-banish nil)
+;;     (setq vertico-multiform-commands
+;;           '((consult-line
+;;              posframe
+;;              (vertico-posframe-poshandler . posframe-poshandler-frame-top-center)
+;;              (vertico-posframe-border-width . 10)
+;;              (vertico-posframe-fallback-mode . vertico-buffer-mode))
+;;             (t posframe)))
 
-(setq vertico-posframe-parameters
-      '((left-fringe . 8)
-        (right-fringe . 8)))
+;;     (setq vertico-posframe-parameters
+;;           '((left-fringe . 8)
+;;             (right-fringe . 8)))
+;;     ))
 
 ;; IBUFFER
 
@@ -372,8 +373,8 @@
                   (lambda () (interactive)
                     (treemacs)
                     (windmove-right)
-                    (mio/toggle-window "*:Buffers:*" 'left 1 treemacs-width)
-                    (mio/toggle-window "*LSP Symbols List*" 'right 0 treemacs-width)
+                    (mio/toggle-window "*:Buffers:*" 'left 3 treemacs-width)
+                    (mio/toggle-window "*LSP Symbols List*" 'left 2 treemacs-width)
                     )))
 ;; FreeBSD
 (when (eq system-type 'berkeley-unix)
@@ -382,20 +383,20 @@
                   (lambda () (interactive)
                     (treemacs)
                     (windmove-right)
-                    (mio/toggle-window "*:Buffers:*" 'left 1 treemacs-width)
-                    (mio/toggle-window "*LSP Symbols List*" 'right 0 treemacs-width)
+                    (mio/toggle-window "*:Buffers:*" 'left 3 treemacs-width)
+                    (mio/toggle-window "*LSP Symbols List*" 'left 2 treemacs-width)
                     )))
 
 
 ;;(global-set-key (kbd "C-c o i")
 (global-set-key (kbd "C-s-i")
                 (lambda () (interactive)
-                  (mio/toggle-window "*:Buffers:*" 'left 1 treemacs-width)))
+                  (mio/toggle-window "*:Buffers:*" 'left 3 treemacs-width)))
 
 ;;(global-set-key (kbd "C-c o o")
 (global-set-key (kbd "C-s-o")
                 (lambda () (interactive)
-                  (mio/toggle-window "*LSP Symbols List*" 'right 0 treemacs-width)))
+                  (mio/toggle-window "*LSP Symbols List*" 'left 2 treemacs-width)))
 
 (global-set-key (kbd "C-s-p")
                 (lambda () (interactive)
@@ -452,14 +453,24 @@
 (defun mio/ide ()
   "Ide Layout"
   (interactive)
-  (treemacs)
+  (setq lsp-treemacs-deps-position-params
+        `((side . ,treemacs-position)
+          (slot . 1)
+          (window-width . ,treemacs-width)))   
+  (setq treemacs-follow-after-init nil)
+  (setq lsp-treemacs-symbols-position-params
+        `((side . left)
+          (slot . 2)
+          (window-width . ,treemacs-width)))
   (lsp-treemacs-symbols)
+  (setq ibuffer-sidebar-display-alist
+        `((side . left) (slot . 3) ))
+  (setq pop-up-windows nil)
+  (treemacs)
   (ibuffer-sidebar-show-sidebar)
   (windmove-right)
   (set-window-parameter (selected-window) 'window-name 'normal)
-  (windmove-left)
-  (setq treemacs-follow-after-init nil)
-  (setq pop-up-windows nil))
+  (windmove-left))
 
 (global-set-key (kbd "s-t") #'+vterm/toggle)
 

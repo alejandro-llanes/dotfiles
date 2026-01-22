@@ -55,28 +55,27 @@
 (package! treemacs-perspective)
 (package! treemacs-persp)
 (package! lsp-treemacs)
+(package! lsp-ui)
+(package! lsp-pyright)
+(package! lsp-cfn)
+(package! cfn-mode)
 (package! ligature)
 (package! cargo)
 (package! nerd-icons)
 (package! nerd-icons-ibuffer)
 (package! ibuffer-sidebar)
-(package! lsp-ui)
 (package! good-scroll)
 (package! beacon)
 (package! apheleia)
 (package! marginalia)
 (package! vertico-posframe
   :recipe (:host github :repo "tumashu/vertico-posframe"))
-(package! lsp-pyright)
 (package! ruff-format)
-;;(package! magit-file-icons)
 (package! prettier-js)
-(package! cfn-mode)
+(package! flycheck-cfn)
 (package! gist)
 (package! sublime-themes)
 (package! kdl-mode)
-;;(package! ws-butler
-;;  :recipe (:host github :repo "lewang/ws-butler"))
 
 ;; MacOS Specific
 

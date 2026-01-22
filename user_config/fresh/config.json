@@ -1,0 +1,13 @@
+{
+  "languages": {
+    "rust": {
+      "tab_size": 2,
+      "format_on_save": true
+    }
+  },
+  "lsp": {
+    "rust": {
+      "enabled": true
+    }
+  },
+}
