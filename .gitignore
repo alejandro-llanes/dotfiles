@@ -9,9 +9,10 @@ tmp/
 /user_config/awesome/wireless_interface
 /system_config/etc_portage/savedconfig/sys-kernel/linux-firmware-20250627
 /user_config/tmux/plugins
-/user_config/lazyvim
+/user_config/lazyvim/
 /user_config/crontabs/*.txt
 /user_config/systemd/user/timers.target.wants/
 /user_config/systemd/user/default.target.wants/
 /user_config/fish/fish_variables
 /freebsd/user_config/leftwm
+/user_config/systemd/user/default.target.wants/

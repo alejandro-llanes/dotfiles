@@ -1,2 +1,2 @@
-app-editors/emacs X dynamic-loading gpm gui json lcms sound ssl systemd threads -motif harfbuzz -athena -Xaw3d gtk jit tree-sitter
+app-editors/emacs -X dynamic-loading gpm gui json lcms sound ssl systemd threads -motif harfbuzz -athena -Xaw3d pgtk gtk jit tree-sitter
 #app-editors/emacs X dynamic-loading gpm gui json lcms sound ssl systemd threads motif -athena -Xaw3d -gtk jit

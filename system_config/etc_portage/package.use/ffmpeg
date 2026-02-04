@@ -1,1 +1,2 @@
 media-video/ffmpeg x265 fdk
+>=media-video/ffmpeg-8.0.1 vdpau

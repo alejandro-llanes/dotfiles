@@ -1,0 +1,5 @@
+sudo tailscale set --operator=alejandro
+tailscale configure systray --enable-startup=systemd
+systemctl --user enable --now tailscale-systray.service
+systemctl --user status tailscale-systray.service
+journalctl --user -xfu tailscale-systray.service

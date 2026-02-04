@@ -2,7 +2,7 @@
 [window]
 decorations = "Full"
 dynamic_padding = true
-opacity = 0.8
+opacity = 0.87
 
 [general]
 import = [
