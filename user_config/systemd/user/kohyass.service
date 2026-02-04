@@ -1,0 +1,17 @@
+[Unit]
+Description=KohyaSS Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=alejandro
+Group=alejandro
+WorkingDirectory=/srv/ialab/kohya_ss
+Environment=VIRTUAL_ENV=/srv/ialab/kohya_ss/.venv
+Environment=PATH=/srv/ialab/kohya_ss/.venv/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/srv/ialab/kohya_ss/.venv/bin/python3 kohya_gui.py --headless --inbrowser --listen 0.0.0.0 --server_port 7860 --share
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

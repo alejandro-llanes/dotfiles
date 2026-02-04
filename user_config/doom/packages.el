@@ -76,6 +76,7 @@
 (package! gist)
 (package! sublime-themes)
 (package! kdl-mode)
+(package! rainbow-delimiters)
 
 ;; MacOS Specific
 

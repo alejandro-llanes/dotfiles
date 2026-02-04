@@ -1,0 +1,10 @@
+  859  systemctl --user stop openwebui
+  860  systemctl --user stop fastsdcpu-web.service 
+  861  systemctl --user stop fastsdcpu-mcp.service 
+  862  systemctl --user stop kohyass.service 
+  863  systemctl --user stop comfyui.service
+
+
+
+# llama server
+   GGML_OPENCL_PLATFORM=Intel GGML_VK_VISIBLE_DEVICES=0 llama-server --device Vulkan0 -

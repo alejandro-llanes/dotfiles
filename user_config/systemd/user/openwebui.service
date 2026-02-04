@@ -1,0 +1,18 @@
+[Unit]
+Description=Openweb UI Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=alejandro
+Group=alejandro
+WorkingDirectory=/srv/ialab/open-webui
+Environment=DATA_DIR=/srv/ialab/open-webui/data
+Environment=VIRTUAL_ENV=/srv/ialab/open-webui
+Environment=PATH=/srv/ialab/open-webui/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=uvx --python 3.11 open-webui@latest serve --host 0.0.0.0
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

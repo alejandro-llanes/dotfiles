@@ -1,0 +1,18 @@
+[Unit]
+Description=ComfyUI Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=alejandro
+Group=alejandro
+WorkingDirectory=/srv/ialab/comfyui/ComfyUI
+Environment=VIRTUAL_ENV=/srv/ialab/comfyui/ComfyUI/venv
+Environment=PATH=/srv/ialab/comfyui/ComfyUI/venv/bin:/usr/local/bin:/usr/bin:/bin
+#ExecStart=/srv/ialab/comfyui/ComfyUI/venv/bin/python3 main.py --listen 0.0.0.0 --enable-manager --cpu --use-pytorch-cross-attention
+ExecStart=/srv/ialab/comfyui/ComfyUI/venv/bin/python3 main.py --listen 0.0.0.0 --enable-manager --use-pytorch-cross-attention
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

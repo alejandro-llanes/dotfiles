@@ -128,3 +128,6 @@ if [[ "$OSN" == "FreeBSD" ]]
     # fi
 fi
 . "$HOME/.cargo/env"
+
+# opencode
+export PATH=/home/alejandro/.opencode/bin:$PATH

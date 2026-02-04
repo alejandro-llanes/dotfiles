@@ -1,0 +1,21 @@
+[Unit]
+Description=FastSD CPU MCP Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=alejandro
+Group=alejandro
+WorkingDirectory=/srv/ialab/fastsdcpu
+Environment=VIRTUAL_ENV=/srv/ialab/fastsdcpu/env
+Environment=PATH=/srv/ialab/fastsdcpu/env/bin:/usr/local/bin:/usr/bin:/bin
+Environment=SERVER_NAME=0.0.0.0
+Environment=SERVER_NAME=8000
+Environment=DEVICE=GPU
+#ExecStart=/srv/ialab/fastsdcpu/env/bin/python3 src/app.py --mcp
+ExecStart=/srv/ialab/fastsdcpu/env/bin/python3 src/app.py --api
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
