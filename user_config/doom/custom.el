@@ -11,7 +11,8 @@
      "dd4582661a1c6b865a33b89312c97a13a3885dc95992e2e5fc57456b4c545176"
      "0325a6b5eea7e5febae709dab35ec8648908af12cf2d2b569bedc8da0a3a81c1" default))
  '(package-selected-packages
-   '(nerd-icons-ibuffer orangey-bits-theme rainbow-delimiters sublime-themes))
+   '(ai-code nerd-icons-ibuffer orangey-bits-theme rainbow-delimiters
+     sublime-themes))
  '(safe-local-variable-values
    '((mio/ide)
      (treemacs-default-directory

@@ -77,6 +77,9 @@
 (package! sublime-themes)
 (package! kdl-mode)
 (package! rainbow-delimiters)
+(package! ai-code)
+(package! exec-path-from-shell)
+
 
 ;; MacOS Specific
 
