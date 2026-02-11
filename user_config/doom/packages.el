@@ -58,6 +58,7 @@
 (package! lsp-ui)
 (package! lsp-pyright)
 (package! lsp-cfn)
+;;(package! lsp-tramp)
 (package! cfn-mode)
 (package! ligature)
 (package! cargo)

@@ -13,6 +13,6 @@ tmp/
 /user_config/crontabs/*.txt
 /user_config/systemd/user/timers.target.wants/
 /user_config/systemd/user/default.target.wants/
-/user_config/fish/fish_variables
+/user_config/fish/fish_variable*
 /freebsd/user_config/leftwm
 /user_config/systemd/user/default.target.wants/

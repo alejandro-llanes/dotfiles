@@ -567,6 +567,52 @@
 ;;(setq lsp-enabled-clients '(terraform-ls))
 (setq ls-terraform-ls-server "/usr/local/bin/terraform-ls")
 
+;; TRAMP
+
+(after! lsp-mode
+  (lsp-register-client
+   (make-lsp-client
+    :new-connection (lsp-tramp-connection "rust-analyzer")
+    :major-modes '(rust-mode rustic-mode)
+    :remote? t
+    :server-id 'rust-analyzer-remote)))
+
+(after! lsp-mode
+  ;; Don't watch remote files (huge perf win)
+  ;;(setq lsp-enable-file-watchers nil)
+  (add-hook 'lsp-before-initialize-hook
+            (lambda ()
+              (when (file-remote-p default-directory)
+                (setq-local lsp-enable-file-watchers nil))))
+
+  ;; Increase timeouts for remote connections
+  (setq lsp-response-timeout 30)
+
+  ;; Remote rust-analyzer path (if not in PATH)
+  (setq lsp-rust-analyzer-server-command '("~/.cargo/bin/rust-analyzer"))
+
+  ;; Disable features that are slow over TRAMP
+  (setq lsp-rust-analyzer-server-display-inlay-hints nil)  ; optional
+  (setq lsp-idle-delay 0.5))
+
+;; Increase TRAMP's timeout
+(after! tramp
+  (setq tramp-connection-timeout 30)
+  ;; Use ssh ControlMaster for connection reuse
+  (setq tramp-default-method "ssh")
+
+  (add-to-list 'tramp-remote-path 'tramp-own-remote-path)
+  (add-to-list 'tramp-remote-path "~/.cargo/bin")
+
+  ;; Cache remote file properties aggressively
+  (setq remote-file-name-inhibit-cache nil)
+  (setq tramp-completion-reread-directory-timeout nil)
+
+  ;; Verbose logging only when debugging
+  ;; (setq tramp-verbose 6)
+  )
+
+
 ;; AI TOOLS
 (use-package! ai-code
   ;; :straight (:host github :repo "tninja/ai-code-interface.el") ;; if you want to use straight to install, no need to have MELPA setting above

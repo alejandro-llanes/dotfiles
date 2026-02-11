@@ -2,5 +2,6 @@
 # VERSION: 3.0
 SETUVAR __fish_initialized:4300
 SETUVAR _tide_left_items:\x1d
+SETUVAR _tide_prompt_1925661:\x1b\x5b49m\x1e\x1b\x5b49m
 SETUVAR _tide_prompt_394877:\x1b\x5b49m\x1e\x1b\x5b49m
 SETUVAR _tide_right_items:\x1d
