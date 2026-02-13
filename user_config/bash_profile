@@ -19,3 +19,7 @@ export PATH=$HOME/go/bin:$PATH
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 export PATH="$HOME/.avm/bin:$PATH"
 . "$HOME/.cargo/env"
+
+
+# filen-cli
+PATH=$PATH:~/.filen-cli/bin

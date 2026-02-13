@@ -131,3 +131,7 @@ fi
 
 # opencode
 export PATH=/home/alejandro/.opencode/bin:$PATH
+
+
+# filen-cli
+PATH=$PATH:~/.filen-cli/bin
