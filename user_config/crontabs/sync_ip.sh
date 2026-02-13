@@ -5,6 +5,8 @@
 # Exit immediately if any command fails
 set -e
 
+. ~/.local.vars.inc
+
 # Get hostname
 HOSTNAME=$(hostname)
 
