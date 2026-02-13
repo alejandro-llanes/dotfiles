@@ -126,6 +126,10 @@ if [[ "$OSN" == "FreeBSD" ]]
     #    then
     #     alacritty msg config 'font.size=9.0' -w -1
     # fi
+    if [[ -e "$HOME/.local.vars.inc" ]]
+    then
+     source $HOME/.local.vars.inc
+    fi
 fi
 . "$HOME/.cargo/env"
 
