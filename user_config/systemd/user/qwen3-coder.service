@@ -1,0 +1,33 @@
+[Unit]
+Description=Llama.cpp HTTP Server
+After=network.target
+
+[Service]
+Type=simple
+User=alejandro
+ExecStart=llama-server \
+  --model /srv/ialab/llama/models/unsloth/Qwen3-Coder-Next-UD-Q4_K_XL.gguf \
+  --alias Qwen3-Coder-Next \
+  --port 8082 \
+  --host 0.0.0.0 \
+  --fit on \
+  --seed 3407 \
+  --temp 1.0 \
+  --top-p 0.95 \
+  --min-p 0.01 \
+  --top-k 40 \
+  --jinja \
+  --no-warmup \
+  --ctx-size 32768 \
+  --batch-size 4096 \
+  --ubatch-size 1024
+#  --n-gpu-layers 40
+WorkingDirectory=/srv/ialab/llama/models
+Restart=always
+# Optional: Limit memory usage if OOM errors occur
+# LimitNOFILE=4096
+# LimitMEMLOCK=infinity
+
+[Install]
+WantedBy=multi-user.target
+
