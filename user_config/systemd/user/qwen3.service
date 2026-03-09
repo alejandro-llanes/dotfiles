@@ -1,0 +1,38 @@
+[Unit]
+Description=Llama.cpp HTTP Server
+After=network.target
+
+[Service]
+Type=simple
+User=alejandro
+Environment="CUDA_VISIBLE_DEVICES='-1'"
+ExecStart=llama-server \
+  --model /srv/ialab/llama/models/Qwen3-Embedding-0.6B-Q8_0.gguf \
+  --alias qwen-embed \
+  --port 8083 \
+  --host 0.0.0.0 \
+#  --fit on \
+#  --seed 3407 \
+#  --temp 1.0 \
+#  --top-p 0.95 \
+#  --min-p 0.01 \
+#  --top-k 40 \
+  --jinja \
+#  --no-warmup \
+#  --ctx-size 8192 \
+  --ctx-size 32768 \
+#  --batch-size 4096 \
+#  --ubatch-size 1024
+  -t 8 \
+  --embedding \
+  -ngl 0
+#  --n-gpu-layers 40
+WorkingDirectory=/srv/ialab/llama/models
+Restart=always
+# Optional: Limit memory usage if OOM errors occur
+# LimitNOFILE=4096
+# LimitMEMLOCK=infinity
+
+[Install]
+WantedBy=default.target
+

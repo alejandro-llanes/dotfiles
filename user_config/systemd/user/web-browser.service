@@ -1,0 +1,18 @@
+[Unit]
+Description=Web Browser Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=alejandro
+Group=alejandro
+WorkingDirectory=/srv/ialab/web-browser
+Environment=BROWSER_PATH=/usr/bin/chromium-browser
+Environment=VIRTUAL_ENV=/srv/ialab/web-browser/.venv/
+Environment=PATH=/srv/ialab/web-browser/.venv/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/srv/ialab/web-browser/.venv/bin/python webui.py --ip 127.0.0.1 --port 7788
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
