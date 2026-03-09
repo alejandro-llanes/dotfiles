@@ -1,0 +1,5 @@
+font-family = JetBrains Mono
+shell-integration = bash
+background-opacity = 0.87
+async-backend = io_uring
+theme = tokyo-night-default

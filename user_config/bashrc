@@ -87,7 +87,7 @@ alias ls="lsd"
 alias astronvim="NVIM_APPNAME=astronvim nvim"
 # do not start a new tmux session if there another one already
 # running.
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ] && [[ ! $ANSTUDIO_ACTIVE ]]  && [[ ! "$EMACSW" ]] && [[ ! "$NVIMON" ]] && [[ ! "$SSH_TTY" ]] && [[ -z "$ZED" ]] ; then
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ] && [[ ! $ANSTUDIO_ACTIVE ]] && [[ ! "$VSCODE" ]]  && [[ ! "$EMACSW" ]] && [[ ! "$NVIMON" ]] && [[ ! "$SSH_TTY" ]] && [[ -z "$ZED" ]] && [[ "$ALACRITTY_SOCKET" ]] ; then
   exec tmux -u new -ADX
 fi
 # GCLOUD
@@ -136,6 +136,10 @@ fi
 # opencode
 export PATH=/home/alejandro/.opencode/bin:$PATH
 
-
 # filen-cli
 PATH=$PATH:~/.filen-cli/bin
+
+# claude
+export ANTHROPIC_AUTH_TOKEN=ollama
+export ANTHROPIC_API_KEY=""
+export ANTHROPIC_BASE_URL=http://192.168.1.61:11434

@@ -1,0 +1,23 @@
+
+installed:
+ollama
+comfyui
+llama
+open-webui
+fastsd
+kohya
+
+- web-browser
+- lemonade server
+
+ docker run --restart always -d --gpus all  --name lemonade-server   -p 8000:8000 -p 8001:8001 -p 8002:8002 -p 8003:8003   -v /srv/ialab/lemonade/hg:/root/.cache/huggingface   -v /srv/ialab/lemonade/llama:/opt/lemonade/llama   -e LEMONADE_LLAMACPP_BACKEND=vulkan   sombralibre/lemonade-server
+
+curl http://localhost:8000/api/v1/models
+
+
+docker network create searxng
+
+docker run --network searxng --restart unless-stopped -v /src/ialab/valkey/data:/data --name searxng-valkey -d valkey/valkey valkey-server --save 60 1 --loglevel warning
+
+docker run --network searxng --restart unless-stopped --name searxng -d -p 8888:8080  -v /srv/ialab/searxng/etc:/etc/searxng/ -v /srv/ialab/searxng/data:/var/cache/searxng/  docker.io/searxng/searxng:latest
+
