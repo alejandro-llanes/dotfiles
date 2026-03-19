@@ -620,7 +620,7 @@
   ;; use codex as backend, other options are 'claude-code, 'gemini, 'github-copilot-cli, 'opencode, 'grok, 'cursor, 'kiro, 'codebuddy, 'claude-code-ide, 'claude-code-el
   (ai-code-set-backend 'opencode)
   ;; Enable global keybinding for the main menu
-  (global-set-key (kbd "C-c a") #'ai-code-menu)
+  (global-set-key (kbd "C-c x") #'ai-code-menu)
   ;; Optional: Use eat if you prefer, by default it is vterm
   ;; (setq ai-code-backends-infra-terminal-backend 'eat) ;; the way to config all native supported CLI. for external backend such as claude-code-ide.el and claude-code.el, please check their config
   ;; Optional: Enable @ file completion in comments and AI sessions

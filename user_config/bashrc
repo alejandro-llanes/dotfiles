@@ -139,7 +139,5 @@ export PATH=/home/alejandro/.opencode/bin:$PATH
 # filen-cli
 PATH=$PATH:~/.filen-cli/bin
 
-# claude
-export ANTHROPIC_AUTH_TOKEN=ollama
-export ANTHROPIC_API_KEY=""
-export ANTHROPIC_BASE_URL=http://192.168.1.61:11434
+
+alias claude-mem='bun "/home/alejandro/.claude/plugins/cache/thedotmack/claude-mem/10.6.0/scripts/worker-service.cjs"'
