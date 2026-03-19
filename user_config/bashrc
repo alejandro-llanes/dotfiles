@@ -139,5 +139,4 @@ export PATH=/home/alejandro/.opencode/bin:$PATH
 # filen-cli
 PATH=$PATH:~/.filen-cli/bin
 
-
 alias claude-mem='bun "/home/alejandro/.claude/plugins/cache/thedotmack/claude-mem/10.6.0/scripts/worker-service.cjs"'

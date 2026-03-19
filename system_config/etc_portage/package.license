@@ -21,3 +21,4 @@ dev-util/android-studio  Apache-2.0 android BSD BSD-2 CDDL-1.1 CPL-0.5 EPL-1.0 G
 dev-util/android-sdk-cmdline-tools android
 media-libs/faac MPEG-4
 media-video/ffmpeg all-rights-reserved
+>=net-wireless/sdrplay-3 SDRplay
