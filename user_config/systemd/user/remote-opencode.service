@@ -1,0 +1,15 @@
+[Unit]
+Description=Remote OpenCode Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Environment="PATH=/home/alejandro/.bun/bin:/home/alejandro/go/bin:/opt/cuda/bin:/home/alejandro/.opencode/bin:/home/alejandro/go/bin:/home/alejandro/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/bin:/usr/lib/llvm/22/bin:/usr/lib/llvm/21/bin:/usr/lib/llvm/20/bin:/usr/lib/llvm/16/bin:/opt/intel/oneapi/mkl/2025.3/bin:/opt/android-sdk/cmdline-tools/latest/bin:/opt/cuda/bin:/home/alejandro/.spicetify:/home/alejandro/.bin:/home/alejandro/.local/bin:/home/alejandro/.config/emacs/bin:/home/alejandro/.filen-cli/bin:/home/alejandro/.spicetify:/home/alejandro/.filen-cli/bin"
+User=alejandro
+Group=alejandro
+ExecStart=%h/.local/bin/remote-opencode start 
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
