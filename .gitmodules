@@ -13,3 +13,6 @@
 [submodule "user_config/alacritty/themes"]
 	path = user_config/alacritty/themes
 	url = https://github.com/alacritty/alacritty-theme.git
+[submodule "user_config/opencode/skillsets"]
+	path = user_config/opencode/skillsets
+	url = git@github.com:alejandro-llanes/skillsets.git
