@@ -2,11 +2,6 @@
     (
         modifiers: [
             Super,
-        ],
-    ): Disable,
-    (
-        modifiers: [
-            Super,
             Ctrl,
         ],
         key: "t",
@@ -15,6 +10,18 @@
         modifiers: [
             Super,
         ],
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
         key: "t",
     ): Disable,
+    (
+        modifiers: [
+            Super,
+            Alt,
+        ],
+        key: "m",
+    ): Minimize,
 }

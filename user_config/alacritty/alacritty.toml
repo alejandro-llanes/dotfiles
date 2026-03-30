@@ -30,3 +30,7 @@ size = 12.0
 
 #[font]
 #size = 11.25
+
+[[keyboard.bindings]]
+key = "F11"
+action = "ToggleFullscreen"
