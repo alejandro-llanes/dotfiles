@@ -1,6 +1,9 @@
 local wibox = require("wibox")
+local beautiful = require("beautiful")
 require("modules/tags")
 require("modules/tasks")
+
+local dpi = beautiful.xresources.apply_dpi
 
 Panel_prototype = function()
   local this = {}
