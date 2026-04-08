@@ -34,20 +34,25 @@ MediaWidget_prototype = function()
     playback_status = "Stopped",
     has_album_art = false,
     update = function()
-      awful.spawn.easy_async("playerctl metadata --format '{{playerName}}|{{title}}|{{artist}}|{{status}}|{{mpris:artUrl}}'", function(output)
-        local parts = {}
-        for part in output:gmatch("([^\n|]*)") do
-          table.insert(parts, part)
-        end
-        
-        this.__private.player_name = parts[1] or ""
-        this.__private.track_title = parts[2] or ""
-        this.__private.track_artist = parts[3] or ""
-        this.__private.playback_status = parts[4] or ""
-        this.__private.has_album_art = (parts[5] or "") ~= ""
-        
-        this.__private.update_display()
+      local ok, err = pcall(function()
+        awful.spawn.easy_async("playerctl metadata --format '{{playerName}}|{{title}}|{{artist}}|{{status}}|{{mpris:artUrl}}'", function(output)
+          local parts = {}
+          for part in output:gmatch("([^\n|]*)") do
+            table.insert(parts, part)
+          end
+          
+          this.__private.player_name = parts[1] or ""
+          this.__private.track_title = parts[2] or ""
+          this.__private.track_artist = parts[3] or ""
+          this.__private.playback_status = parts[4] or ""
+          this.__private.has_album_art = (parts[5] or "") ~= ""
+          
+          this.__private.update_display()
+        end)
       end)
+      if not ok then
+        require("naughty").notify({ title = "MediaWidget Error", text = err, timeout = 5 })
+      end
     end,
     update_display = function()
       if this.__private.playback_status == "" or this.__private.playback_status == "Stopped" then

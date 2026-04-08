@@ -1,6 +1,10 @@
 local awful = require("awful")
+local wibox = require("wibox")
+local beautiful = require("beautiful")
 local vars = require("config.variables")
 local widgets = require("config.widgets")
+
+local dpi = beautiful.xresources.apply_dpi
 
 local task_left_button_press_action = function(c)
 	if not is_client_in_tag(c, awful.tag.selected()) then

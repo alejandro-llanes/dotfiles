@@ -43,65 +43,70 @@ ClipboardWidget_prototype = function()
     rebuild_popup = function()
       local rows = { layout = wibox.layout.fixed.vertical }
       
-      awful.spawn.easy_async("clipman list --max-items=10", function(output)
-        local items = {}
-        for line in output:gmatch("[^\n]+") do
-          if line:match("^%d+%.") then
-            table.insert(items, line:sub(4))
+      local ok, err = pcall(function()
+        awful.spawn.easy_async("clipman list --max-items=10", function(output)
+          local items = {}
+          for line in output:gmatch("[^\n]+") do
+            if line:match("^%d+%.") then
+              table.insert(items, line:sub(4))
+            end
           end
-        end
-        
-        for i, item in ipairs(items) do
-          local display_text = item:sub(1, 50) .. (item:len() > 50 and "..." or "")
           
-          local row = wibox.widget {
-            {
+          for i, item in ipairs(items) do
+            local display_text = item:sub(1, 50) .. (item:len() > 50 and "..." or "")
+            
+            local row = wibox.widget {
               {
                 {
-                  text = display_text,
-                  align = "left",
-                  widget = wibox.widget.textbox
+                  {
+                    text = display_text,
+                    align = "left",
+                    widget = wibox.widget.textbox
+                  },
+                  margins = dpi(8),
+                  layout = wibox.container.margin
                 },
-                margins = dpi(8),
-                layout = wibox.container.margin
-              },
-              widget = wibox.container.background
+                widget = wibox.container.background
+              }
             }
-          }
+            
+            row:connect_signal("mouse::enter", function(c)
+              c:set_bg(beautiful.menu_bg_focus)
+              c:set_fg(beautiful.fg_focus)
+            end)
+            
+            row:connect_signal("mouse::leave", function(c)
+              c:set_bg(gears.color.transparent)
+              c:set_fg(beautiful.fg_normal)
+            end)
+            
+            row:connect_signal("button::press", function()
+              awful.spawn("clipman pick --tool=none", false)
+              this.__private.clipboard_popup.visible = false
+            end)
+            
+            table.insert(rows, row)
+          end
           
-          row:connect_signal("mouse::enter", function(c)
-            c:set_bg(beautiful.menu_bg_focus)
-            c:set_fg(beautiful.fg_focus)
-          end)
+          if #items == 0 then
+            local empty_row = wibox.widget {
+              {
+                text = "Clipboard empty",
+                align = "center",
+                widget = wibox.widget.textbox
+              },
+              margins = dpi(16),
+              layout = wibox.container.margin
+            }
+            table.insert(rows, empty_row)
+          end
           
-          row:connect_signal("mouse::leave", function(c)
-            c:set_bg(gears.color.transparent)
-            c:set_fg(beautiful.fg_normal)
-          end)
-          
-          row:connect_signal("button::press", function()
-            awful.spawn("clipman pick --tool=none", false)
-            this.__private.clipboard_popup.visible = false
-          end)
-          
-          table.insert(rows, row)
-        end
-        
-        if #items == 0 then
-          local empty_row = wibox.widget {
-            {
-              text = "Clipboard empty",
-              align = "center",
-              widget = wibox.widget.textbox
-            },
-            margins = dpi(16),
-            layout = wibox.container.margin
-          }
-          table.insert(rows, empty_row)
-        end
-        
-        this.__private.clipboard_popup:setup(rows)
+          this.__private.clipboard_popup:setup(rows)
+        end)
       end)
+      if not ok then
+        require("naughty").notify({ title = "ClipboardWidget Error", text = err, timeout = 5 })
+      end
     end
   }
 
