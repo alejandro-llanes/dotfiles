@@ -1,0 +1,23 @@
+-- Minimal test to isolate the error
+local naughty = require("naughty")
+
+naughty.notify({
+    title = "Debug Test",
+    text = "If you see this, naughty works",
+    timeout = 5
+})
+
+-- Try loading just variables
+local gears = require("gears")
+local awful = require("awful")
+
+local ok, err = pcall(function()
+    require("utils")
+    require("helper")
+    local vars = require("config.variables")
+    naughty.notify({ title = "Variables loaded", text = "OS: " .. vars.current_os, timeout = 5 })
+end)
+
+if not ok then
+    naughty.notify({ title = "Error loading vars", text = err, timeout = 0 })
+end
