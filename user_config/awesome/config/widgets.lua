@@ -13,6 +13,8 @@ local volume_widget = VolumeWidget(true)
 local microphone_widget = MicrophoneWidget(true)
 local keyboard_layout_widget = KeyboardLayoutWidget()
 local launch_widget = LaunchWidget(vars.launch_command)
+local media_widget = MediaWidget()
+local clipboard_widget = ClipboardWidget()
 
 return {
 	cpu_widget = cpu_widget,
@@ -28,4 +30,6 @@ return {
 	microphone_widget = microphone_widget,
 	keyboard_layout_widget = keyboard_layout_widget,
 	launch_widget = launch_widget,
+	media_widget = media_widget,
+	clipboard_widget = clipboard_widget,
 }

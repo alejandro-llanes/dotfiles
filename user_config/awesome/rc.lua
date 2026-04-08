@@ -19,6 +19,8 @@ require("modules/widgets/keyboard_layout_widget")
 require("modules/widgets/volume_widget")
 require("modules/widgets/microphone_widget")
 require("modules/widgets/launch_widget")
+require("modules/widgets/media_widget")
+require("modules/widgets/clipboard_widget")
 
 require("awful.autofocus")
 

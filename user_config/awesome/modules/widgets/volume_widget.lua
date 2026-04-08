@@ -305,6 +305,14 @@ VolumeWidget_prototype = function()
         awful.keygrabber.stop(_key_grabber)
       end
     end)
+
+    this.__public.icon:connect_signal("mouse::enter", function()
+      this.__public.icon.bg = beautiful.glow_cyan .. "22"
+    end)
+    
+    this.__public.icon:connect_signal("mouse::leave", function()
+      this.__public.icon.bg = gears.color.transparent
+    end)
   end
 
   return this

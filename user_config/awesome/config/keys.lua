@@ -1,4 +1,5 @@
 local awful = require("awful")
+local gears = require("gears")
 local vicious = require("vicious")
 local vars = require("config.variables")
 local widgets = require("config.widgets")

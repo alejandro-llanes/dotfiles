@@ -30,6 +30,26 @@ theme.bg_normal = theme.background_color
 theme.bg_focus = theme.text_color
 theme.bg_urgent = theme.background_color
 
+-- | Glow Effects | --
+
+theme.glow_cyan = "#00E4C5"
+theme.glow_purple = "#9D7AD4"
+theme.glow_danger = "#db5853"
+theme.glow_blur = dpi(3)
+theme.glow_spread = dpi(2)
+
+-- | Animations | --
+
+theme.animation_duration_fast = 0.1
+theme.animation_duration_normal = 0.15
+theme.animation_duration_slow = 0.3
+
+-- | Panel | --
+
+theme.panel_border_radius = dpi(8)
+theme.panel_bg = theme.background_color .. "ee"
+theme.widget_spacing = dpi(4)
+
 -- | Checkbox | --
 
 theme.checkbox_shape = gears.shape.circle

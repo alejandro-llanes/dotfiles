@@ -16,6 +16,8 @@ end
 
 local screen_0_panel = Panel()
 screen_0_panel.position = "top"
+screen_0_panel.floating = true
+screen_0_panel.margin = dpi(4)
 
 if vars.current_os == "Linux" then
 	screen_0_panel.thickness = 32
@@ -34,11 +36,17 @@ if vars.current_os == "Linux" then
 		widgets.memory_widget,
 		widgets.microphone_widget,
 		widgets.brightness_widget,
+		widgets.network_widget,
+		widgets.bluetooth_widget,
+		widgets.volume_widget,
+		widgets.media_widget,
+		widgets.clipboard_widget,
 		{
 			widgets.calendar_widget,
 			widgets.clock_widget,
 		},
 		widgets.menu_widget,
+		wibox.widget.systray(),
 	}
 end
 if vars.current_os == "FreeBSD" then
