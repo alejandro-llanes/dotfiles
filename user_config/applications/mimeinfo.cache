@@ -19,6 +19,7 @@ text/x-pascal=lvim.desktop;neovide.desktop;
 text/x-tcl=lvim.desktop;neovide.desktop;
 text/x-tex=lvim.desktop;neovide.desktop;
 text/xml=edge.desktop;
+x-scheme-handler/claude-cli=claude-code-url-handler.desktop;
 x-scheme-handler/ftp=edge.desktop;
 x-scheme-handler/http=edge.desktop;
 x-scheme-handler/https=edge.desktop;

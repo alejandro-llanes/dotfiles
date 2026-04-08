@@ -6,3 +6,9 @@ gdbus introspect -y -r --dest org.freedesktop.UPower --object-path /org/freedesk
 gdbus introspect -y -r --dest org.freedesktop.UPower --object-path /org/freedesktop/UPower
 gdbus introspect -y -r --dest org.freedesktop.UPower --object-path /org/freedesktop/UPower/devices/battery_devxbatteryx1
 rclone copy "onedrive:plugins-14032026-" . --include "chunk_{38[1-9],39[0-9],4[0-9][0-9]}*"
+
+# tools
+- eget
+- envx
+- gitu
+- modelsdev
