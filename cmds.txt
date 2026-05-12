@@ -11,4 +11,4 @@ rclone copy "onedrive:plugins-14032026-" . --include "chunk_{38[1-9],39[0-9],4[0
 - eget
 - envx
 - gitu
-- modelsdev
+- modelsdevXwayland :10 -geometry 1024x768 -decorate
